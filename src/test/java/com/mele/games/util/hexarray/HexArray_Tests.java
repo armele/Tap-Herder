@@ -108,4 +108,28 @@ public class HexArray_Tests {
 		
 		Assert.assertNull (next);			
 	}
+	
+	@Test
+	public void testVector() {
+		EHexVector reverse = EHexVector.NORTH.reverse();
+		Assert.assertEquals(EHexVector.SOUTH, reverse);
+		
+		reverse = EHexVector.NORTHEAST.reverse();
+		Assert.assertEquals(EHexVector.SOUTHWEST, reverse);
+		
+		reverse = EHexVector.NORTHWEST.reverse();
+		Assert.assertEquals(EHexVector.SOUTHEAST, reverse);		
+		
+		reverse = EHexVector.SOUTH.reverse();
+		Assert.assertEquals(EHexVector.NORTH, reverse);	
+		
+		reverse = EHexVector.SOUTHWEST.reverse();
+		Assert.assertEquals(EHexVector.NORTHEAST, reverse);	
+		
+		reverse = EHexVector.NORTHWEST.reverse();
+		Assert.assertEquals(EHexVector.SOUTHEAST, reverse);	
+		
+		reverse = EHexVector.NORTH.reverse();
+		Assert.assertEquals(EHexVector.SOUTH, reverse);			
+	}
 }

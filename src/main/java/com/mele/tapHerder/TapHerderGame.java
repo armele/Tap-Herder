@@ -12,6 +12,7 @@ import com.mele.games.utils.hexarray.EHexVector;
 import com.mele.games.utils.hexarray.HexArray;
 import com.mele.tapHerder.residents.BaseResident;
 import com.mele.tapHerder.residents.Dog;
+import com.mele.tapHerder.residents.Wolf;
 
 /**
  * @author Ayar
@@ -70,6 +71,9 @@ public class TapHerderGame implements IGame {
 		
 		cell = (TapHerderCell) hexmap.getCell(3, 7);
 		cell.setResident(new Dog(this));
+		
+		cell = (TapHerderCell) hexmap.getCell(7, 9);
+		cell.setResident(new Wolf(this));
 		
 		initialized = true;
 	}

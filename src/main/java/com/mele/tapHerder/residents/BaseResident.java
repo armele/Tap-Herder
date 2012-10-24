@@ -53,5 +53,10 @@ public abstract class BaseResident {
 		this.name = name;
 	}
 	
+	/**
+	 * 
+	 */
+	public abstract void kill();
+	
 	public abstract void react(TapHerderCell homeCell, EHexVector vector); 
 }

@@ -6,22 +6,22 @@ import com.mele.tapHerder.ETerrainType;
 import com.mele.tapHerder.TapHerderCell;
 import com.mele.tapHerder.TapHerderGame;
 
+public class Wolf extends BaseResident implements IAntiresident {
 
-
-public class Dog extends BaseResident implements IResident {
-	public Dog(TapHerderGame game) {
+	public Wolf(TapHerderGame game) {
 		super(game);
-		setName("D");
+		setName("W");
 	}
 	
 	/* (non-Javadoc)
 	 * @see com.mele.tapHerder.residents.BaseResident#react(com.mele.games.utils.hexarray.EHexVector)
 	 */
 	public void react(TapHerderCell homeCell, EHexVector vector) {
-		// Basic single-hex move.
+		// Basic move, but with a reversed vector (the wolf pursues the tap)
 		// TODO: handle multiple move sizes
+		
 		if (homeCell != null) {
-			TapHerderCell neighbor = (TapHerderCell) homeCell.findAdjacentCell(vector);
+			TapHerderCell neighbor = (TapHerderCell) homeCell.findAdjacentCell(vector.reverse());
 			if (neighbor != null) {
 				if (neighbor.getType().equals(ETerrainType.HAZARD)) {
 					// Got pushed into a hazard - I'm dead!
@@ -34,16 +34,10 @@ public class Dog extends BaseResident implements IResident {
 				} else {
 					BaseResident destinationResident = neighbor.getResident();
 					if (destinationResident != null) {
-						if (destinationResident instanceof IAntiresident) {
-							// Next cell over is occupied by an antiresident - it has slain me!
-							kill();
-							homeCell.setResident(null);
-						} else {
-							// Next cell over is occupied by a resident - I killed the resident and took his spot!
-							destinationResident.kill();
-							neighbor.setResident(this);
-							homeCell.setResident(null);
-						}
+						// Next cell over is occupied - I killed the resident and took his spot!
+						destinationResident.kill();
+						neighbor.setResident(this);
+						homeCell.setResident(null);
 					} else {
 						// Next cell over is free - move me!
 						homeCell.setResident(null);
@@ -62,6 +56,6 @@ public class Dog extends BaseResident implements IResident {
 	 * @see com.mele.tapHerder.residents.BaseResident#kill()
 	 */
 	public void kill() {
-		game.getScoreLog().addScore(ScoreEvent.SCORE_DEADRESIDENT);
+		game.getScoreLog().addScore(ScoreEvent.SCORE_DEADANTIRES);
 	}
 }

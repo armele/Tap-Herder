@@ -7,10 +7,37 @@ package com.mele.games.utils.hexarray;
  *
  */
 public enum EHexVector {
-	NORTH,
+	NORTH	 ,
 	NORTHEAST,
 	SOUTHEAST,
-	SOUTH,
+	SOUTH	 ,
 	SOUTHWEST,
-	NORTHWEST
+	NORTHWEST;
+	
+	public EHexVector reverse() {
+		EHexVector reverse = null;
+		
+		switch (this) {
+		case NORTH:
+			reverse = SOUTH;
+			break;
+		case NORTHEAST:
+			reverse = SOUTHWEST;
+			break;
+		case SOUTHEAST:
+			reverse = NORTHWEST;
+			break;
+		case SOUTH:
+			reverse = NORTH;
+			break;
+		case SOUTHWEST:
+			reverse = NORTHEAST;
+			break;
+		case NORTHWEST:
+			reverse = SOUTHEAST;
+			break;
+		}
+		
+		return reverse;
+	}
 }
