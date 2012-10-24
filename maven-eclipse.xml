@@ -1,0 +1,8 @@
+<project default="copy-resources">
+  <target name="init"/>
+  <target name="copy-resources" depends="init">
+    <copy todir="target/classes/com/mele/tapherder" filtering="false">
+      <fileset dir="src/main/resources" includes="*.xml|*.gif|*.jpg|*.psp" excludes="**/*.java|**/*.jbf|**/*.java"/>
+    </copy>
+  </target>
+</project>

@@ -1,0 +1,303 @@
+package com.mele.towerMaster;
+
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
+import org.apache.log4j.Logger;
+
+import com.mele.games.utils.BaseGameBoard;
+import com.mele.games.utils.BaseLocation;
+import com.mele.games.utils.IGameBoardSpace;
+import com.mele.games.utils.ILocation;
+import com.mele.games.utils.pieces.GladePiece;
+import com.mele.games.utils.pieces.IMobile;
+import com.mele.games.utils.pieces.IPiece;
+import com.mele.games.utils.pieces.IPlayer;
+import com.mele.games.utils.pieces.PlayerMobile;
+import com.mele.towerMaster.io.Episode;
+import com.mele.towerMaster.io.EpisodeParser;
+import com.mele.towerMaster.io.EpisodeRecorder;
+
+/**
+ * @author Al
+ *
+ */
+public class TowerMasterGameBoard extends BaseGameBoard {
+	protected static Logger log = Logger.getLogger(TowerMasterGameBoard.class);	
+	protected HashMap<String, List<IPiece>> pieceRegistry = new HashMap<String, List<IPiece>>();
+	public static String REG_PLAYER = "PLAYER";
+	public static String REG_GLADE = "GLADE";
+	protected boolean episodeEditorMode = false;
+	protected Episode currentEpisode = null;
+	protected String loadEpisode = null;
+	protected EpisodeRecorder recorder = null;
+	protected int currentWaveNumber = 0;
+	
+	public TowerMasterGameBoard() {
+		// Size units of a board are in spaces.
+		height = 1;
+		width = 1;
+		depth = 1;
+		spaceArray = new TowerMasterGameSpace[width][height];
+		IGameBoardSpace space = new TowerMasterGameSpace(this);
+		space.setBoardCoordinate(new BaseLocation(0,0));
+		spaceArray[0][0] = space;
+	}	
+	
+	/**
+	 * @return 
+	 */
+	public boolean isEpisodeEditorMode() {
+		return episodeEditorMode;
+	}
+
+	/**
+	 * @param 
+	 */
+	public void setEpisodeEditorMode(boolean edit) {
+		this.episodeEditorMode = edit;
+	}
+
+	/**
+	 * @return the loadEpisode
+	 */
+	public String getLoadEpisode() {
+		return loadEpisode;
+	}
+
+	/**
+	 * @param loadEpisode the loadEpisode to set
+	 */
+	public void setLoadEpisode(String loadEpisode) {
+		this.loadEpisode = loadEpisode;
+	}
+
+	@Override
+	public IGameBoardSpace getSpace(int x, int y) {
+		return spaceArray[0][0];
+	}
+
+	@Override
+	public IGameBoardSpace getSpace(ILocation loc) {
+		return spaceArray[0][0];
+	}
+
+	/* (non-Javadoc)
+	 * @see com.mele.games.utils.IGameBoard#getHeight()
+	 */
+	public int getHeight() {
+		return height;
+	}
+
+	/* (non-Javadoc)
+	 * @see com.mele.games.utils.IGameBoard#getWidth()
+	 */
+	public int getWidth() {
+		return width;
+	}	
+	
+	/* (non-Javadoc)
+	 * @see com.mele.games.utils.IGameBoard#getWidth()
+	 */
+	public int getDepth() {
+		return depth;
+	}
+
+	@Override
+	public boolean mainGameLoop() {
+		boolean action = false;
+		
+		for (IGameBoardSpace space : getSpaceList()) {
+			List<IPiece> removeList = new ArrayList<IPiece>();
+			for (IPiece piece : space.getPieceManager().getPieceList()) {
+				if (piece.isDestroyed()) {
+					// Mark for removal
+					removeList.add(piece);
+				} else {
+					action = action | piece.takeTurn();
+				}
+			}
+			
+			// Remove
+			for (IPiece piece : removeList) {
+				space.getPieceManager().remove(piece);
+			}
+		}
+		
+		return action;
+	}
+
+	@Override
+	public boolean checkEndCondition() {
+		boolean end = super.checkEndCondition();
+		boolean liveMob = false;
+		
+		if (isEpisodeEditorMode()) {
+			// TODO: Allow switch from editor mode to play mode.  (And back?)
+			return end;
+		}
+		
+		// TODO: Consider supporting multiple glades
+		List<IPiece> gladeList = this.getRegisteredPieces(REG_GLADE);
+		GladePiece glade = (GladePiece) gladeList.get(0);
+		if (glade.getProtectiveLayer() <= 0) {
+			this.addMessage("Glade Destroyed!");
+			end = true;
+		}
+		
+		ArrayList<IMobile> mobList = currentEpisode.getWave(currentWaveNumber).getMobList();
+		for (IMobile mob : mobList) {
+			if (!mob.isDestroyed()) {
+				liveMob = true;
+				break;
+			}
+		}
+		
+		if (!liveMob) {
+			currentWaveNumber++;			
+			if (currentWaveNumber >= currentEpisode.getWaveList().size()) {
+				// This signals the end of the episode.
+				end = true;
+			} else {
+				startWave(currentWaveNumber);
+			}
+		}
+		return end;
+	}
+
+	/**
+	 * Starts up an episode.
+	 * 
+	 * @param episode
+	 */
+	protected void startEpisode(IGameBoardSpace space, Episode episode) {
+		currentEpisode = episode;
+		
+		log.info("Loaded episode: " + episode.getTitle());
+		addMessage(episode.getTitle());
+		
+		// Clear out any previously registered Glade
+		List<IPiece> gladeList = getRegisteredPieces(REG_GLADE);
+		if (gladeList != null) {
+			pieceRegistry.remove(gladeList);
+			gladeList.clear();
+		}
+		
+		// Register this episode's Glade for easy retrieval.
+		for (IPiece piece : currentEpisode.getPieceList()) {
+			piece.setSpace(space);
+			if (piece instanceof GladePiece) {
+				registerPiece(REG_GLADE, piece);
+			}
+		}
+
+		startWave(currentWaveNumber);
+
+	}
+	
+	/**
+	 * @param waveNum
+	 */
+	protected void startWave(int waveNum) {
+		IGameBoardSpace space = getSpace(0,0);
+		String waveStr = "Wave " + (waveNum + 1);
+		
+		log.info("Starting - " + waveStr);
+		
+		this.addMessage(waveStr);
+		
+		for (IMobile mob : currentEpisode.getWave(waveNum).getMobList()) {
+			mob.setSpace(space);
+		}
+	}
+	
+	/**
+	 * @return
+	 */
+	protected Episode episodeMenu() {
+		// TODO: create episode menu
+		// TODO: allow external XML files to be located and added to episode menu
+		if (getLoadEpisode() == null || getLoadEpisode().length() == 0) {
+			loadEpisode = "recorded_episode.xml";
+		}
+		URL url = TowerMaster.class.getResource(loadEpisode);  
+		EpisodeParser ep = new EpisodeParser();
+		Episode episode = ep.parse(url);	
+		
+		return episode;
+	}	
+	
+	@Override
+	protected void populatePieces() {
+		IGameBoardSpace space = getSpace(0,0);
+		space.getPieceManager().clear();
+		
+		IPlayer player = new PlayerMobile(space);
+		// TODO: Make player location dynamic based on the episode.
+		player.setLocation(new BaseLocation(300, 300));
+		player.setSpeed(new Integer(5));
+		getReader().setMobile(player);
+		
+		// Register for simple fetching by registration key.
+		registerPiece(REG_PLAYER, player);
+		
+		if (isEpisodeEditorMode()) {
+			recorder = new EpisodeRecorder();
+			player.setSpeed(new Integer(3));
+			addMessage("Recording Episode");
+			if (getLoadEpisode() != null && getLoadEpisode().length() > 0) {
+				log.info("Loading episode " + getLoadEpisode() + " for editing.");
+				recorder.loadEpisode(getLoadEpisode());
+				startEpisode(space, recorder.getEpisode());
+			}
+			// TODO: Support episode menu selection for editing when not present on the command line.
+		} else {
+			Episode episode = episodeMenu();
+			startEpisode(space, episode);
+		}
+	}
+	
+	@Override
+	public void registerPiece(String regKey, IPiece piece) {
+		List<IPiece> registryList = pieceRegistry.get(regKey);
+		if (registryList == null) {
+			registryList = new ArrayList<IPiece>();
+			pieceRegistry.put(regKey, registryList);
+		}
+		registryList.add(piece);
+	}
+
+	@Override
+	public List<IPiece> getRegisteredPieces(String regKey) {
+		List<IPiece> registryList = pieceRegistry.get(regKey);
+		return registryList;
+	}
+
+	/**
+	 * @return the recorder
+	 */
+	public EpisodeRecorder getRecorder() {
+		return recorder;
+	}
+
+	/**
+	 * @param recorder the recorder to set
+	 */
+	public void setRecorder(EpisodeRecorder recorder) {
+		this.recorder = recorder;
+	}
+	
+	/**
+	 * @return
+	 */
+	public boolean isRecording() {
+		boolean recording = false;
+		
+		if (recorder != null) {
+			recording = recorder.isRecording();
+		}
+		return recording;
+	}
+}

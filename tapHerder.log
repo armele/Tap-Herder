@@ -1,0 +1,28 @@
+[2012-10-22 23:14:34,072] INFO - main: com.mele.tapHerder.TapHerder.configureLogging(34) | Logging configured.
+[2012-10-22 23:14:34,213] INFO - main: mele.games.mechanics.BaseGameManager.startGame(38) | Starting game manager...
+[2012-10-22 23:14:34,812] INFO - main: games.utils.ui.RenderUtils.loadImage(73) | Loading image from: /M:/Personal_Al/Programming/tapHerder/target/classes/com/mele/tapHerder/rat.gif
+[2012-10-22 23:14:34,821] INFO - main: games.utils.ui.RenderUtils.loadImage(87) | Waiting for image
+[2012-10-22 23:14:43,207] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mouseClicked(54) | Le mouse: (4,7)
+[2012-10-22 23:14:43,301] INFO - main: com.mele.tapHerder.TapHerderGame.processCommand(105) | Got a tap command: com.mele.tapHerder.TapCommand@57ac3379
+[2012-10-22 23:14:46,822] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mouseClicked(54) | Le mouse: (6,6)
+[2012-10-22 23:14:46,855] INFO - main: com.mele.tapHerder.TapHerderGame.processCommand(105) | Got a tap command: com.mele.tapHerder.TapCommand@714ae2c1
+[2012-10-22 23:14:48,918] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mouseClicked(54) | Le mouse: (6,6)
+[2012-10-22 23:14:48,955] INFO - main: com.mele.tapHerder.TapHerderGame.processCommand(105) | Got a tap command: com.mele.tapHerder.TapCommand@6b6d2702
+[2012-10-22 23:14:51,134] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mouseClicked(54) | Le mouse: (6,10)
+[2012-10-22 23:14:51,158] INFO - main: com.mele.tapHerder.TapHerderGame.processCommand(105) | Got a tap command: com.mele.tapHerder.TapCommand@4b1c2b67
+[2012-10-22 23:14:52,749] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mouseClicked(54) | Le mouse: (5,9)
+[2012-10-22 23:14:52,759] INFO - main: com.mele.tapHerder.TapHerderGame.processCommand(105) | Got a tap command: com.mele.tapHerder.TapCommand@26659db7
+[2012-10-22 23:14:53,959] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mouseClicked(54) | Le mouse: (6,9)
+[2012-10-22 23:14:54,010] INFO - main: com.mele.tapHerder.TapHerderGame.processCommand(105) | Got a tap command: com.mele.tapHerder.TapCommand@59556d12
+[2012-10-22 23:14:55,118] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mouseClicked(54) | Le mouse: (9,10)
+[2012-10-22 23:14:55,161] INFO - main: com.mele.tapHerder.TapHerderGame.processCommand(105) | Got a tap command: com.mele.tapHerder.TapCommand@776be68f
+[2012-10-22 23:14:57,847] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mouseClicked(54) | Le mouse: (8,9)
+[2012-10-22 23:14:57,861] INFO - main: com.mele.tapHerder.TapHerderGame.processCommand(105) | Got a tap command: com.mele.tapHerder.TapCommand@4cedf389
+[2012-10-22 23:15:01,231] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mouseClicked(54) | Le mouse: (8,9)
+[2012-10-22 23:15:01,264] INFO - main: com.mele.tapHerder.TapHerderGame.processCommand(105) | Got a tap command: com.mele.tapHerder.TapCommand@1a0fced4
+[2012-10-22 23:15:02,463] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mouseClicked(54) | Le mouse: (8,9)
+[2012-10-22 23:15:02,514] INFO - main: com.mele.tapHerder.TapHerderGame.processCommand(105) | Got a tap command: com.mele.tapHerder.TapCommand@3d3cdaa
+[2012-10-22 23:15:04,273] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mouseClicked(54) | Le mouse: (8,9)
+[2012-10-22 23:15:04,317] INFO - main: com.mele.tapHerder.TapHerderGame.processCommand(105) | Got a tap command: com.mele.tapHerder.TapCommand@466355dc
+[2012-10-22 23:15:24,838] INFO - main: com.mele.tapHerder.TapHerder.startGame(51) | Ending game...
+[2012-10-22 23:15:24,840] DEBUG - main: com.mele.tapHerder.TapHerder.startGame(58) | Exit from main.

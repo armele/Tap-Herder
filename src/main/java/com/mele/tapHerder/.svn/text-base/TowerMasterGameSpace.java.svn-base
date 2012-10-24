@@ -1,0 +1,81 @@
+package com.mele.towerMaster;
+
+import org.apache.log4j.Logger;
+
+import com.mele.games.utils.BaseLocation;
+import com.mele.games.utils.IGameBoard;
+import com.mele.games.utils.IGameBoardSpace;
+import com.mele.games.utils.ILocation;
+import com.mele.games.utils.pieces.PieceManager;
+
+/**
+ * In TowerMaster there is one game "space", which is the same size as
+ * the game board upon which it resides.
+ * 
+ * @author Al
+ *
+ */
+public class TowerMasterGameSpace implements IGameBoardSpace {
+	protected static Logger log = Logger.getLogger(TowerMasterGameSpace.class);	
+	protected IGameBoard board = null;
+	protected PieceManager pieceManager = new PieceManager();
+	protected ILocation boardCoordinate = null;
+	protected ILocation dimension = new BaseLocation(1000, 600, 2); // TODO make dynamic
+	
+	@Override
+	public void init() {
+		log.debug("Initializing game space.");
+		// Create a new player and associate it with the input reader
+		// TODO: Support multi-player	
+	}	
+	
+	public TowerMasterGameSpace(IGameBoard parent) {
+		board = parent;
+	}
+
+	@Override
+	public int getDepth() {
+		return dimension.getZ().intValue();
+	}
+
+
+	@Override
+	public int getHeight() {
+		return dimension.getY().intValue();
+	}
+
+	@Override
+	public PieceManager getPieceManager() {
+		return pieceManager;
+	}
+	
+	@Override
+	public int getWidth() {
+		return dimension.getX().intValue();
+	}
+
+
+	@Override
+	public IGameBoard getParent() {
+		return board;
+	}
+
+
+	@Override
+	public void setParent(IGameBoard inBoard) {
+		board = inBoard;
+	}
+
+	@Override
+	public ILocation getBoardCoordinate() {
+		return boardCoordinate;
+	}
+
+	@Override
+	public void setBoardCoordinate(ILocation coordinate) {
+		boardCoordinate = coordinate;
+	}
+
+
+
+}

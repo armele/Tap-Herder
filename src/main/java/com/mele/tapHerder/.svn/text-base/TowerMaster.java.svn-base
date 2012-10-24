@@ -1,0 +1,113 @@
+package com.mele.towerMaster;
+
+import java.net.URL;
+
+import org.apache.log4j.Logger;
+import org.apache.log4j.xml.DOMConfigurator;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.mele.games.utils.CommandLinePropertyOverride;
+import com.mele.games.utils.GameException;
+import com.mele.games.utils.IGameBoard;
+
+/**
+ * Startup/init for game.
+ * To start in editor mode rather than in game mode pass in the parameter:
+ * 		<code>Board.episodeEditorMode=true</code>
+ * 
+ * All spring-configurable objects are overridable from the command line.
+ * 
+ * @author Al
+ *
+ */
+public class TowerMaster {
+	protected static Logger log = Logger.getLogger(TowerMaster.class);
+	static protected ApplicationContext ac = null;
+	static protected String contextFile = "com/mele/towerMaster/towerMaster.xml";
+
+	/**
+	 * Initialize logging.
+	 */
+	static public void configureLogging() {
+		URL loggingConfig = TowerMaster.class.getClassLoader().getResource(
+				"com/mele/towerMaster/log4j.xml");
+		if (loggingConfig != null) {
+			System.out.println("Logging with config: "
+					+ loggingConfig.getFile());
+
+			DOMConfigurator.configure(loggingConfig);
+		} else {
+			System.out.println("Logging configuration not found.");
+		}
+		log.info("Logging configured.");
+	}
+
+	/**
+	 * Set up a new game board and initiate the main run loop.
+	 */
+	public static void startGame() {
+		boolean restartRequested = false;
+		IGameBoard gb = (IGameBoard) ac.getBean("Board");
+		gb.setApplicationContext(ac);
+		
+		try {
+			gb.runGame();
+			
+			while (gb.getRenderer().isActive()) {
+				Thread.sleep(1000);
+				restartRequested = gb.getRenderer().restartRequested();
+			}
+			log.info("Ending game...");
+		} catch (Exception ex) {
+			log.error(ex.getClass().getName() + ": " + GameException.fullExceptionInfo(ex));
+		} catch (Throwable t) {
+			log.error(t.getClass().getName() + ": "	+ GameException.fullExceptionInfo(t));
+		}
+
+		gb.getRenderer().stop();
+		
+		if (restartRequested) {
+			log.info("Restarting a new game...");
+			gb.reset();
+			startGame();
+		} else {
+			log.debug("Exit from main.");
+			System.exit(0); // All done!
+		}
+	}
+
+	/**
+	 * @return
+	 */
+	static protected void springInit() {
+		ac = new ClassPathXmlApplicationContext(contextFile);
+		log.info("Spring initialized.");
+	}	
+	
+	/**
+	 * @return
+	 */
+	public static String getContextFile() {
+		return contextFile;
+	}
+	
+	/**
+	 * @return
+	 */
+	public static ApplicationContext getApplicationContext() {
+		return ac;
+	}
+	
+	/**
+	 * @param args
+	 */
+	public static void main(String args[]) {
+		@SuppressWarnings("unused")
+		CommandLinePropertyOverride propReplacer = new CommandLinePropertyOverride(args);  // Used indirectly by Spring - ignore warning.
+		
+		configureLogging();		
+		springInit();
+		startGame();
+	}
+}
