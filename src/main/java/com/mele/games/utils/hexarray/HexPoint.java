@@ -1,5 +1,31 @@
 package com.mele.games.utils.hexarray;
 
+/**
+ * Helper class for translating between hex array points (see HexArray)
+ * and "cartesian" points.  They're not really cartesian points, but I didn't
+ * have a better name for them.  The "cartesian" point measures how many columns 
+ * of hexes over a given hex is, then how many hexes from the top of the column
+ * a given hex is.  
+ * 
+ * So in the diagram below, the Hex Point of C3 is... (3, 3), but the "cartesian" point
+ * of C3 is (3, 2).  Some things are easier with one coordinate system, and some with 
+ * the other, so this point helper class allows the use of either.
+ * 
+ *   A   B   C   D   E
+ *  [A1]	[C2]    [E3]
+ * 1    [B2]    [D3]
+ *  [A2]    [C3]    [E4]
+ * 2    [B3]    [D4]
+ *  [A3]    [C4]    [E5]
+ * 3
+ * 
+ * 4
+ * 
+ * 5
+ * 
+ * @author Ayar
+ *
+ */
 public class HexPoint {
 	protected int x = 0;
 	protected int y = 0;

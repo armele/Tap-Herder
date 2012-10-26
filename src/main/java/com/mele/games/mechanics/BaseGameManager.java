@@ -6,6 +6,12 @@ import org.apache.log4j.Logger;
 
 import com.mele.games.utils.GameException;
 
+/**
+ * Base class which is "game agnostic" as to the game, renderer and input being
+ * managed.  This class handles the game state, and the game thread.
+ * @author Ayar
+ *
+ */
 public abstract class BaseGameManager implements IGameManager {
 	protected static Logger log = Logger.getLogger(BaseGameManager.class);
 	
@@ -26,10 +32,12 @@ public abstract class BaseGameManager implements IGameManager {
 	}
 
 	protected void startRenderer() {
+		// TODO: For non-Swing renderer we'd need a thread for the rendering.
 		//new Thread(renderer).start();
 	}
 	
 	protected void startInput() {
+		// TODO: for non-Swing renderer (which allows input listners) we'd need a thread for the input.
 		//new Thread(input).start();
 	}
 	

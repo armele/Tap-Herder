@@ -10,6 +10,7 @@ import com.mele.games.mechanics.IGameManager;
 import com.mele.games.utils.GameException;
 
 /**
+ * Main class for the Tap Herder game.
  * 
  * @author Al
  *

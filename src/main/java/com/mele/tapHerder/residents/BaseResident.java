@@ -7,6 +7,12 @@ import com.mele.games.utils.hexarray.EHexVector;
 import com.mele.tapHerder.TapHerderCell;
 import com.mele.tapHerder.TapHerderGame;
 
+/**
+ * Defines attributes which all resident types will share.
+ * 
+ * @author Ayar
+ *
+ */
 public abstract class BaseResident {
 	protected Map<String, String> properties = new HashMap<String, String>();
 	protected TapHerderGame game = null;

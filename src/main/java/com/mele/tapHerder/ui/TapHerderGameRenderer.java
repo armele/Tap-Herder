@@ -19,6 +19,13 @@ import com.mele.games.utils.ui.RenderUtils;
 import com.mele.tapHerder.TapHerderGame;
 import com.mele.tapHerder.TapHerderGameManager;
 
+/**
+ * Manages the display responsibiities of the game state.
+ * Most work is passed off to HexArrayRenderer.
+ * 
+ * @author Ayar
+ *
+ */
 public class TapHerderGameRenderer extends Frame implements IGameRenderer {
 	private static final long serialVersionUID = 1L;
 	protected static Logger log = Logger.getLogger(TapHerderGameRenderer.class);

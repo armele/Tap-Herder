@@ -8,6 +8,12 @@ import com.mele.tapHerder.TapHerderGame;
 
 
 
+/**
+ * Defines the "Dog" resident.
+ * 
+ * @author Ayar
+ *
+ */
 public class Dog extends BaseResident implements IResident {
 	public Dog(TapHerderGame game) {
 		super(game);

@@ -2,6 +2,13 @@ package com.mele.games.utils.ui;
 
 import com.mele.games.mechanics.ICommand;
 
+/**
+ * Helper class for wrapping keyboard input into a command. 
+ * Used in tests only.
+ * 
+ * @author Ayar
+ *
+ */
 public class BaseKeyboardCommand implements ICommand {
 	protected String keyInput = null;
 

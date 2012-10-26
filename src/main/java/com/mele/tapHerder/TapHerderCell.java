@@ -5,6 +5,10 @@ import com.mele.games.utils.hexarray.HexPoint;
 import com.mele.tapHerder.residents.BaseResident;
 
 /**
+ * Specific game implementation of a hexagonal array Cell.
+ * This class defines aspects of a cell, such as what terrain
+ * type it has and what resident resides within it.
+ * 
  * @author Ayar
  *
  */

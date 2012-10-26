@@ -6,6 +6,9 @@ import java.util.Random;
 import org.apache.log4j.Logger;
 
 /**
+ * Implementation of a variable-sided die for situations
+ * where randomness is desirable.
+ * 
  * @author Al
  *
  */

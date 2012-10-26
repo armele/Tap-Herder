@@ -14,6 +14,13 @@ import com.mele.games.utils.hexarray.Cell;
 import com.mele.tapHerder.TapCommand;
 import com.mele.tapHerder.TapHerderGameManager;
 
+/**
+ * Listens for mouse clicks on the display window and queues them
+ * as commands to the game.
+ * 
+ * @author Ayar
+ *
+ */
 public class TapHerderInput implements IGameInput, MouseListener {
 	protected static Logger log = Logger.getLogger(TapHerderInput.class);
 	

@@ -2,6 +2,12 @@ package com.mele.games.mechanics;
 
 import java.util.ArrayList;
 
+/**
+ * Collects a list of ScoreEvent objects for the purpose of tracking the score.
+ * 
+ * @author Ayar
+ *
+ */
 public class ScoreLog {
 	protected ArrayList<ScoreEvent> scoreList = new ArrayList<ScoreEvent>();
 	

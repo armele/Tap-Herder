@@ -14,6 +14,12 @@ import com.mele.games.utils.hexarray.HexArray;
 import com.mele.games.utils.hexarray.HexPoint;
 import com.mele.tapHerder.TapHerderCell;
 
+/**
+ * Responsible for drawing the contents of the hex array (the main game board).
+ * 
+ * @author Ayar
+ *
+ */
 public class HexArrayRenderer {
 	protected static Logger log = Logger.getLogger(HexArrayRenderer.class);
 	

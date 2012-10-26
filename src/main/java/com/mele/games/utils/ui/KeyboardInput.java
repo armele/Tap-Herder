@@ -10,6 +10,13 @@ import com.mele.games.mechanics.ICommand;
 import com.mele.games.mechanics.IGameInput;
 import com.mele.games.mechanics.IGameManager;
 
+/**
+ * Input class designed to read input from the console.
+ * Used in test only.
+ * 
+ * @author Ayar
+ *
+ */
 public class KeyboardInput implements IGameInput {
 	protected static Logger log = Logger.getLogger(KeyboardInput.class);
 	

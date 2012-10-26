@@ -2,6 +2,12 @@ package com.mele.games.utils;
 
 import java.io.PrintStream;
 
+/**
+ * Base exception logic.
+ * 
+ * @author Ayar
+ *
+ */
 public class GameException extends RuntimeException {
 
 	/**

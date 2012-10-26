@@ -8,6 +8,10 @@ import com.mele.tapHerder.ui.TapHerderGameRenderer;
 import com.mele.tapHerder.ui.TapHerderInput;
 
 /**
+ * Specific Tap Herder implementation of the game manager which handles coordination between
+ * the game, the input device and the renderer.  (With a Swing interface the renderer
+ * and the input don't need their own threads.)
+ * 
  * @author Ayar
  *
  */
