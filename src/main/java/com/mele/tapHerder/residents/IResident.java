@@ -1,11 +1,16 @@
 package com.mele.tapHerder.residents;
 
+import com.mele.games.utils.hexarray.EHexVector;
+import com.mele.tapHerder.TapHerderCell;
+
 /**
- * Empty interface which defines a resident as a "good guy".
+ * Basic methods any resident must support.
  * 
  * @author Ayar
  *
  */
 public interface IResident {
-
+	public void kill();
+	
+	public void react(TapHerderCell homeCell, EHexVector vector); 
 }

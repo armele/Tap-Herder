@@ -17,7 +17,7 @@
           <include>*.xml</include>
           <include>*.gif</include>
           <include>*.jpg</include>
-          <include>*.psp</include>          
+          <include>*.map</include>          
         </includes>
         <excludes>
           <exclude>**/*.java</exclude>

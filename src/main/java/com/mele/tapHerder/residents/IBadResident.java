@@ -6,6 +6,6 @@ package com.mele.tapHerder.residents;
  * @author Ayar
  *
  */
-public interface IAntiresident {
+public interface IBadResident extends IResident {
 
 }

@@ -50,36 +50,10 @@ public class TapHerderGame implements IGame {
 	}
 
 	protected void init() {
-		//TODO: Board loading, or random board creation
-		TapHerderCell cell = (TapHerderCell) hexmap.getCell(3, 6);
-		cell.setResident(new Dog(this));
-		
-		cell = (TapHerderCell) hexmap.getCell(4, 5);
-		cell.setType(ETerrainType.HAZARD);
-		
-		cell = (TapHerderCell) hexmap.getCell(6, 8);
-		cell.setType(ETerrainType.OBSTACLE);
-		
-		cell = (TapHerderCell) hexmap.getCell(4, 6);
-		cell.setResident(new Dog(this));
-		
-		cell = (TapHerderCell) hexmap.getCell(5, 7);
-		cell.setResident(new Dog(this));
-		
-		cell = (TapHerderCell) hexmap.getCell(5, 8);
-		cell.setResident(new Dog(this));
-		
-		cell = (TapHerderCell) hexmap.getCell(4, 8);
-		cell.setResident(new Dog(this));
-		
-		cell = (TapHerderCell) hexmap.getCell(3, 7);
-		cell.setResident(new Dog(this));
-		
-		cell = (TapHerderCell) hexmap.getCell(7, 9);
-		cell.setResident(new Wolf(this));
-		
-		cell = (TapHerderCell) hexmap.getCell(10, 9);
-		cell.setResident(new Snail(this));
+		//TODO: Concept of multi-board games
+		//TODO: Random board creation options
+		MapReader mr = new MapReader();
+		mr.setMapTerrain(this, hexmap, "com/mele/tapHerder/basic.map");
 		
 		initialized = true;
 	}

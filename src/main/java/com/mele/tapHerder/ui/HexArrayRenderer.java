@@ -134,17 +134,35 @@ public class HexArrayRenderer {
 				color = Color.white;
 			} else {
 				switch (cell.getType()) {
-				case NORMAL:
-					color = Color.green;
+				case DRY_BRUSH:
+					color = Color.cyan;
 					break;
-				case OBSTACLE:
+				case TREE:
+					color = Color.green;
+					break;					
+				case FENCE:
+					color = Color.getHSBColor(32, (float).71, (float).91);
+					break;					
+				case STATUE:
+					color = Color.lightGray;
+					break;						
+				case LONG_GRASS:
+					color = Color.getHSBColor(120, (float).99, (float).46);
+					break;						
+				case FIELD:
+					color = Color.yellow;
+					break;
+				case DEEP_WATER:
 					color = Color.blue;
 					break;
-				case DESTRUCTABLE:
+				case BOULDER:
 					color = Color.gray;
 					break;
-				case HAZARD:
+				case FIRE:
 					color = Color.red;
+					break;
+				case PATH:
+					color = Color.getHSBColor(32, (float).71, (float).56);
 					break;
 				}
 			}

@@ -2,9 +2,7 @@ package com.mele.tapHerder.residents;
 
 import com.mele.games.mechanics.ScoreEvent;
 import com.mele.games.utils.hexarray.EHexVector;
-import com.mele.tapHerder.ETerrainType;
 import com.mele.tapHerder.TapHerderCell;
-import com.mele.tapHerder.TapHerderGame;
 
 /**
  * Defines the "Wolf" anti-resident.
@@ -12,10 +10,9 @@ import com.mele.tapHerder.TapHerderGame;
  * @author Ayar
  *
  */
-public class Wolf extends BaseResident implements IAntiresident {
+public class Wolf extends BaseResident implements IBadResident {
 
-	public Wolf(TapHerderGame game) {
-		super(game);
+	public Wolf() {
 		setName("W");
 	}
 	
@@ -29,13 +26,13 @@ public class Wolf extends BaseResident implements IAntiresident {
 		if (homeCell != null) {
 			TapHerderCell neighbor = (TapHerderCell) homeCell.findAdjacentCell(vector.reverse());
 			if (neighbor != null) {
-				if (neighbor.getType().equals(ETerrainType.HAZARD)) {
+				if (neighbor.getType().isHazard()) {
 					// Got pushed into a hazard - I'm dead!
 					homeCell.setResident(null);
 					kill();
-				} else if (neighbor.getType().equals(ETerrainType.OBSTACLE)) {
-					// Got pushed into an obstacle - can't move
-				} else if (neighbor.getType().equals(ETerrainType.DESTRUCTABLE)) {
+				} else if (neighbor.getType().isObstacle()) {
+					// Got pushed into an obstacle - can't moveo
+				} else if (neighbor.getType().isDestructable()) {
 					// Got pushed into a destroyable obstacle - can't move
 				} else {
 					BaseResident destinationResident = neighbor.getResident();

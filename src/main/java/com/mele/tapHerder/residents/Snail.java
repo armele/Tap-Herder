@@ -2,9 +2,7 @@ package com.mele.tapHerder.residents;
 
 import com.mele.games.mechanics.ScoreEvent;
 import com.mele.games.utils.hexarray.EHexVector;
-import com.mele.tapHerder.ETerrainType;
 import com.mele.tapHerder.TapHerderCell;
-import com.mele.tapHerder.TapHerderGame;
 
 /**
  * Defines the "Snail" resident.
@@ -14,8 +12,7 @@ import com.mele.tapHerder.TapHerderGame;
  */
 public class Snail extends BaseResident {
 
-	public Snail(TapHerderGame game) {
-		super(game);
+	public Snail() {
 		setName("S");
 	}
 	
@@ -28,20 +25,22 @@ public class Snail extends BaseResident {
 		if (homeCell != null) {
 			TapHerderCell neighbor = (TapHerderCell) homeCell.findAdjacentCell(vector);
 			if (neighbor != null) {
-				if (neighbor.getType().equals(ETerrainType.HAZARD)) {
+				if (neighbor.getType().isHazard()) {
 					// Got pushed into a hazard - I'm dead!
 					homeCell.setResident(null);
 					kill();
-				} else if (neighbor.getType().equals(ETerrainType.OBSTACLE)) {
+				} else if (neighbor.getType().isObstacle()) {
 					// Got pushed into an obstacle - I'm a snail and it kills me.  Sad.
 					homeCell.setResident(null);
 					kill();
-				} else if (neighbor.getType().equals(ETerrainType.DESTRUCTABLE)) {
-					// Got pushed into a destroyable obstacle - can't move
+				} else if (neighbor.getType().isDestructable()) {
+					// Got pushed into a destroyable obstacle - I'm a snail and it kills me.  Sad.
+					homeCell.setResident(null);
+					kill();
 				} else {
 					BaseResident destinationResident = neighbor.getResident();
 					if (destinationResident != null) {
-						if (destinationResident instanceof IAntiresident) {
+						if (destinationResident instanceof IBadResident) {
 							// Next cell over is occupied by an antiresident - it has slain me!
 							kill();
 							homeCell.setResident(null);

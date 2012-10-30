@@ -14,7 +14,7 @@ import com.mele.tapHerder.residents.BaseResident;
  */
 public class TapHerderCell extends Cell {
 	protected BaseResident resident = null;
-	protected ETerrainType type = ETerrainType.NORMAL;
+	protected ETerrainType type = ETerrainType.FIELD;
 	
 	public TapHerderCell(HexPoint point) {
 		super(point);

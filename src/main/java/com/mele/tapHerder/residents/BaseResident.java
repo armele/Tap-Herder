@@ -13,18 +13,22 @@ import com.mele.tapHerder.TapHerderGame;
  * @author Ayar
  *
  */
-public abstract class BaseResident {
+public abstract class BaseResident implements IGoodResident {
 	protected Map<String, String> properties = new HashMap<String, String>();
 	protected TapHerderGame game = null;
 	protected int moveLength = 1;
 	protected String name = null;
 	
-	public BaseResident (TapHerderGame game) {
-		this.game = game;
+	public BaseResident() {
+		
 	}
 	
 	public String getProperty(String key) {
 		return properties.get(key);
+	}
+	
+	public void setGame(TapHerderGame game) {
+		this.game = game;
 	}
 	
 	public void addProperty(String key, String value) {
