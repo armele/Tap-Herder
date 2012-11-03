@@ -62,7 +62,7 @@ public class TapHerderGameRenderer extends Frame implements IGameRenderer {
 		@SuppressWarnings("unused")
 		Image img = null;
 		try {
-			img = RenderUtils.loadImage(this, "rat.gif");
+			img = RenderUtils.loadImage("rat.gif");
 
 		} catch (GameException ge) {
 			log.error(GameException.fullExceptionInfo(ge));

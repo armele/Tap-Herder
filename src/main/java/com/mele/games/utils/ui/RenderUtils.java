@@ -1,7 +1,9 @@
 package com.mele.games.utils.ui;
 
-import java.awt.Component;
+import java.awt.Color;
+import java.awt.Graphics;
 import java.awt.Image;
+import java.awt.Polygon;
 import java.awt.Toolkit;
 import java.awt.image.FilteredImageSource;
 import java.awt.image.RGBImageFilter;
@@ -48,8 +50,8 @@ public class RenderUtils {
 	 * @param imageResource
 	 * @return
 	 */
-	public static Image loadImage(Component component, String imageResource) {
-		return loadImage(component, imageResource, DEFAULT_TRANSPARENCY);
+	public static Image loadImage(String imageResource) {
+		return loadImage(imageResource, DEFAULT_TRANSPARENCY);
 	}
 	
 	/**
@@ -58,7 +60,7 @@ public class RenderUtils {
 	 * @param transparency
 	 * @return
 	 */
-	public static Image loadImage(Component component, String imageResource, int transparency) {
+	public static Image loadImage(String imageResource, int transparency) {
 		Image image = imageByResourceName.get(imageResource);
 		
 		// Skip the image loading if we've already cached it by resource name;
@@ -71,31 +73,12 @@ public class RenderUtils {
 			
 			if (url != null) {
 				log.info("Loading image from: " + url.getFile());
-				image = transparentLoad(component, url, transparency);
+				image = transparentLoad(url, transparency);
 			} else {
 				// TODO: Make this fatal, or load a default image.
 				throw new GameException("No image found for: " + imageResource);
 			}
 		}
-		
-		//While not likely, it may be possible that the size isn't
-		// known yet.  Do the following just in case.
-		//Wait until size is known
-		int waitcount = 0;
-		while (image.getWidth(component) == -1 || image.getHeight(component) == -1) {
-			if (waitcount % 1000 == 0) {
-				log.info("Waiting for image");
-			}
-			if (waitcount > 2000) {
-				break;
-			}
-			try {
-				Thread.sleep(20);
-			} catch (InterruptedException e) {
-				break;
-			}
-			waitcount++;
-		}//end while loop	
 		
 		// Cache this image for later use.
 		imageByResourceName.put(imageResource, image);
@@ -110,16 +93,33 @@ public class RenderUtils {
 	 * @param imageFile
 	 * @return
 	 */
-	protected static Image transparentLoad(Component c, URL imageFile, int transparentColor) {
+	protected static Image transparentLoad(URL imageFile, int transparentColor) {
 		// the original image
 		Image original = Toolkit.getDefaultToolkit().getImage(imageFile);
 
 		// the resulting image
 		Image transparent
-		   = c.createImage(
+		   = Toolkit.getDefaultToolkit().createImage(
 		        new FilteredImageSource(original.getSource(),  new TransparentFilter(transparentColor))
 		     );
 		
 		return transparent;
+	}
+	
+	/**
+	 * @param p
+	 * @param text
+	 * @param g
+	 */
+	public static void drawPolygonText(Polygon p, String text, Graphics g) {
+		Color backup = g.getColor();
+		g.setColor(Color.black);
+		
+		int x = (int)p.getBounds().getMinX() + ((int)p.getBounds().getWidth() / 2) - (g.getFontMetrics().stringWidth(text) / 2);
+		int y = (int)p.getBounds().getMinY() + ((int)p.getBounds().getHeight() / 2) + (g.getFontMetrics().getHeight() / 2);
+
+		g.drawString(text, x, y);
+		
+		g.setColor(backup);
 	}
 }

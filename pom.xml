@@ -17,6 +17,7 @@
           <include>*.xml</include>
           <include>*.gif</include>
           <include>*.jpg</include>
+          <include>*.png</include>
           <include>*.map</include>          
         </includes>
         <excludes>

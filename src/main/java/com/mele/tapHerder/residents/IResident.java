@@ -13,4 +13,6 @@ public interface IResident {
 	public void kill();
 	
 	public void react(TapHerderCell homeCell, EHexVector vector); 
+	
+	public String getName();
 }

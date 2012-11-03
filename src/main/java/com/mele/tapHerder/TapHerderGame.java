@@ -11,9 +11,6 @@ import com.mele.games.utils.hexarray.Cell;
 import com.mele.games.utils.hexarray.EHexVector;
 import com.mele.games.utils.hexarray.HexArray;
 import com.mele.tapHerder.residents.BaseResident;
-import com.mele.tapHerder.residents.Dog;
-import com.mele.tapHerder.residents.Snail;
-import com.mele.tapHerder.residents.Wolf;
 
 /**
  * Main game logic for the Tap Herder game.
