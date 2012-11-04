@@ -13,11 +13,13 @@ import org.apache.log4j.Logger;
 import com.mele.games.utils.hexarray.Cell;
 import com.mele.games.utils.hexarray.HexArray;
 import com.mele.games.utils.hexarray.HexPoint;
+import com.mele.games.utils.ui.ERenderPass;
 import com.mele.games.utils.ui.RenderUtils;
 import com.mele.games.utils.ui.Sprite;
 import com.mele.games.utils.ui.SpriteFactory;
 import com.mele.tapHerder.TapHerderCell;
 import com.mele.tapHerder.residents.IResident;
+
 
 /**
  * Responsible for drawing the contents of the hex array (the main game board).
@@ -126,36 +128,28 @@ public class HexArrayRenderer {
 	}
 	
 	
+	/**
+	 * Given a cell, determine what color is should be filled with (if any)
+	 * 
+	 * @param cell
+	 * @return
+	 */
 	protected Color cellColor(TapHerderCell cell) {
 		Color color = null;
 		
 		switch (cell.getType()) {
-		case DRY_BRUSH:
-			color = Color.cyan;
-			break;
-		case TREE:
-			color = Color.green;
-			break;					
+		case BOULDER:
+		case TREE:			
 		case FENCE:
-			color = Color.getHSBColor((float).1, (float)1.0, (float).67);  // light brown
-			break;					
-		case STATUE:
-			color = Color.lightGray;
-			break;						
 		case LONG_GRASS:
-			color = Color.getHSBColor((float).25, (float)1.0, (float)1.0);  // neon green
-			break;						
+		case DRY_BRUSH:
+		case FIRE:
 		case FIELD:
+		case STATUE:
 			color = Color.getHSBColor((float).33, (float).2, (float)1.0);  // light green
 			break;
 		case DEEP_WATER:
-			color = Color.blue;
-			break;
-		case BOULDER:
-			color = Color.gray;
-			break;
-		case FIRE:
-			color = Color.red;
+			color = null;
 			break;
 		case PATH:
 			color = Color.getHSBColor((float).12, (float).58, (float).75);  // khaki(?)
@@ -170,7 +164,7 @@ public class HexArrayRenderer {
 	 * @param p
 	 * @param g
 	 */
-	public void drawSprite(IResident resident, Polygon p, Graphics g) {
+	public void drawSprite(ERenderPass pass, IResident resident, Polygon p, Graphics g) {
 		Sprite sprite = resSpriteMap.get(resident);
 		if (sprite == null) {
 			sprite = SpriteFactory.letThereBeSprite(resident);
@@ -178,7 +172,9 @@ public class HexArrayRenderer {
 		}
 		
 		if (sprite != null) {
-			sprite.render(p, g);
+			if (sprite.getDescriptor().getRenderPass().equals(pass)) {
+				sprite.render(p, g);	
+			}
 		} else {
 			String name = resident.getName();
 			RenderUtils.drawPolygonText(p, name, g);		
@@ -190,20 +186,58 @@ public class HexArrayRenderer {
 	 * @param p
 	 * @param g
 	 */
-	public void drawSprite(TapHerderCell cell, Polygon p, Graphics g) {
+	public void drawSprite(ERenderPass pass, TapHerderCell cell, Polygon p, Graphics g) {
 		Sprite sprite = cellSpriteMap.get(cell);
-		if (sprite == null) {
+		if (TapHerderCell.PROPVAL_TRUE.equals(cell.getProperty(TapHerderCell.PROPKEY_NEWTYPE)) || sprite == null) {
 			sprite = SpriteFactory.letThereBeSprite(cell);
 			cellSpriteMap.put(cell, sprite);
 		}
 		
-		Color color = cellColor(cell);
-		g.setColor(color);
-		g.fillPolygon(p);	
+		// Cell backgrounds are painted on the middle pass only.
+		if (ERenderPass.MIDDLE.equals(pass)) {
+			Color color = cellColor(cell);
+			if (color != null) {
+				g.setColor(color);
+				g.fillPolygon(p);	
+			}
+		}
 		
 		if (sprite != null) {
-			sprite.render(p, g);	
+			if (sprite.getDescriptor().getRenderPass().equals(pass)) {
+				sprite.render(p, g);	
+			}
 		}
+	}
+	
+	/**
+	 * @param pass
+	 * @param g
+	 */
+	public void drawHexArray(ERenderPass pass, Graphics g) {
+		for (Polygon p : visualMap.keySet()) {
+			TapHerderCell cell = (TapHerderCell) visualMap.get(p);
+			Color color = Color.white;
+			
+			if (cell.isSelected()) {
+				color = Color.white;
+				g.setColor(color);
+				g.fillPolygon(p);
+			}
+			
+			drawSprite(pass, cell, p, g);
+			
+			IResident resident = cell.getResident();
+			
+			if (resident != null) {
+				drawSprite(pass, resident, p, g);
+			}
+			
+			if (ERenderPass.TOP.equals(pass)) {
+				g.setColor(Color.black);
+				g.drawPolygon(p);
+			}
+			
+		}		
 	}
 	
 	/**
@@ -216,28 +250,10 @@ public class HexArrayRenderer {
 		
 		Color backup = g.getColor();
 	    
-		for (Polygon p : visualMap.keySet()) {
-			TapHerderCell cell = (TapHerderCell) visualMap.get(p);
-			Color color = Color.white;
-			
-			if (cell.isSelected()) {
-				color = Color.white;
-				g.setColor(color);
-				g.fillPolygon(p);
-			}
-			
-			drawSprite(cell, p, g);
-			
-			IResident resident = cell.getResident();
-			// TODO: Control paint such that all sprites are on top of all hex fills.
-			if (resident != null) {
-				drawSprite(resident, p, g);
-			}
-			
-			g.setColor(Color.black);
-			g.drawPolygon(p);
-			
-		}
+		// Rendering is done in three phases, so sprites "stack" appropriately with the background graphics.
+		drawHexArray(ERenderPass.BOTTOM, g);
+		drawHexArray(ERenderPass.MIDDLE, g);
+		drawHexArray(ERenderPass.TOP, g);
 		
 		g.setColor(backup);
 	}

@@ -75,7 +75,6 @@ public class RenderUtils {
 				log.info("Loading image from: " + url.getFile());
 				image = transparentLoad(url, transparency);
 			} else {
-				// TODO: Make this fatal, or load a default image.
 				throw new GameException("No image found for: " + imageResource);
 			}
 		}

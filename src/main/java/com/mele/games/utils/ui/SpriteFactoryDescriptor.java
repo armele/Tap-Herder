@@ -14,7 +14,8 @@ public class SpriteFactoryDescriptor {
 	protected ArrayList<AnimationImage> imageList = new ArrayList<AnimationImage>();
 	protected Properties props = new Properties();
 	protected int transparency = -65281; // Default to magenta
-
+	protected ERenderPass renderPass = ERenderPass.MIDDLE;
+	
 	public String getSpriteClass() {
 		return spriteClass;
 	}
@@ -67,6 +68,14 @@ public class SpriteFactoryDescriptor {
 
 	public void setProperties(Properties props) {
 		this.props = props;
+	}
+
+	public ERenderPass getRenderPass() {
+		return renderPass;
+	}
+	
+	public void setRenderPass(ERenderPass pass) {
+		renderPass = pass;
 	}
 
 	

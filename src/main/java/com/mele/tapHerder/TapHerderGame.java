@@ -6,6 +6,7 @@ import com.mele.games.mechanics.EGameState;
 import com.mele.games.mechanics.ICommand;
 import com.mele.games.mechanics.IGame;
 import com.mele.games.mechanics.IGameManager;
+import com.mele.games.mechanics.ScoreEvent;
 import com.mele.games.mechanics.ScoreLog;
 import com.mele.games.utils.hexarray.Cell;
 import com.mele.games.utils.hexarray.EHexVector;
@@ -24,6 +25,7 @@ public class TapHerderGame implements IGame {
 	protected HexArray hexmap = new HexArray(15,21, TapHerderCell.class);
 	protected TapHerderGameManager gameManager = null;
 	protected boolean initialized = false;
+	protected int tapCount = 0;
 	
 	// Going with a more complicated scoring model here, anticipating potential
 	// things like statistics, achievements, etc.
@@ -67,14 +69,44 @@ public class TapHerderGame implements IGame {
 		if (gameManager.isRenderUpToDate()) {
 			for (Cell cell : hexmap) {
 				TapHerderCell hCell = (TapHerderCell) cell;
+				
 				if (hCell.isSelected()) {
-					// TODO: respond to selection;
+					if (hCell.getType().isDestructable()) {
+						ETerrainType newType = hCell.getType().getDestructable();
+						
+						if (newType.isHazard()) {
+							scoreLog.addScore(ScoreEvent.SCORE_TOHAZARD);
+						} else if (!newType.isObstacle()) {
+							scoreLog.addScore(ScoreEvent.SCORE_TOSAFE);
+						}
+						
+						hCell.setType(newType);
+						hCell.setProperty(TapHerderCell.PROPKEY_NEWTYPE, TapHerderCell.PROPVAL_TRUE);
+					}
+					
+					for(EHexVector vector : EHexVector.values()) {
+						TapHerderCell neighbor = (TapHerderCell) cell.findAdjacentCell(vector);
+						
+						if (neighbor != null) {
+							BaseResident resident = neighbor.getResident();
+							if (resident != null) {
+								resident.react(neighbor, vector);
+							}
+						}
+					}
 					hCell.setSelected(false);
+				} else {
+					hCell.setProperty(TapHerderCell.PROPKEY_NEWTYPE, TapHerderCell.PROPVAL_FALSE);
 				}
 			}
 		}
+		
+		// TODO: Determine end game conditions (board completed / failed)
 	}
 
+	/* (non-Javadoc)
+	 * @see com.mele.games.mechanics.IGame#processCommand(com.mele.games.mechanics.ICommand)
+	 */
 	@Override
 	public boolean processCommand(ICommand cmd) {
 		if (cmd != null) {
@@ -83,18 +115,9 @@ public class TapHerderGame implements IGame {
 			if (cmd instanceof TapCommand) {
 				TapHerderCell cell = (TapHerderCell) ((TapCommand) cmd).getTapLocation();
 				cell.setSelected(true);
-				log.info("Got a tap command: " + cmd);
-				
-				for(EHexVector vector : EHexVector.values()) {
-					TapHerderCell neighbor = (TapHerderCell) cell.findAdjacentCell(vector);
-					
-					if (neighbor != null) {
-						BaseResident resident = neighbor.getResident();
-						if (resident != null) {
-							resident.react(neighbor, vector);
-						}
-					}
-				}
+				//log.info("Got a tap command: " + cmd);
+				scoreLog.addScore(ScoreEvent.SCORE_TAP);
+				tapCount++;
 			}
 		
 		}
@@ -116,5 +139,9 @@ public class TapHerderGame implements IGame {
 	
 	public ScoreLog getScoreLog() {
 		return scoreLog;
+	}
+	
+	public int getTapCount() {
+		return tapCount;
 	}
 }

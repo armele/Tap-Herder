@@ -22,6 +22,13 @@ import com.mele.tapHerder.residents.IResident;
 public class SpriteFactory {
 	protected static Logger log = Logger.getLogger(SpriteFactory.class);
 	
+	/**
+	 * This method uses cell terrain type to associate lists of images to
+	 * be animated.
+	 * 
+	 * @param type
+	 * @return
+	 */
 	protected static SpriteFactoryDescriptor spriteDescriptionForType(ETerrainType type) {
 		SpriteFactoryDescriptor sd = null;
 		
@@ -30,12 +37,51 @@ public class SpriteFactory {
 			sd = new SpriteFactoryDescriptor();
 			sd.addImageFrames("Fence.png", 1, 0);
 			break;
+		case DRY_BRUSH:
+			sd = new SpriteFactoryDescriptor();
+			sd.addImageFrames("DryBrush.png", 1, 0);
+			break;
+		case FIRE:
+			sd = new SpriteFactoryDescriptor();
+			sd.addImageFrames("Fire_0.png", 1, 2);
+			sd.addImageFrames("Fire_1.png", 4, 2);
+			sd.addImageFrames("Fire_2.png", 1, 2);
+			sd.addImageFrames("Fire_1.png", 4, 2);
+			break;	
+		case LONG_GRASS:
+			sd = new SpriteFactoryDescriptor();
+			sd.addImageFrames("TallGrass.png", 1, 0);
+			break;
+		case TREE:
+			sd = new SpriteFactoryDescriptor();
+			sd.addImageFrames("Tree.png", 1, 0);
+			break;	
+		case BOULDER:
+			sd = new SpriteFactoryDescriptor();
+			sd.addImageFrames("Boulder.png", 1, 0);
+			break;		
+		case STATUE:
+			sd = new SpriteFactoryDescriptor();
+			sd.addImageFrames("Statue.png", 1, 0);
+			break;		
+		case DEEP_WATER:
+			sd = new SpriteFactoryDescriptor();
+			sd.addImageFrames("Grid_Water.png", 1, 0);
+			sd.setRenderPass(ERenderPass.BOTTOM);
+			break;			
 		}
 		
 		
 		return sd;
 	}
 	
+	/**
+	 * This method uses resident names to associate lists of images
+	 * to be animated.
+	 * 
+	 * @param name
+	 * @return
+	 */
 	protected static SpriteFactoryDescriptor spriteDescriptorForResident(String name) {
 		SpriteFactoryDescriptor sd = null;
 		
@@ -43,6 +89,7 @@ public class SpriteFactory {
 			sd = new SpriteFactoryDescriptor();
 			sd.addImageFrames("150px-Wolf_(Tamed)_0.png", 5, 6);
 			sd.addImageFrames("150px-Wolf_(Tamed)_1.png", 1, 2);
+			sd.setRenderPass(ERenderPass.TOP);
 		}
 		
 		if ("W".equals(name)) {
@@ -50,7 +97,9 @@ public class SpriteFactory {
 			sd.addImageFrames("150px-Wolf_(Aggressive)_0.png", 2, 3);
 			sd.addImageFrames("150px-Wolf_(Aggressive)_1.png", 2, 4);
 			sd.addImageFrames("150px-Wolf_(Aggressive)_2.png", 2, 3);
-			sd.addImageFrames("150px-Wolf_(Aggressive)_1.png", 2, 4);		}
+			sd.addImageFrames("150px-Wolf_(Aggressive)_1.png", 2, 4);		
+			sd.setRenderPass(ERenderPass.TOP);	
+		}
 		
 		return sd;
 	}

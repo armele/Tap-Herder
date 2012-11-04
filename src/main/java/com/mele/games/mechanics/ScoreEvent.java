@@ -9,8 +9,12 @@ package com.mele.games.mechanics;
  *
  */
 public class ScoreEvent {
-	public static final ScoreEvent SCORE_DEADRESIDENT = new ScoreEvent("SC_DEADRES", -25);
+	public static final ScoreEvent SCORE_DEADRESIDENT = new ScoreEvent("SC_DEADRES", -50);
 	public static final ScoreEvent SCORE_DEADANTIRES = new ScoreEvent("SC_DEADANTI", 50);
+	public static final ScoreEvent SCORE_RESGOAL = new ScoreEvent("SC_RESGOAL", 100);
+	public static final ScoreEvent SCORE_TOHAZARD = new ScoreEvent("SC_TOHAZARD", 25);
+	public static final ScoreEvent SCORE_TOSAFE = new ScoreEvent("SC_TOSAFE", -25);
+	public static final ScoreEvent SCORE_TAP = new ScoreEvent("SC_TAP", -1);
 	
 	protected String event;
 	protected int score;

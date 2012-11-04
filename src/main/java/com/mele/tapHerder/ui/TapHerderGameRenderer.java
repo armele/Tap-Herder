@@ -1,5 +1,7 @@
 package com.mele.tapHerder.ui;
 
+import java.applet.Applet;
+import java.applet.AudioClip;
 import java.awt.Color;
 import java.awt.Frame;
 import java.awt.Graphics;
@@ -8,14 +10,14 @@ import java.awt.Image;
 import java.awt.Point;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.net.URL;
 
 import org.apache.log4j.Logger;
 
 import com.mele.games.mechanics.IGameManager;
 import com.mele.games.mechanics.IGameRenderer;
-import com.mele.games.utils.GameException;
 import com.mele.games.utils.hexarray.Cell;
-import com.mele.games.utils.ui.RenderUtils;
+import com.mele.tapHerder.TapHerder;
 import com.mele.tapHerder.TapHerderGame;
 import com.mele.tapHerder.TapHerderGameManager;
 
@@ -35,6 +37,7 @@ public class TapHerderGameRenderer extends Frame implements IGameRenderer {
 	protected boolean initialized = false;
 	protected TapHerderGameManager gameManager = null;
 	protected HexArrayRenderer har = new HexArrayRenderer();
+	protected AudioClip song; // Sound player
 	
 	// Graphic components
 	protected Image backgroundImage = null;
@@ -42,7 +45,7 @@ public class TapHerderGameRenderer extends Frame implements IGameRenderer {
 	protected void init() {
 		setVisible(true);
 		setTitle("Tap Herder");
-		setSize(500, 800);
+		setSize(480, 800);
 		
 		this.addWindowListener(new WindowAdapter() {
 		      public void windowClosing(WindowEvent e) {
@@ -58,20 +61,23 @@ public class TapHerderGameRenderer extends Frame implements IGameRenderer {
 			offScreenGraphicsCtx = (Graphics2D) offScreenImage.getGraphics();
 		}//end if
 		
-		// Initialize images from resources.
-		@SuppressWarnings("unused")
-		Image img = null;
-		try {
-			img = RenderUtils.loadImage("rat.gif");
-
-		} catch (GameException ge) {
-			log.error(GameException.fullExceptionInfo(ge));
-		}
-		
 		har.setHexmap(((TapHerderGame)gameManager.getGame()).getHexmap());
-		har.setReferencePointX(50);
+		har.setReferencePointX(30);
 		har.setReferencePointY(50);
 		har.init();
+		
+		// TODO: Make optional, configurable, and variable by board.
+		// TODO: Add sound effects for residents, etc.
+		String songName = "monkeys wedding.wav";
+		URL songPath = TapHerder.class.getResource(songName);
+		if (songPath != null) {
+			song = Applet.newAudioClip(songPath);
+			song.loop();
+			log.info("Music: " + songName);
+		} else {
+			log.error("Cannot load song file: " + songName);
+		}
+		
 		initialized = true;
 	}
 	
@@ -116,6 +122,9 @@ public class TapHerderGameRenderer extends Frame implements IGameRenderer {
 		gameManager.setRenderUpToDate(true);
 	}
 	
+	/**
+	 * @param g
+	 */
 	protected void drawScore(Graphics g) {
 		int scorePosX = 30;
 		int scorePosY = 45;
@@ -128,10 +137,29 @@ public class TapHerderGameRenderer extends Frame implements IGameRenderer {
 		g.fillRect(scorePosX, scorePosY - 12, 100, 14);
 		
 		g.setColor(Color.white);
-		g.drawString(score.toString(), scorePosX, scorePosY);
+		g.drawString("Score: " + score.toString(), scorePosX, scorePosY);
 		g.setColor(backup);
 	}
 
+	/**
+	 * @param g
+	 */
+	protected void drawTapCount(Graphics g) {
+		int scorePosX = 120;
+		int scorePosY = 45;
+		Color backup = g.getColor();
+		
+		g.setColor(Color.darkGray);
+		TapHerderGame game = (TapHerderGame)gameManager.getGame();
+		Integer tapCount = game.getTapCount();
+		g.drawRect(scorePosX, scorePosY - 12, 100, 14);
+		g.fillRect(scorePosX, scorePosY - 12, 100, 14);
+		
+		g.setColor(Color.white);
+		g.drawString("Taps: " + tapCount.toString(), scorePosX, scorePosY);
+		g.setColor(backup);
+	}
+	
 	/* (non-Javadoc)
 	 * @see java.awt.Container#update(java.awt.Graphics)
 	 */
@@ -140,6 +168,7 @@ public class TapHerderGameRenderer extends Frame implements IGameRenderer {
 		har.update(offScreenGraphicsCtx);
 		
 		drawScore(offScreenGraphicsCtx);
+		drawTapCount(offScreenGraphicsCtx);
 		
 		// Draw the scene onto the screen
 		if (offScreenImage != null) {
@@ -149,6 +178,7 @@ public class TapHerderGameRenderer extends Frame implements IGameRenderer {
 
 	@Override
 	public void kill() {
+		song.stop();
 		kill = true;
 	}
 

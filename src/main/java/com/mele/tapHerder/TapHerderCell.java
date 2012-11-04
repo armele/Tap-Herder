@@ -1,5 +1,8 @@
 package com.mele.tapHerder;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import com.mele.games.utils.hexarray.Cell;
 import com.mele.games.utils.hexarray.HexPoint;
 import com.mele.tapHerder.residents.BaseResident;
@@ -15,6 +18,14 @@ import com.mele.tapHerder.residents.BaseResident;
 public class TapHerderCell extends Cell {
 	protected BaseResident resident = null;
 	protected ETerrainType type = ETerrainType.FIELD;
+	protected Map<String, String> properties = new HashMap<String, String>();
+	
+	// Property key constants
+	public static final String PROPKEY_NEWTYPE = "NEWTYPE";
+	
+	// Property value constants
+	public static final String PROPVAL_TRUE = "TRUE";
+	public static final String PROPVAL_FALSE = "FALSE";
 	
 	public TapHerderCell(HexPoint point) {
 		super(point);
@@ -67,4 +78,13 @@ public class TapHerderCell extends Cell {
 	public void setType(ETerrainType type) {
 		this.type = type;
 	}
+	
+	public void setProperty(String key, String value) {
+		properties.put(key, value);
+	}
+	
+	public String getProperty(String key) {
+		return properties.get(key);
+	}
+
 }

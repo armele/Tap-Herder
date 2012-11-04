@@ -32,13 +32,13 @@ public abstract class BaseGameManager implements IGameManager {
 	}
 
 	protected void startRenderer() {
-		// TODO: For non-Swing renderer we'd need a thread for the rendering.
-		//new Thread(renderer).start();
+		// For non-Swing renderer we'd need a thread for the rendering.
+		// new Thread(renderer).start();
 	}
 	
 	protected void startInput() {
-		// TODO: for non-Swing renderer (which allows input listners) we'd need a thread for the input.
-		//new Thread(input).start();
+		// For non-Swing renderer (which allows input listners) we'd need a thread for the input.
+		// new Thread(input).start();
 	}
 	
 	@Override

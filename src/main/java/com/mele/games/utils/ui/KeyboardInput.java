@@ -23,6 +23,7 @@ public class KeyboardInput implements IGameInput {
 	Scanner input= new Scanner(System.in); 
     boolean kill = false;
     List<ICommand> commandQueue = new ArrayList<ICommand>();
+    IGameManager gm = null;
     
 	public void run() {
 		while (!kill) {
@@ -60,8 +61,7 @@ public class KeyboardInput implements IGameInput {
 	}
 
 	@Override
-	public void setGameManager(IGameManager game) {
-		// TODO Auto-generated method stub
-		
+	public void setGameManager(IGameManager gameManager) {
+		gm = gameManager;
 	}
 }

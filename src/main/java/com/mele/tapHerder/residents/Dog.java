@@ -26,7 +26,16 @@ public class Dog extends BaseResident implements IGoodResident {
 		if (homeCell != null) {
 			TapHerderCell neighbor = (TapHerderCell) homeCell.findAdjacentCell(vector);
 			if (neighbor != null) {
-				if (neighbor.getType().isHazard()) {
+				if (neighbor.getType().isGoal()){
+					// Reached a goal space!
+					game.getScoreLog().addScore(ScoreEvent.SCORE_RESGOAL);
+					homeCell.setResident(null);
+					
+					// TODO: Find a good spot for these constants...
+					// TODO: Special animations for reaching a goal...
+					// TODO: Propagate this to other resident classes...
+					neighbor.setProperty("GOALREACH", "TRUE"); 
+				} else if (neighbor.getType().isHazard()) {
 					// Got pushed into a hazard - I'm dead!
 					homeCell.setResident(null);
 					kill();
@@ -55,6 +64,7 @@ public class Dog extends BaseResident implements IGoodResident {
 				}
 			} else {
 				// Next cell over is off the map.  I'm dead!
+				// TODO: Sound effects (event log or repurpose the score log?)
 				homeCell.setResident(null);
 				kill();
 			}

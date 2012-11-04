@@ -31,7 +31,7 @@ public abstract class BaseResident implements IGoodResident {
 		this.game = game;
 	}
 	
-	public void addProperty(String key, String value) {
+	public void setProperty(String key, String value) {
 		properties.put(key, value);
 	}
 

@@ -54,16 +54,7 @@ public class TapHerderInput implements IGameInput, MouseListener {
 
 	@Override
 	public void mouseClicked(MouseEvent arg0) {
-		Point p = arg0.getPoint();
-		Cell target = ((TapHerderGameRenderer)gameManager.getRenderer()).getCellAtPoint(p);
-		
-		if (target != null) {
-			log.info("Le mouse: " + target.getPoint());
-			
-			TapCommand cmd = new TapCommand();
-			cmd.setTapLocation(target);
-			commandList.add(cmd);
-		}
+		// TODO Auto-generated method stub
 	}
 
 	@Override
@@ -80,8 +71,16 @@ public class TapHerderInput implements IGameInput, MouseListener {
 
 	@Override
 	public void mousePressed(MouseEvent arg0) {
-		// TODO Auto-generated method stub
-
+		Point p = arg0.getPoint();
+		Cell target = ((TapHerderGameRenderer)gameManager.getRenderer()).getCellAtPoint(p);
+		
+		if (target != null) {
+			log.info("Le mouse: " + target.getPoint());
+			
+			TapCommand cmd = new TapCommand();
+			cmd.setTapLocation(target);
+			commandList.add(cmd);
+		}
 	}
 
 	@Override
