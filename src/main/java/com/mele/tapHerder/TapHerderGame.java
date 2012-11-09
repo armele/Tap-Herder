@@ -22,7 +22,7 @@ import com.mele.tapHerder.residents.BaseResident;
 public class TapHerderGame implements IGame {
 	protected static Logger log = Logger.getLogger(TapHerderGame.class);
 	protected EGameState state = EGameState.UNINITIALIZED;
-	protected HexArray hexmap = new HexArray(15,21, TapHerderCell.class);
+	protected HexArray hexmap = new HexArray(TapHerderCell.class);
 	protected TapHerderGameManager gameManager = null;
 	protected boolean initialized = false;
 	protected int tapCount = 0;

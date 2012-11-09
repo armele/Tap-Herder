@@ -45,7 +45,7 @@ public class TapHerderGameRenderer extends Frame implements IGameRenderer {
 	protected void init() {
 		setVisible(true);
 		setTitle("Tap Herder");
-		setSize(480, 800);
+		setSize(480, 640);
 		
 		this.addWindowListener(new WindowAdapter() {
 		      public void windowClosing(WindowEvent e) {
@@ -65,6 +65,8 @@ public class TapHerderGameRenderer extends Frame implements IGameRenderer {
 		har.setReferencePointX(30);
 		har.setReferencePointY(50);
 		har.init();
+		
+		setSize((int)har.getMaxX() + 10, (int)har.getMaxY() + 10);
 		
 		// TODO: Make optional, configurable, and variable by board.
 		// TODO: Add sound effects for residents, etc.

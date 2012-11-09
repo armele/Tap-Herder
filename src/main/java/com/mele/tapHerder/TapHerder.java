@@ -65,6 +65,9 @@ public class TapHerder {
 	 */
 	public static void main(String args[]) {
 		configureLogging();		
+		
+		// TODO: Splash screen for instant acknowledgement that the game has started.
+		
 		startGame();
 	}
 }

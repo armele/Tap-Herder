@@ -16,6 +16,13 @@ import com.mele.tapHerder.residents.Dog;
 import com.mele.tapHerder.residents.Snail;
 import com.mele.tapHerder.residents.Wolf;
 
+/**
+ * TODO: Create the reverse of this class - the MapWriter.  This would allow users to graphically
+ * design maps and then save the ASCII result for use in future games.
+ * 
+ * @author Ayar
+ *
+ */
 public class MapReader {
 	protected static Logger log = Logger.getLogger(MapReader.class);
 	protected HashMap<String, ETerrainType> symbolTerrain = new HashMap<String, ETerrainType>();
@@ -40,9 +47,46 @@ public class MapReader {
 	}
 	
 	
+	/**
+	 * @param hexMap
+	 * @param scanner
+	 * @throws FileNotFoundException 
+	 */
+	protected void initializeHexMap(HexArray hexMap, File mapFile) throws FileNotFoundException {
+		int columns = 0;
+		double rows = 0;
+		
+		Scanner scanner = new Scanner(mapFile);
+		
+		// A bit unintuitive, but remember that in the ascii hex map the first
+		// text row represents the first cell of each odd column, and the second
+		// text row represents the first cell of each even column.  So to get the
+		// total number of columns, you need to count the cells in both rows.
+		// And since the HexArray is created by indicating the number of cells
+		// in the first column, only every odd text row counts as a cell in the
+		// first column (hence the addition of .5 per text row instead of 1).
+		while (scanner.hasNext()) {
+			rows = rows + .5;
+			String output = scanner.nextLine();
+			
+			if (rows <= 1) {
+				String[] cellTokens = output.trim().split("  ");
+				columns = columns + cellTokens.length;
+			}
+		}
+		
+		hexMap.create(columns, (int)rows + 1);
+	}
+	
+	/**
+	 * Reads an ASCII file map and initializes the game board (including the underlying hex array) based on it.
+	 *  
+	 * @param game
+	 * @param hexMap
+	 * @param terrainMapName
+	 */
 	public void setMapTerrain(TapHerderGame game, HexArray hexMap, String terrainMapName) {
-		URL mapResource = TapHerder.class.getClassLoader().getResource(
-				terrainMapName);
+		URL mapResource = TapHerder.class.getClassLoader().getResource(terrainMapName);
 		
 		if (mapResource != null) {
 			File mapFile = new File(mapResource.getFile());
@@ -50,7 +94,11 @@ public class MapReader {
 			if (mapFile.canRead()) {
 				try {
 					int row = 0;
+					
+					initializeHexMap(hexMap, mapFile);
+					
 					Scanner fileScan = new Scanner(mapFile);
+
 					while (fileScan.hasNext()) {
 						row++;
 						String output = fileScan.nextLine();

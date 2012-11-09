@@ -48,6 +48,7 @@ public class HexArray implements Iterable<Cell> {
 	protected int ysize = 0;
 	
 	protected HashMap<HexPoint, Cell> hexmap = new HashMap<HexPoint, Cell>();
+	protected Class<?> cellClass = null;
 	
 	/**
 	 * Provide the number of columns and the number of cells in the first column.
@@ -56,6 +57,21 @@ public class HexArray implements Iterable<Cell> {
 	 * @param rows
 	 */
 	public HexArray(int columns, int rows, Class<?> cellClass) {
+		this.cellClass = cellClass;
+		create(columns, rows);
+	}
+	
+	public HexArray(Class<?> cellClass) {
+		this.cellClass = cellClass;
+	}
+	
+	/**
+	 * Populate the hex array with cells.
+	 * 
+	 * @param columns
+	 * @param rows
+	 */
+	public void create(int columns, int rows) {
 		xsize = columns;
 		ysize = rows;
 	
@@ -96,5 +112,13 @@ public class HexArray implements Iterable<Cell> {
 
 	public int size() {
 		return hexmap.size();
+	}
+	
+	public int getRows() {
+		return ysize;
+	}
+	
+	public int getColumns() {
+		return xsize;
 	}
 }

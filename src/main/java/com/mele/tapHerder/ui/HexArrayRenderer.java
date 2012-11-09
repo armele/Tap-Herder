@@ -41,6 +41,8 @@ public class HexArrayRenderer {
 	protected static final int HEX = 6;
 	protected int referencePointX = 0;
 	protected int referencePointY = 0;
+	protected double maxX = 0;
+	protected double maxY = 0;
 	protected boolean initialized = false;
 	
 	public HexArrayRenderer(HexArray hexmap) {
@@ -104,6 +106,13 @@ public class HexArrayRenderer {
 			    	(int) (referencePointX + columnOffset + (cellSize * Math.cos(i * 2 * Math.PI / HEX))),
 			        (int) (referencePointY + rowOffset + (cellSize * Math.sin(i * 2 * Math.PI / HEX)))
 			      );
+			      
+			      if (maxX < p.getBounds().getMaxX()) {
+			    	  maxX = p.getBounds().getMaxX();
+			      }
+			      if (maxY < p.getBounds().getMaxY()) {
+			    	  maxY = p.getBounds().getMaxY();
+			      }
 		    }
 		}
 		
@@ -258,4 +267,11 @@ public class HexArrayRenderer {
 		g.setColor(backup);
 	}
 	
+	public double getMaxX() {
+		return maxX;
+	}
+	
+	public double getMaxY() {
+		return maxY;
+	}
 }

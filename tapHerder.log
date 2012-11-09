@@ -1,361 +1,223 @@
-[2012-11-04 14:49:13,343] INFO - main: com.mele.tapHerder.TapHerder.configureLogging(35) | Logging configured.
-[2012-11-04 14:49:13,419] INFO - main: mele.games.mechanics.BaseGameManager.startGame(46) | Starting game manager...
-[2012-11-04 14:49:13,904] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (1,1) -8
-[2012-11-04 14:49:13,912] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (3,2) -8
-[2012-11-04 14:49:13,916] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (5,3) -8
-[2012-11-04 14:49:13,919] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (7,4) -8
-[2012-11-04 14:49:13,922] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (9,5) -8
-[2012-11-04 14:49:13,925] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (11,6) -8
-[2012-11-04 14:49:13,929] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (13,7) -8
-[2012-11-04 14:49:13,933] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (15,8) -8
-[2012-11-04 14:49:13,937] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (2,2) -8
-[2012-11-04 14:49:13,941] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (4,3) -8
-[2012-11-04 14:49:13,946] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (6,4) -8
-[2012-11-04 14:49:13,950] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (8,5) -8
-[2012-11-04 14:49:13,955] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (10,6) -8
-[2012-11-04 14:49:13,966] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (12,7) -8
-[2012-11-04 14:49:13,971] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (14,8) -8
-[2012-11-04 14:49:13,975] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (1,2) -8
-[2012-11-04 14:49:13,978] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (3,3) -.
-[2012-11-04 14:49:13,981] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (5,4) -.
-[2012-11-04 14:49:13,987] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (7,5) -%
-[2012-11-04 14:49:13,992] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (9,6) -T
-[2012-11-04 14:49:13,996] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (11,7) -+
-[2012-11-04 14:49:14,004] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (13,8) -.
-[2012-11-04 14:49:14,008] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (15,9) -8
-[2012-11-04 14:49:14,017] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (2,3) -%
-[2012-11-04 14:49:14,035] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (4,4) -:
-[2012-11-04 14:49:14,052] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (6,5) -.
-[2012-11-04 14:49:14,059] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (8,6) -.
-[2012-11-04 14:49:14,064] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (10,7) -.
-[2012-11-04 14:49:14,068] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (12,8) -:
-[2012-11-04 14:49:14,072] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (14,9) -+
-[2012-11-04 14:49:14,078] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (1,3) -8
-[2012-11-04 14:49:14,083] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (3,4) -~
-[2012-11-04 14:49:14,098] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (5,5) -:
-[2012-11-04 14:49:14,104] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (7,6) D.
-[2012-11-04 14:49:14,109] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (9,7) -.
-[2012-11-04 14:49:14,123] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (11,8) -8
-[2012-11-04 14:49:14,128] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (13,9) -+
-[2012-11-04 14:49:14,141] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (15,10) -8
-[2012-11-04 14:49:14,149] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (2,4) -.
-[2012-11-04 14:49:14,153] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (4,5) -.
-[2012-11-04 14:49:14,170] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (6,6) -:
-[2012-11-04 14:49:14,173] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (8,7) -.
-[2012-11-04 14:49:14,178] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (10,8) -~
-[2012-11-04 14:49:14,183] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (12,9) -.
-[2012-11-04 14:49:14,187] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (14,10) -.
-[2012-11-04 14:49:14,192] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (1,4) -8
-[2012-11-04 14:49:14,196] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (3,5) -~
-[2012-11-04 14:49:14,201] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (5,6) -*
-[2012-11-04 14:49:14,250] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (7,7) D.
-[2012-11-04 14:49:14,254] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (9,8) -.
-[2012-11-04 14:49:14,259] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (11,9) -~
-[2012-11-04 14:49:14,264] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (13,10) -~
-[2012-11-04 14:49:14,268] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (15,11) -8
-[2012-11-04 14:49:14,273] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (2,5) -.
-[2012-11-04 14:49:14,278] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (4,6) -.
-[2012-11-04 14:49:14,282] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (6,7) D:
-[2012-11-04 14:49:14,289] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (8,8) D.
-[2012-11-04 14:49:14,293] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (10,9) -.
-[2012-11-04 14:49:14,298] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (12,10) -%
-[2012-11-04 14:49:14,304] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (14,11) -.
-[2012-11-04 14:49:14,312] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (1,5) -8
-[2012-11-04 14:49:14,325] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (3,6) -.
-[2012-11-04 14:49:14,330] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (5,7) -:
-[2012-11-04 14:49:14,335] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (7,8) D.
-[2012-11-04 14:49:14,343] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (9,9) -.
-[2012-11-04 14:49:14,357] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (11,10) -.
-[2012-11-04 14:49:14,375] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (13,11) -.
-[2012-11-04 14:49:14,379] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (15,12) -8
-[2012-11-04 14:49:14,384] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (2,6) -.
-[2012-11-04 14:49:14,388] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (4,7) -.
-[2012-11-04 14:49:14,392] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (6,8) -.
-[2012-11-04 14:49:14,396] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (8,9) -T
-[2012-11-04 14:49:14,399] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (10,10) -%.
-[2012-11-04 14:49:14,405] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (12,11) -.
-[2012-11-04 14:49:14,409] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (14,12) -.
-[2012-11-04 14:49:14,412] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (1,6) -8
-[2012-11-04 14:49:14,416] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (3,7) -.
-[2012-11-04 14:49:14,419] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (5,8) -:
-[2012-11-04 14:49:14,427] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (7,9) -.
-[2012-11-04 14:49:14,432] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (9,10) -.
-[2012-11-04 14:49:14,435] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (11,11) -.
-[2012-11-04 14:49:14,441] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (13,12) -.
-[2012-11-04 14:49:14,445] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (15,13) -8
-[2012-11-04 14:49:14,451] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (2,7) -.
-[2012-11-04 14:49:14,455] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (4,8) S.
-[2012-11-04 14:49:14,459] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (6,9) -.
-[2012-11-04 14:49:14,466] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (8,10) -.
-[2012-11-04 14:49:14,469] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (10,11) -%
-[2012-11-04 14:49:14,472] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (12,12) W.
-[2012-11-04 14:49:14,476] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (14,13) -.
-[2012-11-04 14:49:14,480] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (1,7) -8
-[2012-11-04 14:49:14,484] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (3,8) -.
-[2012-11-04 14:49:14,488] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (5,9) -:
-[2012-11-04 14:49:14,496] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (7,10) -%
-[2012-11-04 14:49:14,514] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (9,11) -T
-[2012-11-04 14:49:14,519] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (11,12) -+
-[2012-11-04 14:49:14,528] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (13,13) -.
-[2012-11-04 14:49:14,532] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (15,14) -8
-[2012-11-04 14:49:14,538] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (2,8) -%
-[2012-11-04 14:49:14,544] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (4,9) -.
-[2012-11-04 14:49:14,548] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (6,10) -:
-[2012-11-04 14:49:14,565] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (8,11) -.
-[2012-11-04 14:49:14,569] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (10,12) -+
-[2012-11-04 14:49:14,573] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (12,13) -:
-[2012-11-04 14:49:14,579] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (14,14) -.
-[2012-11-04 14:49:14,584] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (1,8) -8
-[2012-11-04 14:49:14,588] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (3,9) -~
-[2012-11-04 14:49:14,593] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (5,10) -.
-[2012-11-04 14:49:14,597] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (7,11) -.
-[2012-11-04 14:49:14,600] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (9,12) -.
-[2012-11-04 14:49:14,603] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (11,13) -.
-[2012-11-04 14:49:14,621] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (13,14) -+
-[2012-11-04 14:49:14,640] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (15,15) -8
-[2012-11-04 14:49:14,678] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (2,9) -8
-[2012-11-04 14:49:14,736] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (4,10) -.
-[2012-11-04 14:49:14,745] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (6,11) -:
-[2012-11-04 14:49:14,750] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (8,12) -&
-[2012-11-04 14:49:14,755] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (10,13) -~
-[2012-11-04 14:49:14,758] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (12,14) -.
-[2012-11-04 14:49:14,763] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (14,15) -8
-[2012-11-04 14:49:14,767] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (1,9) -8
-[2012-11-04 14:49:14,771] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (3,10) -8
-[2012-11-04 14:49:14,775] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (5,11) -8
-[2012-11-04 14:49:14,779] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (7,12) -*
-[2012-11-04 14:49:14,786] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (9,13) -.
-[2012-11-04 14:49:14,791] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (11,14) -8
-[2012-11-04 14:49:14,795] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (13,15) -8
-[2012-11-04 14:49:14,799] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (15,16) -8
-[2012-11-04 14:49:14,802] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (2,10) -8
-[2012-11-04 14:49:14,807] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (4,11) -8
-[2012-11-04 14:49:14,811] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (6,12) -:
-[2012-11-04 14:49:14,814] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (8,13) -.
-[2012-11-04 14:49:14,819] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (10,14) -.
-[2012-11-04 14:49:14,823] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (12,15) -8
-[2012-11-04 14:49:14,826] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (14,16) -8
-[2012-11-04 14:49:14,834] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (1,10) -8
-[2012-11-04 14:49:14,840] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (3,11) -.
-[2012-11-04 14:49:14,844] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (5,12) -.
-[2012-11-04 14:49:14,848] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (7,13) W.
-[2012-11-04 14:49:14,852] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (9,14) -.
-[2012-11-04 14:49:14,856] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (11,15) S.
-[2012-11-04 14:49:14,861] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (13,16) -.
-[2012-11-04 14:49:14,865] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (15,17) -8
-[2012-11-04 14:49:14,868] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (2,11) -.
-[2012-11-04 14:49:14,872] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (4,12) -.
-[2012-11-04 14:49:14,875] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (6,13) -:
-[2012-11-04 14:49:14,879] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (8,14) -T
-[2012-11-04 14:49:14,882] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (10,15) -%
-[2012-11-04 14:49:14,887] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (12,16) -.
-[2012-11-04 14:49:14,893] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (14,17) -.
-[2012-11-04 14:49:14,899] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (1,11) -8
-[2012-11-04 14:49:14,902] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (3,12) -.
-[2012-11-04 14:49:14,906] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (5,13) -.
-[2012-11-04 14:49:14,909] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (7,14) -:
-[2012-11-04 14:49:14,912] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (9,15) -.
-[2012-11-04 14:49:14,917] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (11,16) -.
-[2012-11-04 14:49:14,920] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (13,17) -.
-[2012-11-04 14:49:14,924] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (15,18) -8
-[2012-11-04 14:49:14,928] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (2,12) -.
-[2012-11-04 14:49:14,936] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (4,13) -.
-[2012-11-04 14:49:14,940] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (6,14) -.
-[2012-11-04 14:49:14,944] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (8,15) -T
-[2012-11-04 14:49:14,949] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (10,16) -%
-[2012-11-04 14:49:14,952] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (12,17) -.
-[2012-11-04 14:49:14,955] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (14,18) -.
-[2012-11-04 14:49:14,958] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (1,12) -8
-[2012-11-04 14:49:14,962] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (3,13) -.
-[2012-11-04 14:49:14,965] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (5,14) -.
-[2012-11-04 14:49:14,972] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (7,15) -:
-[2012-11-04 14:49:14,975] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (9,16) -.
-[2012-11-04 14:49:14,979] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (11,17) -+
-[2012-11-04 14:49:14,983] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (13,18) -+
-[2012-11-04 14:49:14,988] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (15,19) -8
-[2012-11-04 14:49:14,992] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (2,13) -%
-[2012-11-04 14:49:14,996] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (4,14) -.
-[2012-11-04 14:49:15,001] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (6,15) -.
-[2012-11-04 14:49:15,005] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (8,16) -:
-[2012-11-04 14:49:15,008] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (10,17) -:
-[2012-11-04 14:49:15,012] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (12,18) -:
-[2012-11-04 14:49:15,015] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (14,19) -.
-[2012-11-04 14:49:15,021] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (1,13) -8
-[2012-11-04 14:49:15,026] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (3,14) -~
-[2012-11-04 14:49:15,029] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (5,15) -.
-[2012-11-04 14:49:15,040] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (7,16) -.
-[2012-11-04 14:49:15,042] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (9,17) -:
-[2012-11-04 14:49:15,045] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (11,18) -:
-[2012-11-04 14:49:15,048] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (13,19) -+
-[2012-11-04 14:49:15,052] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (15,20) -8
-[2012-11-04 14:49:15,054] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (2,14) -8
-[2012-11-04 14:49:15,058] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (4,15) -.
-[2012-11-04 14:49:15,063] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (6,16) -.
-[2012-11-04 14:49:15,066] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (8,17) -&
-[2012-11-04 14:49:15,069] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (10,18) -~
-[2012-11-04 14:49:15,072] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (12,19) -:
-[2012-11-04 14:49:15,075] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (14,20) -.
-[2012-11-04 14:49:15,079] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (1,14) -8
-[2012-11-04 14:49:15,082] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (3,15) -8
-[2012-11-04 14:49:15,084] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (5,16) -8
-[2012-11-04 14:49:15,087] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (7,17) -8
-[2012-11-04 14:49:15,092] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (9,18) -8
-[2012-11-04 14:49:15,096] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (11,19) -8
-[2012-11-04 14:49:15,099] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (13,20) -:
-[2012-11-04 14:49:15,102] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (15,21) -8
-[2012-11-04 14:49:15,106] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (2,15) -8
-[2012-11-04 14:49:15,109] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (4,16) -8
-[2012-11-04 14:49:15,114] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (6,17) -8
-[2012-11-04 14:49:15,117] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (8,18) -8
-[2012-11-04 14:49:15,119] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (10,19) -8
-[2012-11-04 14:49:15,121] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (12,20) -*
-[2012-11-04 14:49:15,125] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (14,21) W:
-[2012-11-04 14:49:15,129] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (1,15) -8
-[2012-11-04 14:49:15,133] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (3,16) -.
-[2012-11-04 14:49:15,141] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (5,17) -.
-[2012-11-04 14:49:15,146] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (7,18) -.
-[2012-11-04 14:49:15,151] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (9,19) -.
-[2012-11-04 14:49:15,153] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (11,20) -.
-[2012-11-04 14:49:15,155] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (13,21) -.
-[2012-11-04 14:49:15,159] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (15,22) -8
-[2012-11-04 14:49:15,163] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (2,16) -.
-[2012-11-04 14:49:15,166] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (4,17) -T
-[2012-11-04 14:49:15,169] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (6,18) -.
-[2012-11-04 14:49:15,172] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (8,19) -T
-[2012-11-04 14:49:15,175] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (10,20) -%
-[2012-11-04 14:49:15,179] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (12,21) -.
-[2012-11-04 14:49:15,182] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (14,22) -:
-[2012-11-04 14:49:15,185] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (1,16) -8
-[2012-11-04 14:49:15,188] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (3,17) -.
-[2012-11-04 14:49:15,193] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (5,18) -.
-[2012-11-04 14:49:15,197] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (7,19) -:
-[2012-11-04 14:49:15,202] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (9,20) -.
-[2012-11-04 14:49:15,205] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (11,21) -.
-[2012-11-04 14:49:15,209] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (13,22) -.
-[2012-11-04 14:49:15,213] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (15,23) -8
-[2012-11-04 14:49:15,218] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (2,17) -.
-[2012-11-04 14:49:15,221] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (4,18) -.
-[2012-11-04 14:49:15,224] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (6,19) -.
-[2012-11-04 14:49:15,229] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (8,20) -T
-[2012-11-04 14:49:15,234] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (10,21) -%
-[2012-11-04 14:49:15,236] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (12,22) -.
-[2012-11-04 14:49:15,238] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (14,23) -:
-[2012-11-04 14:49:15,245] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (1,17) -8
-[2012-11-04 14:49:15,248] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (3,18) -.
-[2012-11-04 14:49:15,251] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (5,19) -.
-[2012-11-04 14:49:15,255] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (7,20) -.
-[2012-11-04 14:49:15,259] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (9,21) -T
-[2012-11-04 14:49:15,263] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (11,22) -+
-[2012-11-04 14:49:15,267] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (13,23) -:
-[2012-11-04 14:49:15,270] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (15,24) -8
-[2012-11-04 14:49:15,275] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (2,18) -%
-[2012-11-04 14:49:15,281] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (4,19) -~
-[2012-11-04 14:49:15,284] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (6,20) -:
-[2012-11-04 14:49:15,287] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (8,21) -.
-[2012-11-04 14:49:15,290] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (10,22) -+
-[2012-11-04 14:49:15,300] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (12,23) -:
-[2012-11-04 14:49:15,303] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (14,24) -+
-[2012-11-04 14:49:15,306] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (1,18) -8
-[2012-11-04 14:49:15,309] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (3,19) -~
-[2012-11-04 14:49:15,312] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (5,20) -:
-[2012-11-04 14:49:15,315] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (7,21) W:
-[2012-11-04 14:49:15,318] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (9,22) -*
-[2012-11-04 14:49:15,321] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (11,23) -:
-[2012-11-04 14:49:15,324] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (13,24) W+
-[2012-11-04 14:49:15,327] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (15,25) -8
-[2012-11-04 14:49:15,331] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (2,19) -~
-[2012-11-04 14:49:15,334] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (4,20) -#
-[2012-11-04 14:49:15,337] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (6,21) -.
-[2012-11-04 14:49:15,343] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (8,22) :&
-[2012-11-04 14:49:15,348] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (10,23) -:
-[2012-11-04 14:49:15,352] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (12,24) -.
-[2012-11-04 14:49:15,355] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (14,25) -.
-[2012-11-04 14:49:15,384] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (1,19) -8
-[2012-11-04 14:49:15,388] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (3,20) -~
-[2012-11-04 14:49:15,390] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (5,21) -.
-[2012-11-04 14:49:15,394] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (7,22) -.
-[2012-11-04 14:49:15,398] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (9,23) -:
-[2012-11-04 14:49:15,400] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (11,24) -~
-[2012-11-04 14:49:15,403] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (13,25) -.
-[2012-11-04 14:49:15,406] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (15,26) -8
-[2012-11-04 14:49:15,409] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (2,20) -.
-[2012-11-04 14:49:15,413] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (4,21) -~
-[2012-11-04 14:49:15,415] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (6,22) -.
-[2012-11-04 14:49:15,418] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (8,23) -.
-[2012-11-04 14:49:15,421] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (10,24) -.
-[2012-11-04 14:49:15,423] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (12,25) -%
-[2012-11-04 14:49:15,425] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (14,26) -.
-[2012-11-04 14:49:15,428] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (1,20) -8
-[2012-11-04 14:49:15,431] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (3,21) -8
-[2012-11-04 14:49:15,436] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (5,22) -8
-[2012-11-04 14:49:15,439] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (7,23) -8
-[2012-11-04 14:49:15,442] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (9,24) -8
-[2012-11-04 14:49:15,451] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (11,25) -8
-[2012-11-04 14:49:15,454] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (13,26) -8
-[2012-11-04 14:49:15,459] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (15,27) -8
-[2012-11-04 14:49:15,462] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (2,21) -8
-[2012-11-04 14:49:15,475] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (4,22) -8
-[2012-11-04 14:49:15,478] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (6,23) -8
-[2012-11-04 14:49:15,481] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (8,24) -8
-[2012-11-04 14:49:15,484] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (10,25) -8
-[2012-11-04 14:49:15,487] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (12,26) -8
-[2012-11-04 14:49:15,489] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(66) | (14,27) -8
-[2012-11-04 14:49:16,119] INFO - main: mele.tapHerder.ui.TapHerderGameRenderer.init(76) | Music: monkeys wedding.wav
-[2012-11-04 14:49:16,326] INFO - main: games.utils.ui.RenderUtils.loadImage(75) | Loading image from: /M:/Personal_Al/Programming/tapHerder/target/classes/com/mele/tapHerder/Grid_Water.png
-[2012-11-04 14:49:16,376] INFO - main: games.utils.ui.RenderUtils.loadImage(75) | Loading image from: /M:/Personal_Al/Programming/tapHerder/target/classes/com/mele/tapHerder/Boulder.png
-[2012-11-04 14:49:16,431] INFO - main: games.utils.ui.RenderUtils.loadImage(75) | Loading image from: /M:/Personal_Al/Programming/tapHerder/target/classes/com/mele/tapHerder/Fire_0.png
-[2012-11-04 14:49:16,445] INFO - main: games.utils.ui.RenderUtils.loadImage(75) | Loading image from: /M:/Personal_Al/Programming/tapHerder/target/classes/com/mele/tapHerder/Fire_1.png
-[2012-11-04 14:49:16,455] INFO - main: games.utils.ui.RenderUtils.loadImage(75) | Loading image from: /M:/Personal_Al/Programming/tapHerder/target/classes/com/mele/tapHerder/Fire_2.png
-[2012-11-04 14:49:16,463] INFO - main: games.utils.ui.RenderUtils.loadImage(75) | Loading image from: /M:/Personal_Al/Programming/tapHerder/target/classes/com/mele/tapHerder/Fence.png
-[2012-11-04 14:49:16,479] INFO - main: games.utils.ui.RenderUtils.loadImage(75) | Loading image from: /M:/Personal_Al/Programming/tapHerder/target/classes/com/mele/tapHerder/DryBrush.png
-[2012-11-04 14:49:16,503] INFO - main: games.utils.ui.RenderUtils.loadImage(75) | Loading image from: /M:/Personal_Al/Programming/tapHerder/target/classes/com/mele/tapHerder/TallGrass.png
-[2012-11-04 14:49:16,511] INFO - main: games.utils.ui.RenderUtils.loadImage(75) | Loading image from: /M:/Personal_Al/Programming/tapHerder/target/classes/com/mele/tapHerder/150px-Wolf_(Tamed)_0.png
-[2012-11-04 14:49:16,521] INFO - main: games.utils.ui.RenderUtils.loadImage(75) | Loading image from: /M:/Personal_Al/Programming/tapHerder/target/classes/com/mele/tapHerder/150px-Wolf_(Tamed)_1.png
-[2012-11-04 14:49:16,554] INFO - main: games.utils.ui.RenderUtils.loadImage(75) | Loading image from: /M:/Personal_Al/Programming/tapHerder/target/classes/com/mele/tapHerder/Tree.png
-[2012-11-04 14:49:16,564] INFO - main: games.utils.ui.RenderUtils.loadImage(75) | Loading image from: /M:/Personal_Al/Programming/tapHerder/target/classes/com/mele/tapHerder/Statue.png
-[2012-11-04 14:49:16,578] INFO - main: games.utils.ui.RenderUtils.loadImage(75) | Loading image from: /M:/Personal_Al/Programming/tapHerder/target/classes/com/mele/tapHerder/150px-Wolf_(Aggressive)_0.png
-[2012-11-04 14:49:16,589] INFO - main: games.utils.ui.RenderUtils.loadImage(75) | Loading image from: /M:/Personal_Al/Programming/tapHerder/target/classes/com/mele/tapHerder/150px-Wolf_(Aggressive)_1.png
-[2012-11-04 14:49:16,600] INFO - main: games.utils.ui.RenderUtils.loadImage(75) | Loading image from: /M:/Personal_Al/Programming/tapHerder/target/classes/com/mele/tapHerder/150px-Wolf_(Aggressive)_2.png
-[2012-11-04 14:49:29,966] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (2,3)
-[2012-11-04 14:49:35,789] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (8,6)
-[2012-11-04 14:49:39,743] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (8,9)
-[2012-11-04 14:49:54,377] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (7,6)
-[2012-11-04 14:49:55,408] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (6,6)
-[2012-11-04 14:49:56,066] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (6,7)
-[2012-11-04 14:49:56,537] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (6,8)
-[2012-11-04 14:49:57,056] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (8,8)
-[2012-11-04 14:49:57,714] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (9,7)
-[2012-11-04 14:49:59,146] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (10,9)
-[2012-11-04 14:49:59,425] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (10,9)
-[2012-11-04 14:50:00,194] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (9,9)
-[2012-11-04 14:50:00,785] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (8,9)
-[2012-11-04 14:50:02,986] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (5,9)
-[2012-11-04 14:50:04,193] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (8,9)
-[2012-11-04 14:50:04,730] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (6,8)
-[2012-11-04 14:50:05,282] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (6,9)
-[2012-11-04 14:50:05,778] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (6,10)
-[2012-11-04 14:50:06,297] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (6,11)
-[2012-11-04 14:50:07,401] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (5,12)
-[2012-11-04 14:50:08,818] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (7,13)
-[2012-11-04 14:50:10,129] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (9,11)
-[2012-11-04 14:50:10,842] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (8,11)
-[2012-11-04 14:50:11,498] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (6,10)
-[2012-11-04 14:50:12,340] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (6,11)
-[2012-11-04 14:50:13,123] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (6,13)
-[2012-11-04 14:50:17,963] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (6,14)
-[2012-11-04 14:50:18,627] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (7,15)
-[2012-11-04 14:50:19,349] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (8,16)
-[2012-11-04 14:50:20,437] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (8,17)
-[2012-11-04 14:50:21,356] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (9,16)
-[2012-11-04 14:50:21,876] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (10,17)
-[2012-11-04 14:50:22,636] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (11,18)
-[2012-11-04 14:50:27,220] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (13,21)
-[2012-11-04 14:50:28,533] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (14,21)
-[2012-11-04 14:50:30,382] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (12,18)
-[2012-11-04 14:50:58,416] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (6,20)
-[2012-11-04 14:50:58,912] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (5,20)
-[2012-11-04 14:50:59,528] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (4,20)
-[2012-11-04 14:51:01,160] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (3,20)
-[2012-11-04 14:51:01,897] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (3,19)
-[2012-11-04 14:51:23,052] INFO - main: com.mele.tapHerder.TapHerder.startGame(52) | Ending game...
-[2012-11-04 14:51:23,061] DEBUG - main: com.mele.tapHerder.TapHerder.startGame(59) | Exit from main.
+[2012-11-08 20:47:42,495] INFO - main: com.mele.tapHerder.TapHerder.configureLogging(35) | Logging configured.
+[2012-11-08 20:47:42,586] INFO - main: mele.games.mechanics.BaseGameManager.startGame(46) | Starting game manager...
+[2012-11-08 20:47:43,046] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (1,1) -8
+[2012-11-08 20:47:43,066] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (3,2) -8
+[2012-11-08 20:47:43,076] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (5,3) -8
+[2012-11-08 20:47:43,086] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (7,4) -8
+[2012-11-08 20:47:43,096] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (9,5) -8
+[2012-11-08 20:47:43,116] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (11,6) -8
+[2012-11-08 20:47:43,126] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (13,7) -8
+[2012-11-08 20:47:43,146] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (15,8) -8
+[2012-11-08 20:47:43,156] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (2,2) -8
+[2012-11-08 20:47:43,166] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (4,3) -8
+[2012-11-08 20:47:43,166] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (6,4) -8
+[2012-11-08 20:47:43,176] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (8,5) -8
+[2012-11-08 20:47:43,186] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (10,6) -8
+[2012-11-08 20:47:43,206] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (12,7) -8
+[2012-11-08 20:47:43,206] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (14,8) -8
+[2012-11-08 20:47:43,216] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (1,2) -8
+[2012-11-08 20:47:43,236] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (3,3) -.
+[2012-11-08 20:47:43,246] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (5,4) -.
+[2012-11-08 20:47:43,256] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (7,5) -%
+[2012-11-08 20:47:43,266] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (9,6) -T
+[2012-11-08 20:47:43,276] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (11,7) -+
+[2012-11-08 20:47:43,286] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (13,8) -.
+[2012-11-08 20:47:43,286] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (15,9) -8
+[2012-11-08 20:47:43,296] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (2,3) -%
+[2012-11-08 20:47:43,296] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (4,4) -:
+[2012-11-08 20:47:43,296] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (6,5) -.
+[2012-11-08 20:47:43,306] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (8,6) -.
+[2012-11-08 20:47:43,306] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (10,7) -.
+[2012-11-08 20:47:43,306] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (12,8) -:
+[2012-11-08 20:47:43,316] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (14,9) -+
+[2012-11-08 20:47:43,316] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (1,3) -8
+[2012-11-08 20:47:43,316] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (3,4) -~
+[2012-11-08 20:47:43,326] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (5,5) -:
+[2012-11-08 20:47:43,326] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (7,6) D.
+[2012-11-08 20:47:43,326] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (9,7) -.
+[2012-11-08 20:47:43,336] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (11,8) -8
+[2012-11-08 20:47:43,346] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (13,9) -+
+[2012-11-08 20:47:43,346] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (15,10) -8
+[2012-11-08 20:47:43,356] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (2,4) -.
+[2012-11-08 20:47:43,356] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (4,5) -.
+[2012-11-08 20:47:43,366] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (6,6) -:
+[2012-11-08 20:47:43,366] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (8,7) -.
+[2012-11-08 20:47:43,366] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (10,8) -~
+[2012-11-08 20:47:43,376] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (12,9) -.
+[2012-11-08 20:47:43,376] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (14,10) -.
+[2012-11-08 20:47:43,376] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (1,4) -8
+[2012-11-08 20:47:43,376] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (3,5) -~
+[2012-11-08 20:47:43,386] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (5,6) -*
+[2012-11-08 20:47:43,386] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (7,7) D.
+[2012-11-08 20:47:43,396] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (9,8) -.
+[2012-11-08 20:47:43,406] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (11,9) -~
+[2012-11-08 20:47:43,406] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (13,10) -~
+[2012-11-08 20:47:43,426] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (15,11) -8
+[2012-11-08 20:47:43,426] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (2,5) -.
+[2012-11-08 20:47:43,436] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (4,6) S.
+[2012-11-08 20:47:43,436] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (6,7) -.
+[2012-11-08 20:47:43,446] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (8,8) -.
+[2012-11-08 20:47:43,446] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (10,9) -%
+[2012-11-08 20:47:43,446] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (12,10) W.
+[2012-11-08 20:47:43,446] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (14,11) -.
+[2012-11-08 20:47:43,456] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (1,5) -8
+[2012-11-08 20:47:43,456] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (3,6) -.
+[2012-11-08 20:47:43,456] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (5,7) -:
+[2012-11-08 20:47:43,456] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (7,8) -%
+[2012-11-08 20:47:43,456] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (9,9) -T
+[2012-11-08 20:47:43,466] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (11,10) -+
+[2012-11-08 20:47:43,466] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (13,11) -.
+[2012-11-08 20:47:43,476] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (15,12) -8
+[2012-11-08 20:47:43,476] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (2,6) -%
+[2012-11-08 20:47:43,476] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (4,7) -.
+[2012-11-08 20:47:43,486] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (6,8) -:
+[2012-11-08 20:47:43,486] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (8,9) -.
+[2012-11-08 20:47:43,486] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (10,10) -+
+[2012-11-08 20:47:43,496] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (12,11) -:
+[2012-11-08 20:47:43,496] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (14,12) -.
+[2012-11-08 20:47:43,496] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (1,6) -8
+[2012-11-08 20:47:43,496] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (3,7) -~
+[2012-11-08 20:47:43,506] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (5,8) -.
+[2012-11-08 20:47:43,506] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (7,9) -.
+[2012-11-08 20:47:43,506] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (9,10) -.
+[2012-11-08 20:47:43,506] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (11,11) -.
+[2012-11-08 20:47:43,516] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (13,12) -+
+[2012-11-08 20:47:43,516] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (15,13) -8
+[2012-11-08 20:47:43,516] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (2,7) -8
+[2012-11-08 20:47:43,516] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (4,8) -.
+[2012-11-08 20:47:43,526] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (6,9) -:
+[2012-11-08 20:47:43,526] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (8,10) -&
+[2012-11-08 20:47:43,526] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (10,11) -~
+[2012-11-08 20:47:43,526] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (12,12) -.
+[2012-11-08 20:47:43,537] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (14,13) -8
+[2012-11-08 20:47:43,537] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (1,7) -8
+[2012-11-08 20:47:43,547] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (3,8) -8
+[2012-11-08 20:47:43,547] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (5,9) -8
+[2012-11-08 20:47:43,547] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (7,10) -*
+[2012-11-08 20:47:43,557] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (9,11) -.
+[2012-11-08 20:47:43,557] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (11,12) -8
+[2012-11-08 20:47:43,557] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (13,13) -8
+[2012-11-08 20:47:43,567] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (15,14) -8
+[2012-11-08 20:47:43,567] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (2,8) -8
+[2012-11-08 20:47:43,567] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (4,9) -8
+[2012-11-08 20:47:43,577] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (6,10) -:
+[2012-11-08 20:47:43,577] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (8,11) -.
+[2012-11-08 20:47:43,577] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (10,12) -.
+[2012-11-08 20:47:43,577] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (12,13) -8
+[2012-11-08 20:47:43,587] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (14,14) -8
+[2012-11-08 20:47:43,587] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (1,8) -8
+[2012-11-08 20:47:43,587] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (3,9) -.
+[2012-11-08 20:47:43,587] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (5,10) -.
+[2012-11-08 20:47:43,587] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (7,11) W.
+[2012-11-08 20:47:43,597] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (9,12) -.
+[2012-11-08 20:47:43,597] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (11,13) S.
+[2012-11-08 20:47:43,597] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (13,14) -.
+[2012-11-08 20:47:43,597] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (15,15) -8
+[2012-11-08 20:47:43,607] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (2,9) -.
+[2012-11-08 20:47:43,617] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (4,10) -.
+[2012-11-08 20:47:43,617] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (6,11) -:
+[2012-11-08 20:47:43,617] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (8,12) -T
+[2012-11-08 20:47:43,617] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (10,13) -%
+[2012-11-08 20:47:43,627] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (12,14) -.
+[2012-11-08 20:47:43,627] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (14,15) -.
+[2012-11-08 20:47:43,627] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (1,9) -8
+[2012-11-08 20:47:43,637] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (3,10) -~
+[2012-11-08 20:47:43,647] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (5,11) -.
+[2012-11-08 20:47:43,647] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (7,12) -.
+[2012-11-08 20:47:43,647] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (9,13) -:
+[2012-11-08 20:47:43,657] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (11,14) -:
+[2012-11-08 20:47:43,657] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (13,15) -+
+[2012-11-08 20:47:43,657] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (15,16) -8
+[2012-11-08 20:47:43,667] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (2,10) -8
+[2012-11-08 20:47:43,667] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (4,11) -.
+[2012-11-08 20:47:43,667] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (6,12) -.
+[2012-11-08 20:47:43,677] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (8,13) -&
+[2012-11-08 20:47:43,677] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (10,14) -~
+[2012-11-08 20:47:43,677] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (12,15) -:
+[2012-11-08 20:47:43,687] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (14,16) -.
+[2012-11-08 20:47:43,687] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (1,10) -8
+[2012-11-08 20:47:43,697] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (3,11) -8
+[2012-11-08 20:47:43,697] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (5,12) -8
+[2012-11-08 20:47:43,697] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (7,13) -8
+[2012-11-08 20:47:43,697] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (9,14) -8
+[2012-11-08 20:47:43,707] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (11,15) -8
+[2012-11-08 20:47:43,707] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (13,16) -:
+[2012-11-08 20:47:43,707] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (15,17) -8
+[2012-11-08 20:47:43,717] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (2,11) -8
+[2012-11-08 20:47:43,717] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (4,12) -8
+[2012-11-08 20:47:43,717] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (6,13) -8
+[2012-11-08 20:47:43,727] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (8,14) -8
+[2012-11-08 20:47:43,727] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (10,15) -8
+[2012-11-08 20:47:43,727] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (12,16) -*
+[2012-11-08 20:47:43,737] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (14,17) W:
+[2012-11-08 20:47:43,737] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (1,11) -8
+[2012-11-08 20:47:43,747] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (3,12) -.
+[2012-11-08 20:47:43,747] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (5,13) -.
+[2012-11-08 20:47:43,757] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (7,14) -.
+[2012-11-08 20:47:43,757] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (9,15) -.
+[2012-11-08 20:47:43,757] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (11,16) -.
+[2012-11-08 20:47:43,757] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (13,17) -.
+[2012-11-08 20:47:43,767] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (15,18) -8
+[2012-11-08 20:47:43,767] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (2,12) -.
+[2012-11-08 20:47:43,767] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (4,13) -T
+[2012-11-08 20:47:43,777] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (6,14) -.
+[2012-11-08 20:47:43,777] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (8,15) -T
+[2012-11-08 20:47:43,787] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (10,16) -%
+[2012-11-08 20:47:43,787] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (12,17) -.
+[2012-11-08 20:47:43,797] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (14,18) -:
+[2012-11-08 20:47:43,797] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (1,12) -8
+[2012-11-08 20:47:43,797] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (3,13) -.
+[2012-11-08 20:47:43,797] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (5,14) -.
+[2012-11-08 20:47:43,807] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (7,15) -.
+[2012-11-08 20:47:43,817] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (9,16) -.
+[2012-11-08 20:47:43,827] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (11,17) -.
+[2012-11-08 20:47:43,827] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (13,18) -.
+[2012-11-08 20:47:43,874] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (15,19) -8
+[2012-11-08 20:47:43,877] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (2,13) -.
+[2012-11-08 20:47:43,882] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (4,14) -T
+[2012-11-08 20:47:43,884] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (6,15) -.
+[2012-11-08 20:47:43,898] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (8,16) -T
+[2012-11-08 20:47:43,900] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (10,17) -%
+[2012-11-08 20:47:43,904] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (12,18) -.
+[2012-11-08 20:47:43,906] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (14,19) -:
+[2012-11-08 20:47:43,909] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (1,13) -8
+[2012-11-08 20:47:43,911] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (3,14) -8
+[2012-11-08 20:47:43,913] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (5,15) -8
+[2012-11-08 20:47:43,915] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (7,16) -8
+[2012-11-08 20:47:43,917] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (9,17) -8
+[2012-11-08 20:47:43,919] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (11,18) -8
+[2012-11-08 20:47:43,922] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (13,19) -8
+[2012-11-08 20:47:43,924] DEBUG - main: com.mele.tapHerder.MapReader.setMapTerrain(107) | (15,20) -8
+[2012-11-08 20:47:44,610] INFO - main: mele.tapHerder.ui.TapHerderGameRenderer.init(78) | Music: monkeys wedding.wav
+[2012-11-08 20:47:44,709] INFO - main: games.utils.ui.RenderUtils.loadImage(75) | Loading image from: /M:/Personal_Al/Programming/tapHerder/target/classes/com/mele/tapHerder/Boulder.png
+[2012-11-08 20:47:44,719] INFO - main: games.utils.ui.RenderUtils.loadImage(75) | Loading image from: /M:/Personal_Al/Programming/tapHerder/target/classes/com/mele/tapHerder/DryBrush.png
+[2012-11-08 20:47:44,725] INFO - main: games.utils.ui.RenderUtils.loadImage(75) | Loading image from: /M:/Personal_Al/Programming/tapHerder/target/classes/com/mele/tapHerder/Grid_Water.png
+[2012-11-08 20:47:44,766] INFO - main: games.utils.ui.RenderUtils.loadImage(75) | Loading image from: /M:/Personal_Al/Programming/tapHerder/target/classes/com/mele/tapHerder/Fence.png
+[2012-11-08 20:47:44,793] INFO - main: games.utils.ui.RenderUtils.loadImage(75) | Loading image from: /M:/Personal_Al/Programming/tapHerder/target/classes/com/mele/tapHerder/Tree.png
+[2012-11-08 20:47:44,817] INFO - main: games.utils.ui.RenderUtils.loadImage(75) | Loading image from: /M:/Personal_Al/Programming/tapHerder/target/classes/com/mele/tapHerder/Fire_0.png
+[2012-11-08 20:47:44,823] INFO - main: games.utils.ui.RenderUtils.loadImage(75) | Loading image from: /M:/Personal_Al/Programming/tapHerder/target/classes/com/mele/tapHerder/Fire_1.png
+[2012-11-08 20:47:44,829] INFO - main: games.utils.ui.RenderUtils.loadImage(75) | Loading image from: /M:/Personal_Al/Programming/tapHerder/target/classes/com/mele/tapHerder/Fire_2.png
+[2012-11-08 20:47:44,837] INFO - main: games.utils.ui.RenderUtils.loadImage(75) | Loading image from: /M:/Personal_Al/Programming/tapHerder/target/classes/com/mele/tapHerder/150px-Wolf_(Tamed)_0.png
+[2012-11-08 20:47:44,843] INFO - main: games.utils.ui.RenderUtils.loadImage(75) | Loading image from: /M:/Personal_Al/Programming/tapHerder/target/classes/com/mele/tapHerder/150px-Wolf_(Tamed)_1.png
+[2012-11-08 20:47:44,851] INFO - main: games.utils.ui.RenderUtils.loadImage(75) | Loading image from: /M:/Personal_Al/Programming/tapHerder/target/classes/com/mele/tapHerder/150px-Wolf_(Aggressive)_0.png
+[2012-11-08 20:47:44,857] INFO - main: games.utils.ui.RenderUtils.loadImage(75) | Loading image from: /M:/Personal_Al/Programming/tapHerder/target/classes/com/mele/tapHerder/150px-Wolf_(Aggressive)_1.png
+[2012-11-08 20:47:44,866] INFO - main: games.utils.ui.RenderUtils.loadImage(75) | Loading image from: /M:/Personal_Al/Programming/tapHerder/target/classes/com/mele/tapHerder/150px-Wolf_(Aggressive)_2.png
+[2012-11-08 20:47:44,879] INFO - main: games.utils.ui.RenderUtils.loadImage(75) | Loading image from: /M:/Personal_Al/Programming/tapHerder/target/classes/com/mele/tapHerder/Statue.png
+[2012-11-08 20:48:39,811] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (8,6)
+[2012-11-08 20:48:40,988] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (6,5)
+[2012-11-08 20:48:41,756] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (6,6)
+[2012-11-08 20:48:43,019] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (9,8)
+[2012-11-08 20:48:43,756] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (8,7)
+[2012-11-08 20:48:45,931] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (5,7)
+[2012-11-08 20:48:47,332] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (7,8)
+[2012-11-08 20:48:48,964] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (9,9)
+[2012-11-08 20:48:50,428] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (10,11)
+[2012-11-08 20:48:52,212] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (7,10)
+[2012-11-08 20:48:53,165] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (9,11)
+[2012-11-08 20:48:53,901] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (8,12)
+[2012-11-08 20:48:54,813] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (10,13)
+[2012-11-08 20:48:55,413] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (10,16)
+[2012-11-08 20:48:55,693] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (10,17)
+[2012-11-08 20:48:57,276] INFO - AWT-EventQueue-0: mele.tapHerder.ui.TapHerderInput.mousePressed(78) | Le mouse: (8,13)
+[2012-11-08 20:49:03,074] INFO - main: com.mele.tapHerder.TapHerder.startGame(52) | Ending game...
+[2012-11-08 20:49:03,079] DEBUG - main: com.mele.tapHerder.TapHerder.startGame(59) | Exit from main.
