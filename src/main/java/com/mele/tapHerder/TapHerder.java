@@ -1,13 +1,11 @@
 package com.mele.tapHerder;
 
-import java.net.URL;
-
-import org.apache.log4j.Logger;
-import org.apache.log4j.xml.DOMConfigurator;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import com.mele.games.mechanics.EGameState;
-import com.mele.games.mechanics.IGameManager;
 import com.mele.games.utils.GameException;
+import com.mele.tapHerder.editor.EditRenderer;
 
 /**
  * Main class for the Tap Herder game.
@@ -16,30 +14,14 @@ import com.mele.games.utils.GameException;
  *
  */
 public class TapHerder {
-	protected static Logger log = Logger.getLogger(TapHerder.class);
+	protected static Logger log = LogManager.getLogger(TapHerder.class);
 
-	/**
-	 * Initialize logging.
-	 */
-	static public void configureLogging() {
-		URL loggingConfig = TapHerder.class.getClassLoader().getResource(
-				"com/mele/tapHerder/log4j.xml");
-		if (loggingConfig != null) {
-			System.out.println("Logging with config: "
-					+ loggingConfig.getFile());
-
-			DOMConfigurator.configure(loggingConfig);
-		} else {
-			System.out.println("Logging configuration not found.");
-		}
-		log.info("Logging configured.");
-	}
 	
 	/**
 	 * Set up a new game board and initiate the main run loop.
 	 */
 	public static void startGame() {
-		IGameManager gm = new TapHerderGameManager();
+		TapHerderGameManager gm = new TapHerderGameManager();
 		
 		try {
 			gm.startGame();
@@ -61,13 +43,35 @@ public class TapHerder {
 	}
 
 	/**
+	 * 
+	 */
+	public static void startEditor() {
+		EditRenderer editor = new EditRenderer();
+
+		while (!editor.isKilled()) {
+			editor.display();
+			
+			try {
+				Thread.sleep(83);
+			} catch (InterruptedException e) {
+				log.error(e.getClass().getName() + ": " + GameException.fullExceptionInfo(e));
+			}
+		}
+		
+		System.exit(0);
+	}
+	
+	/**
 	 * @param args
 	 */
-	public static void main(String args[]) {
-		configureLogging();		
+	public static void main(String args[]) {	
 		
-		// TODO: Splash screen for instant acknowledgement that the game has started.
-		
-		startGame();
+		// TODO: Splash screen for instant acknowledgment that the game has started.
+		// TODO: Command line parsing to start in edit mode.
+		if (args != null && args.length > 0 && "edit".equalsIgnoreCase(args[0])) {
+			startEditor();
+		} else {
+			startGame();
+		}
 	}
 }

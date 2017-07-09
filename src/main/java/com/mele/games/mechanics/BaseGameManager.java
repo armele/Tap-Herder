@@ -2,9 +2,11 @@ package com.mele.games.mechanics;
 
 import java.util.Date;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import com.mele.games.utils.GameException;
+import com.mele.tapHerder.TapHerderGame;
 
 /**
  * Base class which is "game agnostic" as to the game, renderer and input being
@@ -12,43 +14,33 @@ import com.mele.games.utils.GameException;
  * @author Ayar
  *
  */
-public abstract class BaseGameManager implements IGameManager {
-	protected static Logger log = Logger.getLogger(BaseGameManager.class);
-	
-	protected IGameInput input = null;
-	protected IGameRenderer renderer = null;
-	protected IGame game = null;
+public abstract class BaseGameManager  {
+	protected static Logger log = LogManager.getLogger(BaseGameManager.class);
+
+	protected TapHerderGame game = new TapHerderGame();
 	protected EGameState managerState = EGameState.UNINITIALIZED;
 	protected static long NORMAL_PAUSE = 50;
-	
-	@Override
+
+	/**
+	 * @return
+	 */
 	public EGameState state() {
 		EGameState state = managerState;
 		
 		if ((game != null) && (managerState == EGameState.UNINITIALIZED)) {
-			state = game.getState();
+			state = game.getGameState();
 		}
 		return state;
 	}
 
-	protected void startRenderer() {
-		// For non-Swing renderer we'd need a thread for the rendering.
-		// new Thread(renderer).start();
-	}
-	
-	protected void startInput() {
-		// For non-Swing renderer (which allows input listners) we'd need a thread for the input.
-		// new Thread(input).start();
-	}
-	
-	@Override
+	/**
+	 * 
+	 */
 	public void startGame() {
 		log.info("Starting game manager...");
-		initialize();
+		initialize(); 
 		
-		if ((input != null) && (renderer != null) && (game != null)) {
-			startRenderer();
-			startInput();
+		if (game != null) {
 			runGame();
 		} else {
 			managerState = EGameState.ERROR;
@@ -58,12 +50,13 @@ public abstract class BaseGameManager implements IGameManager {
 		}
 	}
 
-	@Override
+	
+	/**
+	 * 
+	 */
 	public void endGame() {
-		game.setState(EGameState.HALTED);
+		game.setGameState(EGameState.HALTED);
 		cleanup();
-		input.kill();
-		renderer.kill();
 	}
 
 	/**
@@ -84,7 +77,7 @@ public abstract class BaseGameManager implements IGameManager {
 				Thread.sleep(milliseconds);
 			} catch (Exception ie) {
 				log.error(ie.getLocalizedMessage());
-				game.setState(EGameState.ERROR);
+				game.setGameState(EGameState.ERROR);
 			}
 		}
 	}
@@ -96,7 +89,7 @@ public abstract class BaseGameManager implements IGameManager {
 	protected boolean isStopped() {
 		boolean stopped = false;
 		
-		if ((game == null) || (game.getState() == EGameState.HALTED || game.getState() == EGameState.ERROR)) {
+		if ((game == null) || (game.getGameState() == EGameState.HALTED || game.getGameState() == EGameState.ERROR)) {
 			stopped = true;
 		}
 		
@@ -109,25 +102,21 @@ public abstract class BaseGameManager implements IGameManager {
 	 * all to the game itself.
 	 */
 	protected void runGame() {
-
-		game.setState(EGameState.IN_PROGRESS);
+		int tick = 0;
+		game.setGameState(EGameState.IN_PROGRESS);
 		
 		while (!isStopped()) {
 			long passStart = (new Date()).getTime();
-			
-			ICommand cmd = input.readCommand();
 
-			if (cmd != null) {
-				game.processCommand(cmd);
-			}
-
-			game.mainGameLoop();
+			game.mainGameLoop(tick);
 			
 			// Throttle such that the pause varies based on how much time was 
 			// spent in the game loop.  Result should be a constant loop time
 			// unless the game loop exceeds the normal pause duration.
 			long passEnd = (new Date()).getTime();
 			rest (NORMAL_PAUSE - (passEnd - passStart));
+			tick++;
+			game.display();
 		}
 	}
 	

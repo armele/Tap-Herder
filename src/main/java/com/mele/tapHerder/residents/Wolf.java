@@ -1,8 +1,12 @@
 package com.mele.tapHerder.residents;
 
+import com.mele.games.animation.ERenderPass;
+import com.mele.games.animation.SpriteAnimated;
+import com.mele.games.animation.SpriteFrame;
+import com.mele.games.hex.ui.HexCell;
+import com.mele.games.hex.ui.ResidentMetadata;
 import com.mele.games.mechanics.ScoreEvent;
-import com.mele.games.utils.hexarray.EHexVector;
-import com.mele.tapHerder.TapHerderCell;
+import com.mele.tapHerder.types.BaseTerrainType;
 
 /**
  * Defines the "Wolf" anti-resident.
@@ -10,49 +14,29 @@ import com.mele.tapHerder.TapHerderCell;
  * @author Ayar
  *
  */
+@ResidentMetadata(symbol="W")
+@SpriteAnimated(spriteTag="WOLF", 
+frames = { 
+		@SpriteFrame(frameCount = 2, frameVariation = 3, imageName = "/150px-Wolf_(Aggressive)_0.png"),
+		@SpriteFrame(frameCount = 2, frameVariation = 4, imageName = "/150px-Wolf_(Aggressive)_1.png"),
+		@SpriteFrame(frameCount = 2, frameVariation = 3, imageName = "/150px-Wolf_(Aggressive)_2.png"),
+		@SpriteFrame(frameCount = 2, frameVariation = 4, imageName = "/150px-Wolf_(Aggressive)_1.png")
+		},
+renderPass = ERenderPass.MIDDLE
+	)
 public class Wolf extends BaseResident implements IBadResident {
-
+	public static final String NAME = "W";
+	
 	public Wolf() {
-		setName("W");
+		setName(NAME);
 	}
 	
 	/* (non-Javadoc)
-	 * @see com.mele.tapHerder.residents.BaseResident#react(com.mele.games.utils.hexarray.EHexVector)
+	 * @see com.mele.tapHerder.residents.BaseResident#moveTo(com.mele.tapHerder.Cell)
 	 */
-	public void react(TapHerderCell homeCell, EHexVector vector) {
-		// Basic move, but with a reversed vector (the wolf pursues the tap)
-		// TODO: handle multiple move sizes
-		
-		if (homeCell != null) {
-			TapHerderCell neighbor = (TapHerderCell) homeCell.findAdjacentCell(vector.reverse());
-			if (neighbor != null) {
-				if (neighbor.getType().isHazard()) {
-					// Got pushed into a hazard - I'm dead!
-					homeCell.setResident(null);
-					kill();
-				} else if (neighbor.getType().isObstacle()) {
-					// Got pushed into an obstacle - can't moveo
-				} else if (neighbor.getType().isDestructable()) {
-					// Got pushed into a destroyable obstacle - can't move
-				} else {
-					BaseResident destinationResident = neighbor.getResident();
-					if (destinationResident != null) {
-						// Next cell over is occupied - I killed the resident and took his spot!
-						destinationResident.kill();
-						neighbor.setResident(this);
-						homeCell.setResident(null);
-					} else {
-						// Next cell over is free - move me!
-						homeCell.setResident(null);
-						neighbor.setResident(this);
-					}
-				}
-			} else {
-				// Next cell over is off the map.  I'm dead!
-				homeCell.setResident(null);
-				kill();
-			}
-		}
+	protected void moveTo(HexCell neighbor) {
+		BaseTerrainType type = (BaseTerrainType) neighbor.getType();
+		badResidentMove(neighbor, type);
 	}
 	
 	/* (non-Javadoc)

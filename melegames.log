@@ -1,0 +1,1880 @@
+main INFO  mele.games.mechanics.BaseGameManager - Starting game manager...
+main INFO  mele.games.mechanics.BaseGameManager - Starting game manager...
+main DEBUG games.hex.ui.MapReader - Autoregistering Cell Types and Residents...
+main DEBUG games.hex.ui.MapReader - Autoregistering Cell Types and Residents...
+main INFO  games.hex.ui.MapReader - Registering & to com.mele.tapHerder.types.StatueTerrain
+main INFO  games.hex.ui.MapReader - Registering & to com.mele.tapHerder.types.StatueTerrain
+main INFO  games.hex.ui.MapReader - Registering 8 to com.mele.tapHerder.types.BoulderTerrain
+main INFO  games.hex.ui.MapReader - Registering 8 to com.mele.tapHerder.types.BoulderTerrain
+main INFO  games.hex.ui.MapReader - Registering T to com.mele.tapHerder.types.TreeTerrain
+main INFO  games.hex.ui.MapReader - Registering T to com.mele.tapHerder.types.TreeTerrain
+main INFO  games.hex.ui.MapReader - Registering : to com.mele.tapHerder.types.PathTerrain
+main INFO  games.hex.ui.MapReader - Registering : to com.mele.tapHerder.types.PathTerrain
+main INFO  games.hex.ui.MapReader - Registering ^ to com.mele.tapHerder.types.FireTerrain
+main INFO  games.hex.ui.MapReader - Registering ^ to com.mele.tapHerder.types.FireTerrain
+main INFO  games.hex.ui.MapReader - Registering ~ to com.mele.tapHerder.types.DeepWaterTerrain
+main INFO  games.hex.ui.MapReader - Registering ~ to com.mele.tapHerder.types.DeepWaterTerrain
+main INFO  games.hex.ui.MapReader - Registering + to com.mele.tapHerder.types.FenceTerrain
+main INFO  games.hex.ui.MapReader - Registering + to com.mele.tapHerder.types.FenceTerrain
+main INFO  games.hex.ui.MapReader - Registering # to com.mele.tapHerder.types.LongGrassTerrain
+main INFO  games.hex.ui.MapReader - Registering # to com.mele.tapHerder.types.LongGrassTerrain
+main INFO  games.hex.ui.MapReader - Registering - to com.mele.tapHerder.types.FieldTerrain
+main INFO  games.hex.ui.MapReader - Registering - to com.mele.tapHerder.types.FieldTerrain
+main INFO  games.hex.ui.MapReader - Registering % to com.mele.tapHerder.types.DryBrushTerrain
+main INFO  games.hex.ui.MapReader - Registering % to com.mele.tapHerder.types.DryBrushTerrain
+main INFO  games.hex.ui.MapReader - Registering D to com.mele.tapHerder.residents.Dog
+main INFO  games.hex.ui.MapReader - Registering D to com.mele.tapHerder.residents.Dog
+main INFO  games.hex.ui.MapReader - Registering W to com.mele.tapHerder.residents.Wolf
+main INFO  games.hex.ui.MapReader - Registering W to com.mele.tapHerder.residents.Wolf
+main INFO  games.hex.ui.MapReader - Registering S to com.mele.tapHerder.residents.Sheep
+main INFO  games.hex.ui.MapReader - Registering S to com.mele.tapHerder.residents.Sheep
+main INFO  games.hex.ui.MapReader - Registering O to com.mele.tapHerder.residents.Ocelot
+main INFO  games.hex.ui.MapReader - Registering O to com.mele.tapHerder.residents.Ocelot
+main DEBUG games.hex.ui.HexArray - Creating hex array with 15 columns and 20 rows.
+main DEBUG games.hex.ui.HexArray - Creating hex array with 15 columns and 20 rows.
+main DEBUG games.hex.ui.MapReader - (0,0) 8-
+main DEBUG games.hex.ui.MapReader - (0,0) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (0,0): com.mele.tapHerder.types.BoulderTerrain@124c278f
+main INFO  games.hex.ui.MapReader - Setting cell type for (0,0): com.mele.tapHerder.types.BoulderTerrain@124c278f
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (2,0) 8-
+main DEBUG games.hex.ui.MapReader - (2,0) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (2,0): com.mele.tapHerder.types.BoulderTerrain@15b204a1
+main INFO  games.hex.ui.MapReader - Setting cell type for (2,0): com.mele.tapHerder.types.BoulderTerrain@15b204a1
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (4,0) 8-
+main DEBUG games.hex.ui.MapReader - (4,0) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (4,0): com.mele.tapHerder.types.BoulderTerrain@77167fb7
+main INFO  games.hex.ui.MapReader - Setting cell type for (4,0): com.mele.tapHerder.types.BoulderTerrain@77167fb7
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (6,0) 8-
+main DEBUG games.hex.ui.MapReader - (6,0) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (6,0): com.mele.tapHerder.types.BoulderTerrain@1fe20588
+main INFO  games.hex.ui.MapReader - Setting cell type for (6,0): com.mele.tapHerder.types.BoulderTerrain@1fe20588
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (8,0) 8-
+main DEBUG games.hex.ui.MapReader - (8,0) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (8,0): com.mele.tapHerder.types.BoulderTerrain@6ce139a4
+main INFO  games.hex.ui.MapReader - Setting cell type for (8,0): com.mele.tapHerder.types.BoulderTerrain@6ce139a4
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (10,0) 8-
+main DEBUG games.hex.ui.MapReader - (10,0) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (10,0): com.mele.tapHerder.types.BoulderTerrain@6973bf95
+main INFO  games.hex.ui.MapReader - Setting cell type for (10,0): com.mele.tapHerder.types.BoulderTerrain@6973bf95
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (12,0) 8-
+main DEBUG games.hex.ui.MapReader - (12,0) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (12,0): com.mele.tapHerder.types.BoulderTerrain@2ddc8ecb
+main INFO  games.hex.ui.MapReader - Setting cell type for (12,0): com.mele.tapHerder.types.BoulderTerrain@2ddc8ecb
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (14,0) 8-
+main DEBUG games.hex.ui.MapReader - (14,0) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (14,0): com.mele.tapHerder.types.BoulderTerrain@229d10bd
+main INFO  games.hex.ui.MapReader - Setting cell type for (14,0): com.mele.tapHerder.types.BoulderTerrain@229d10bd
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (1,0) 8-
+main DEBUG games.hex.ui.MapReader - (1,0) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (1,0): com.mele.tapHerder.types.BoulderTerrain@47542153
+main INFO  games.hex.ui.MapReader - Setting cell type for (1,0): com.mele.tapHerder.types.BoulderTerrain@47542153
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (3,0) 8-
+main DEBUG games.hex.ui.MapReader - (3,0) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (3,0): com.mele.tapHerder.types.BoulderTerrain@33afa13b
+main INFO  games.hex.ui.MapReader - Setting cell type for (3,0): com.mele.tapHerder.types.BoulderTerrain@33afa13b
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (5,0) 8-
+main DEBUG games.hex.ui.MapReader - (5,0) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (5,0): com.mele.tapHerder.types.BoulderTerrain@7a4ccb53
+main INFO  games.hex.ui.MapReader - Setting cell type for (5,0): com.mele.tapHerder.types.BoulderTerrain@7a4ccb53
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (7,0) 8-
+main DEBUG games.hex.ui.MapReader - (7,0) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (7,0): com.mele.tapHerder.types.BoulderTerrain@309e345f
+main INFO  games.hex.ui.MapReader - Setting cell type for (7,0): com.mele.tapHerder.types.BoulderTerrain@309e345f
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (9,0) 8-
+main DEBUG games.hex.ui.MapReader - (9,0) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (9,0): com.mele.tapHerder.types.BoulderTerrain@56a6d5a6
+main INFO  games.hex.ui.MapReader - Setting cell type for (9,0): com.mele.tapHerder.types.BoulderTerrain@56a6d5a6
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (11,0) 8-
+main DEBUG games.hex.ui.MapReader - (11,0) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (11,0): com.mele.tapHerder.types.BoulderTerrain@18ce0030
+main INFO  games.hex.ui.MapReader - Setting cell type for (11,0): com.mele.tapHerder.types.BoulderTerrain@18ce0030
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (13,0) 8-
+main DEBUG games.hex.ui.MapReader - (13,0) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (13,0): com.mele.tapHerder.types.BoulderTerrain@4445629
+main INFO  games.hex.ui.MapReader - Setting cell type for (13,0): com.mele.tapHerder.types.BoulderTerrain@4445629
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (0,1) 8-
+main DEBUG games.hex.ui.MapReader - (0,1) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (0,1): com.mele.tapHerder.types.BoulderTerrain@25d250c6
+main INFO  games.hex.ui.MapReader - Setting cell type for (0,1): com.mele.tapHerder.types.BoulderTerrain@25d250c6
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (2,1) .-
+main DEBUG games.hex.ui.MapReader - (2,1) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (4,1) .-
+main DEBUG games.hex.ui.MapReader - (4,1) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (6,1) %-
+main DEBUG games.hex.ui.MapReader - (6,1) %-
+main INFO  games.hex.ui.MapReader - Setting cell type for (6,1): com.mele.tapHerder.types.DryBrushTerrain@4df50bcc
+main INFO  games.hex.ui.MapReader - Setting cell type for (6,1): com.mele.tapHerder.types.DryBrushTerrain@4df50bcc
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (8,1) T-
+main DEBUG games.hex.ui.MapReader - (8,1) T-
+main INFO  games.hex.ui.MapReader - Setting cell type for (8,1): com.mele.tapHerder.types.TreeTerrain@6b26e945
+main INFO  games.hex.ui.MapReader - Setting cell type for (8,1): com.mele.tapHerder.types.TreeTerrain@6b26e945
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (10,1) +-
+main DEBUG games.hex.ui.MapReader - (10,1) +-
+main INFO  games.hex.ui.MapReader - Setting cell type for (10,1): com.mele.tapHerder.types.FenceTerrain@63a65a25
+main INFO  games.hex.ui.MapReader - Setting cell type for (10,1): com.mele.tapHerder.types.FenceTerrain@63a65a25
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (12,1) .-
+main DEBUG games.hex.ui.MapReader - (12,1) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (14,1) 8-
+main DEBUG games.hex.ui.MapReader - (14,1) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (14,1): com.mele.tapHerder.types.BoulderTerrain@54c562f7
+main INFO  games.hex.ui.MapReader - Setting cell type for (14,1): com.mele.tapHerder.types.BoulderTerrain@54c562f7
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (1,1) %-
+main DEBUG games.hex.ui.MapReader - (1,1) %-
+main INFO  games.hex.ui.MapReader - Setting cell type for (1,1): com.mele.tapHerder.types.DryBrushTerrain@318ba8c8
+main INFO  games.hex.ui.MapReader - Setting cell type for (1,1): com.mele.tapHerder.types.DryBrushTerrain@318ba8c8
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (3,1) -:
+main DEBUG games.hex.ui.MapReader - (3,1) -:
+main INFO  games.hex.ui.MapReader - Setting cell type for (3,1): com.mele.tapHerder.types.FieldTerrain@6dbb137d
+main INFO  games.hex.ui.MapReader - Setting cell type for (3,1): com.mele.tapHerder.types.FieldTerrain@6dbb137d
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - (5,1) .-
+main DEBUG games.hex.ui.MapReader - (5,1) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (7,1) .-
+main DEBUG games.hex.ui.MapReader - (7,1) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (9,1) .-
+main DEBUG games.hex.ui.MapReader - (9,1) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (11,1) -:
+main DEBUG games.hex.ui.MapReader - (11,1) -:
+main INFO  games.hex.ui.MapReader - Setting cell type for (11,1): com.mele.tapHerder.types.FieldTerrain@3c9d0b9d
+main INFO  games.hex.ui.MapReader - Setting cell type for (11,1): com.mele.tapHerder.types.FieldTerrain@3c9d0b9d
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - (13,1) +-
+main DEBUG games.hex.ui.MapReader - (13,1) +-
+main INFO  games.hex.ui.MapReader - Setting cell type for (13,1): com.mele.tapHerder.types.FenceTerrain@43301423
+main INFO  games.hex.ui.MapReader - Setting cell type for (13,1): com.mele.tapHerder.types.FenceTerrain@43301423
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (0,2) 8-
+main DEBUG games.hex.ui.MapReader - (0,2) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (0,2): com.mele.tapHerder.types.BoulderTerrain@2f112965
+main INFO  games.hex.ui.MapReader - Setting cell type for (0,2): com.mele.tapHerder.types.BoulderTerrain@2f112965
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (2,2) ~-
+main DEBUG games.hex.ui.MapReader - (2,2) ~-
+main INFO  games.hex.ui.MapReader - Setting cell type for (2,2): com.mele.tapHerder.types.DeepWaterTerrain@1a04f701
+main INFO  games.hex.ui.MapReader - Setting cell type for (2,2): com.mele.tapHerder.types.DeepWaterTerrain@1a04f701
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (4,2) -:
+main DEBUG games.hex.ui.MapReader - (4,2) -:
+main INFO  games.hex.ui.MapReader - Setting cell type for (4,2): com.mele.tapHerder.types.FieldTerrain@4e91d63f
+main INFO  games.hex.ui.MapReader - Setting cell type for (4,2): com.mele.tapHerder.types.FieldTerrain@4e91d63f
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - (6,2) .D
+main DEBUG games.hex.ui.MapReader - (6,2) .D
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - (8,2) .-
+main DEBUG games.hex.ui.MapReader - (8,2) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (10,2) 8-
+main DEBUG games.hex.ui.MapReader - (10,2) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (10,2): com.mele.tapHerder.types.BoulderTerrain@2bbf180e
+main INFO  games.hex.ui.MapReader - Setting cell type for (10,2): com.mele.tapHerder.types.BoulderTerrain@2bbf180e
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (12,2) +-
+main DEBUG games.hex.ui.MapReader - (12,2) +-
+main INFO  games.hex.ui.MapReader - Setting cell type for (12,2): com.mele.tapHerder.types.FenceTerrain@163e4e87
+main INFO  games.hex.ui.MapReader - Setting cell type for (12,2): com.mele.tapHerder.types.FenceTerrain@163e4e87
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (14,2) 8-
+main DEBUG games.hex.ui.MapReader - (14,2) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (14,2): com.mele.tapHerder.types.BoulderTerrain@56de5251
+main INFO  games.hex.ui.MapReader - Setting cell type for (14,2): com.mele.tapHerder.types.BoulderTerrain@56de5251
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (1,2) .-
+main DEBUG games.hex.ui.MapReader - (1,2) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (3,2) .-
+main DEBUG games.hex.ui.MapReader - (3,2) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (5,2) -:
+main DEBUG games.hex.ui.MapReader - (5,2) -:
+main INFO  games.hex.ui.MapReader - Setting cell type for (5,2): com.mele.tapHerder.types.FieldTerrain@419c5f1a
+main INFO  games.hex.ui.MapReader - Setting cell type for (5,2): com.mele.tapHerder.types.FieldTerrain@419c5f1a
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - (7,2) .-
+main DEBUG games.hex.ui.MapReader - (7,2) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (9,2) ~-
+main DEBUG games.hex.ui.MapReader - (9,2) ~-
+main INFO  games.hex.ui.MapReader - Setting cell type for (9,2): com.mele.tapHerder.types.DeepWaterTerrain@12b0404f
+main INFO  games.hex.ui.MapReader - Setting cell type for (9,2): com.mele.tapHerder.types.DeepWaterTerrain@12b0404f
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (11,2) .-
+main DEBUG games.hex.ui.MapReader - (11,2) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (13,2) .-
+main DEBUG games.hex.ui.MapReader - (13,2) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (0,3) 8-
+main DEBUG games.hex.ui.MapReader - (0,3) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (0,3): com.mele.tapHerder.types.BoulderTerrain@769e7ee8
+main INFO  games.hex.ui.MapReader - Setting cell type for (0,3): com.mele.tapHerder.types.BoulderTerrain@769e7ee8
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (2,3) ~-
+main DEBUG games.hex.ui.MapReader - (2,3) ~-
+main INFO  games.hex.ui.MapReader - Setting cell type for (2,3): com.mele.tapHerder.types.DeepWaterTerrain@5276e6b0
+main INFO  games.hex.ui.MapReader - Setting cell type for (2,3): com.mele.tapHerder.types.DeepWaterTerrain@5276e6b0
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (4,3) *-
+main DEBUG games.hex.ui.MapReader - (4,3) *-
+main DEBUG games.hex.ui.MapReader - No type mapped to *
+main DEBUG games.hex.ui.MapReader - No type mapped to *
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (6,3) .D
+main DEBUG games.hex.ui.MapReader - (6,3) .D
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - (8,3) .-
+main DEBUG games.hex.ui.MapReader - (8,3) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (10,3) ~-
+main DEBUG games.hex.ui.MapReader - (10,3) ~-
+main INFO  games.hex.ui.MapReader - Setting cell type for (10,3): com.mele.tapHerder.types.DeepWaterTerrain@6193932a
+main INFO  games.hex.ui.MapReader - Setting cell type for (10,3): com.mele.tapHerder.types.DeepWaterTerrain@6193932a
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (12,3) ~-
+main DEBUG games.hex.ui.MapReader - (12,3) ~-
+main INFO  games.hex.ui.MapReader - Setting cell type for (12,3): com.mele.tapHerder.types.DeepWaterTerrain@647fd8ce
+main INFO  games.hex.ui.MapReader - Setting cell type for (12,3): com.mele.tapHerder.types.DeepWaterTerrain@647fd8ce
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (14,3) 8-
+main DEBUG games.hex.ui.MapReader - (14,3) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (14,3): com.mele.tapHerder.types.BoulderTerrain@159f197
+main INFO  games.hex.ui.MapReader - Setting cell type for (14,3): com.mele.tapHerder.types.BoulderTerrain@159f197
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (1,3) .-
+main DEBUG games.hex.ui.MapReader - (1,3) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (3,3) .-
+main DEBUG games.hex.ui.MapReader - (3,3) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (5,3) :D
+main DEBUG games.hex.ui.MapReader - (5,3) :D
+main INFO  games.hex.ui.MapReader - Setting cell type for (5,3): com.mele.tapHerder.types.PathTerrain@78aab498
+main INFO  games.hex.ui.MapReader - Setting cell type for (5,3): com.mele.tapHerder.types.PathTerrain@78aab498
+main DEBUG games.hex.ui.MapReader - (7,3) .D
+main DEBUG games.hex.ui.MapReader - (7,3) .D
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - (9,3) .-
+main DEBUG games.hex.ui.MapReader - (9,3) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (11,3) %-
+main DEBUG games.hex.ui.MapReader - (11,3) %-
+main INFO  games.hex.ui.MapReader - Setting cell type for (11,3): com.mele.tapHerder.types.DryBrushTerrain@51e5fc98
+main INFO  games.hex.ui.MapReader - Setting cell type for (11,3): com.mele.tapHerder.types.DryBrushTerrain@51e5fc98
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (13,3) .-
+main DEBUG games.hex.ui.MapReader - (13,3) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (0,4) 8-
+main DEBUG games.hex.ui.MapReader - (0,4) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (0,4): com.mele.tapHerder.types.BoulderTerrain@7c469c48
+main INFO  games.hex.ui.MapReader - Setting cell type for (0,4): com.mele.tapHerder.types.BoulderTerrain@7c469c48
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (2,4) .-
+main DEBUG games.hex.ui.MapReader - (2,4) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (4,4) -:
+main DEBUG games.hex.ui.MapReader - (4,4) -:
+main INFO  games.hex.ui.MapReader - Setting cell type for (4,4): com.mele.tapHerder.types.FieldTerrain@12e61fe6
+main INFO  games.hex.ui.MapReader - Setting cell type for (4,4): com.mele.tapHerder.types.FieldTerrain@12e61fe6
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - (6,4) .D
+main DEBUG games.hex.ui.MapReader - (6,4) .D
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - (8,4) .-
+main DEBUG games.hex.ui.MapReader - (8,4) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (10,4) .-
+main DEBUG games.hex.ui.MapReader - (10,4) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (12,4) .-
+main DEBUG games.hex.ui.MapReader - (12,4) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (14,4) 8-
+main DEBUG games.hex.ui.MapReader - (14,4) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (14,4): com.mele.tapHerder.types.BoulderTerrain@1677d1
+main INFO  games.hex.ui.MapReader - Setting cell type for (14,4): com.mele.tapHerder.types.BoulderTerrain@1677d1
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (1,4) .-
+main DEBUG games.hex.ui.MapReader - (1,4) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (3,4) .-
+main DEBUG games.hex.ui.MapReader - (3,4) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (5,4) .-
+main DEBUG games.hex.ui.MapReader - (5,4) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (7,4) T-
+main DEBUG games.hex.ui.MapReader - (7,4) T-
+main INFO  games.hex.ui.MapReader - Setting cell type for (7,4): com.mele.tapHerder.types.TreeTerrain@48fa0f47
+main INFO  games.hex.ui.MapReader - Setting cell type for (7,4): com.mele.tapHerder.types.TreeTerrain@48fa0f47
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (9,4) %-.
+main DEBUG games.hex.ui.MapReader - (9,4) %-.
+main INFO  games.hex.ui.MapReader - Setting cell type for (9,4): com.mele.tapHerder.types.DryBrushTerrain@6ac13091
+main INFO  games.hex.ui.MapReader - Setting cell type for (9,4): com.mele.tapHerder.types.DryBrushTerrain@6ac13091
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (11,4) .-
+main DEBUG games.hex.ui.MapReader - (11,4) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (13,4) .-
+main DEBUG games.hex.ui.MapReader - (13,4) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (0,5) 8-
+main DEBUG games.hex.ui.MapReader - (0,5) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (0,5): com.mele.tapHerder.types.BoulderTerrain@5e316c74
+main INFO  games.hex.ui.MapReader - Setting cell type for (0,5): com.mele.tapHerder.types.BoulderTerrain@5e316c74
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (2,5) .-
+main DEBUG games.hex.ui.MapReader - (2,5) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (4,5) -:
+main DEBUG games.hex.ui.MapReader - (4,5) -:
+main INFO  games.hex.ui.MapReader - Setting cell type for (4,5): com.mele.tapHerder.types.FieldTerrain@6d2a209c
+main INFO  games.hex.ui.MapReader - Setting cell type for (4,5): com.mele.tapHerder.types.FieldTerrain@6d2a209c
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - (6,5) .-
+main DEBUG games.hex.ui.MapReader - (6,5) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (8,5) .-
+main DEBUG games.hex.ui.MapReader - (8,5) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (10,5) .-
+main DEBUG games.hex.ui.MapReader - (10,5) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (12,5) .-
+main DEBUG games.hex.ui.MapReader - (12,5) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (14,5) 8-
+main DEBUG games.hex.ui.MapReader - (14,5) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (14,5): com.mele.tapHerder.types.BoulderTerrain@75329a49
+main INFO  games.hex.ui.MapReader - Setting cell type for (14,5): com.mele.tapHerder.types.BoulderTerrain@75329a49
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (1,5) .-
+main DEBUG games.hex.ui.MapReader - (1,5) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (3,5) S.
+main DEBUG games.hex.ui.MapReader - (3,5) S.
+main DEBUG games.hex.ui.MapReader - No type mapped to S
+main DEBUG games.hex.ui.MapReader - No type mapped to S
+main DEBUG games.hex.ui.MapReader - No resident mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to .
+main DEBUG games.hex.ui.MapReader - (5,5) .-
+main DEBUG games.hex.ui.MapReader - (5,5) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (7,5) .-
+main DEBUG games.hex.ui.MapReader - (7,5) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (9,5) %-
+main DEBUG games.hex.ui.MapReader - (9,5) %-
+main INFO  games.hex.ui.MapReader - Setting cell type for (9,5): com.mele.tapHerder.types.DryBrushTerrain@161479c6
+main INFO  games.hex.ui.MapReader - Setting cell type for (9,5): com.mele.tapHerder.types.DryBrushTerrain@161479c6
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (11,5) .W
+main DEBUG games.hex.ui.MapReader - (11,5) .W
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - (13,5) .-
+main DEBUG games.hex.ui.MapReader - (13,5) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (0,6) 8-
+main DEBUG games.hex.ui.MapReader - (0,6) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (0,6): com.mele.tapHerder.types.BoulderTerrain@7f010382
+main INFO  games.hex.ui.MapReader - Setting cell type for (0,6): com.mele.tapHerder.types.BoulderTerrain@7f010382
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (2,6) .-
+main DEBUG games.hex.ui.MapReader - (2,6) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (4,6) -:
+main DEBUG games.hex.ui.MapReader - (4,6) -:
+main INFO  games.hex.ui.MapReader - Setting cell type for (4,6): com.mele.tapHerder.types.FieldTerrain@1e802ef9
+main INFO  games.hex.ui.MapReader - Setting cell type for (4,6): com.mele.tapHerder.types.FieldTerrain@1e802ef9
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - (6,6) %-
+main DEBUG games.hex.ui.MapReader - (6,6) %-
+main INFO  games.hex.ui.MapReader - Setting cell type for (6,6): com.mele.tapHerder.types.DryBrushTerrain@2b6faea6
+main INFO  games.hex.ui.MapReader - Setting cell type for (6,6): com.mele.tapHerder.types.DryBrushTerrain@2b6faea6
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (8,6) T-
+main DEBUG games.hex.ui.MapReader - (8,6) T-
+main INFO  games.hex.ui.MapReader - Setting cell type for (8,6): com.mele.tapHerder.types.TreeTerrain@778d1062
+main INFO  games.hex.ui.MapReader - Setting cell type for (8,6): com.mele.tapHerder.types.TreeTerrain@778d1062
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (10,6) +-
+main DEBUG games.hex.ui.MapReader - (10,6) +-
+main INFO  games.hex.ui.MapReader - Setting cell type for (10,6): com.mele.tapHerder.types.FenceTerrain@670002
+main INFO  games.hex.ui.MapReader - Setting cell type for (10,6): com.mele.tapHerder.types.FenceTerrain@670002
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (12,6) .-
+main DEBUG games.hex.ui.MapReader - (12,6) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (14,6) 8-
+main DEBUG games.hex.ui.MapReader - (14,6) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (14,6): com.mele.tapHerder.types.BoulderTerrain@1f0f1111
+main INFO  games.hex.ui.MapReader - Setting cell type for (14,6): com.mele.tapHerder.types.BoulderTerrain@1f0f1111
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (1,6) %-
+main DEBUG games.hex.ui.MapReader - (1,6) %-
+main INFO  games.hex.ui.MapReader - Setting cell type for (1,6): com.mele.tapHerder.types.DryBrushTerrain@49c386c8
+main INFO  games.hex.ui.MapReader - Setting cell type for (1,6): com.mele.tapHerder.types.DryBrushTerrain@49c386c8
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (3,6) .-
+main DEBUG games.hex.ui.MapReader - (3,6) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (5,6) -:
+main DEBUG games.hex.ui.MapReader - (5,6) -:
+main INFO  games.hex.ui.MapReader - Setting cell type for (5,6): com.mele.tapHerder.types.FieldTerrain@56528192
+main INFO  games.hex.ui.MapReader - Setting cell type for (5,6): com.mele.tapHerder.types.FieldTerrain@56528192
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - (7,6) .-
+main DEBUG games.hex.ui.MapReader - (7,6) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (9,6) +-
+main DEBUG games.hex.ui.MapReader - (9,6) +-
+main INFO  games.hex.ui.MapReader - Setting cell type for (9,6): com.mele.tapHerder.types.FenceTerrain@6e0dec4a
+main INFO  games.hex.ui.MapReader - Setting cell type for (9,6): com.mele.tapHerder.types.FenceTerrain@6e0dec4a
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (11,6) -:
+main DEBUG games.hex.ui.MapReader - (11,6) -:
+main INFO  games.hex.ui.MapReader - Setting cell type for (11,6): com.mele.tapHerder.types.FieldTerrain@96def03
+main INFO  games.hex.ui.MapReader - Setting cell type for (11,6): com.mele.tapHerder.types.FieldTerrain@96def03
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - (13,6) .-
+main DEBUG games.hex.ui.MapReader - (13,6) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (0,7) 8-
+main DEBUG games.hex.ui.MapReader - (0,7) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (0,7): com.mele.tapHerder.types.BoulderTerrain@5ccddd20
+main INFO  games.hex.ui.MapReader - Setting cell type for (0,7): com.mele.tapHerder.types.BoulderTerrain@5ccddd20
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (2,7) ~-
+main DEBUG games.hex.ui.MapReader - (2,7) ~-
+main INFO  games.hex.ui.MapReader - Setting cell type for (2,7): com.mele.tapHerder.types.DeepWaterTerrain@1ed1993a
+main INFO  games.hex.ui.MapReader - Setting cell type for (2,7): com.mele.tapHerder.types.DeepWaterTerrain@1ed1993a
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (4,7) .-
+main DEBUG games.hex.ui.MapReader - (4,7) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (6,7) .-
+main DEBUG games.hex.ui.MapReader - (6,7) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (8,7) .-
+main DEBUG games.hex.ui.MapReader - (8,7) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (10,7) .-
+main DEBUG games.hex.ui.MapReader - (10,7) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (12,7) +-
+main DEBUG games.hex.ui.MapReader - (12,7) +-
+main INFO  games.hex.ui.MapReader - Setting cell type for (12,7): com.mele.tapHerder.types.FenceTerrain@1f3f4916
+main INFO  games.hex.ui.MapReader - Setting cell type for (12,7): com.mele.tapHerder.types.FenceTerrain@1f3f4916
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (14,7) 8-
+main DEBUG games.hex.ui.MapReader - (14,7) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (14,7): com.mele.tapHerder.types.BoulderTerrain@794cb805
+main INFO  games.hex.ui.MapReader - Setting cell type for (14,7): com.mele.tapHerder.types.BoulderTerrain@794cb805
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (1,7) 8-
+main DEBUG games.hex.ui.MapReader - (1,7) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (1,7): com.mele.tapHerder.types.BoulderTerrain@4b5a5ed1
+main INFO  games.hex.ui.MapReader - Setting cell type for (1,7): com.mele.tapHerder.types.BoulderTerrain@4b5a5ed1
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (3,7) .-
+main DEBUG games.hex.ui.MapReader - (3,7) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (5,7) -:
+main DEBUG games.hex.ui.MapReader - (5,7) -:
+main INFO  games.hex.ui.MapReader - Setting cell type for (5,7): com.mele.tapHerder.types.FieldTerrain@59d016c9
+main INFO  games.hex.ui.MapReader - Setting cell type for (5,7): com.mele.tapHerder.types.FieldTerrain@59d016c9
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - (7,7) -&
+main DEBUG games.hex.ui.MapReader - (7,7) -&
+main INFO  games.hex.ui.MapReader - Setting cell type for (7,7): com.mele.tapHerder.types.FieldTerrain@3cc2931c
+main INFO  games.hex.ui.MapReader - Setting cell type for (7,7): com.mele.tapHerder.types.FieldTerrain@3cc2931c
+main DEBUG games.hex.ui.MapReader - No resident mapped to &
+main DEBUG games.hex.ui.MapReader - No resident mapped to &
+main DEBUG games.hex.ui.MapReader - (9,7) ~-
+main DEBUG games.hex.ui.MapReader - (9,7) ~-
+main INFO  games.hex.ui.MapReader - Setting cell type for (9,7): com.mele.tapHerder.types.DeepWaterTerrain@20d28811
+main INFO  games.hex.ui.MapReader - Setting cell type for (9,7): com.mele.tapHerder.types.DeepWaterTerrain@20d28811
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (11,7) .-
+main DEBUG games.hex.ui.MapReader - (11,7) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (13,7) 8-
+main DEBUG games.hex.ui.MapReader - (13,7) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (13,7): com.mele.tapHerder.types.BoulderTerrain@3967e60c
+main INFO  games.hex.ui.MapReader - Setting cell type for (13,7): com.mele.tapHerder.types.BoulderTerrain@3967e60c
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (0,8) 8-
+main DEBUG games.hex.ui.MapReader - (0,8) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (0,8): com.mele.tapHerder.types.BoulderTerrain@60d8c9b7
+main INFO  games.hex.ui.MapReader - Setting cell type for (0,8): com.mele.tapHerder.types.BoulderTerrain@60d8c9b7
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (2,8) 8-
+main DEBUG games.hex.ui.MapReader - (2,8) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (2,8): com.mele.tapHerder.types.BoulderTerrain@48aaecc3
+main INFO  games.hex.ui.MapReader - Setting cell type for (2,8): com.mele.tapHerder.types.BoulderTerrain@48aaecc3
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (4,8) 8-
+main DEBUG games.hex.ui.MapReader - (4,8) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (4,8): com.mele.tapHerder.types.BoulderTerrain@7c0c77c7
+main INFO  games.hex.ui.MapReader - Setting cell type for (4,8): com.mele.tapHerder.types.BoulderTerrain@7c0c77c7
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (6,8) *-
+main DEBUG games.hex.ui.MapReader - (6,8) *-
+main DEBUG games.hex.ui.MapReader - No type mapped to *
+main DEBUG games.hex.ui.MapReader - No type mapped to *
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (8,8) .-
+main DEBUG games.hex.ui.MapReader - (8,8) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (10,8) 8-
+main DEBUG games.hex.ui.MapReader - (10,8) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (10,8): com.mele.tapHerder.types.BoulderTerrain@7adda9cc
+main INFO  games.hex.ui.MapReader - Setting cell type for (10,8): com.mele.tapHerder.types.BoulderTerrain@7adda9cc
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (12,8) 8-
+main DEBUG games.hex.ui.MapReader - (12,8) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (12,8): com.mele.tapHerder.types.BoulderTerrain@5cee5251
+main INFO  games.hex.ui.MapReader - Setting cell type for (12,8): com.mele.tapHerder.types.BoulderTerrain@5cee5251
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (14,8) 8-
+main DEBUG games.hex.ui.MapReader - (14,8) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (14,8): com.mele.tapHerder.types.BoulderTerrain@433d61fb
+main INFO  games.hex.ui.MapReader - Setting cell type for (14,8): com.mele.tapHerder.types.BoulderTerrain@433d61fb
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (1,8) 8-
+main DEBUG games.hex.ui.MapReader - (1,8) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (1,8): com.mele.tapHerder.types.BoulderTerrain@5c909414
+main INFO  games.hex.ui.MapReader - Setting cell type for (1,8): com.mele.tapHerder.types.BoulderTerrain@5c909414
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (3,8) 8-
+main DEBUG games.hex.ui.MapReader - (3,8) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (3,8): com.mele.tapHerder.types.BoulderTerrain@4b14c583
+main INFO  games.hex.ui.MapReader - Setting cell type for (3,8): com.mele.tapHerder.types.BoulderTerrain@4b14c583
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (5,8) -:
+main DEBUG games.hex.ui.MapReader - (5,8) -:
+main INFO  games.hex.ui.MapReader - Setting cell type for (5,8): com.mele.tapHerder.types.FieldTerrain@65466a6a
+main INFO  games.hex.ui.MapReader - Setting cell type for (5,8): com.mele.tapHerder.types.FieldTerrain@65466a6a
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - (7,8) .-
+main DEBUG games.hex.ui.MapReader - (7,8) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (9,8) .-
+main DEBUG games.hex.ui.MapReader - (9,8) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (11,8) 8-
+main DEBUG games.hex.ui.MapReader - (11,8) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (11,8): com.mele.tapHerder.types.BoulderTerrain@4ddced80
+main INFO  games.hex.ui.MapReader - Setting cell type for (11,8): com.mele.tapHerder.types.BoulderTerrain@4ddced80
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (13,8) 8-
+main DEBUG games.hex.ui.MapReader - (13,8) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (13,8): com.mele.tapHerder.types.BoulderTerrain@1534f01b
+main INFO  games.hex.ui.MapReader - Setting cell type for (13,8): com.mele.tapHerder.types.BoulderTerrain@1534f01b
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (0,9) 8-
+main DEBUG games.hex.ui.MapReader - (0,9) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (0,9): com.mele.tapHerder.types.BoulderTerrain@78e117e3
+main INFO  games.hex.ui.MapReader - Setting cell type for (0,9): com.mele.tapHerder.types.BoulderTerrain@78e117e3
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (2,9) .-
+main DEBUG games.hex.ui.MapReader - (2,9) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (4,9) .-
+main DEBUG games.hex.ui.MapReader - (4,9) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (6,9) .W
+main DEBUG games.hex.ui.MapReader - (6,9) .W
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - (8,9) .-
+main DEBUG games.hex.ui.MapReader - (8,9) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (10,9) S.
+main DEBUG games.hex.ui.MapReader - (10,9) S.
+main DEBUG games.hex.ui.MapReader - No type mapped to S
+main DEBUG games.hex.ui.MapReader - No type mapped to S
+main DEBUG games.hex.ui.MapReader - No resident mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to .
+main DEBUG games.hex.ui.MapReader - (12,9) .-
+main DEBUG games.hex.ui.MapReader - (12,9) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (14,9) 8-
+main DEBUG games.hex.ui.MapReader - (14,9) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (14,9): com.mele.tapHerder.types.BoulderTerrain@4386f16
+main INFO  games.hex.ui.MapReader - Setting cell type for (14,9): com.mele.tapHerder.types.BoulderTerrain@4386f16
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (1,9) .-
+main DEBUG games.hex.ui.MapReader - (1,9) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (3,9) .-
+main DEBUG games.hex.ui.MapReader - (3,9) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (5,9) -:
+main DEBUG games.hex.ui.MapReader - (5,9) -:
+main INFO  games.hex.ui.MapReader - Setting cell type for (5,9): com.mele.tapHerder.types.FieldTerrain@363ee3a2
+main INFO  games.hex.ui.MapReader - Setting cell type for (5,9): com.mele.tapHerder.types.FieldTerrain@363ee3a2
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - (7,9) T-
+main DEBUG games.hex.ui.MapReader - (7,9) T-
+main INFO  games.hex.ui.MapReader - Setting cell type for (7,9): com.mele.tapHerder.types.TreeTerrain@4690b489
+main INFO  games.hex.ui.MapReader - Setting cell type for (7,9): com.mele.tapHerder.types.TreeTerrain@4690b489
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (9,9) %-
+main DEBUG games.hex.ui.MapReader - (9,9) %-
+main INFO  games.hex.ui.MapReader - Setting cell type for (9,9): com.mele.tapHerder.types.DryBrushTerrain@79b06cab
+main INFO  games.hex.ui.MapReader - Setting cell type for (9,9): com.mele.tapHerder.types.DryBrushTerrain@79b06cab
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (11,9) .-
+main DEBUG games.hex.ui.MapReader - (11,9) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (13,9) .-
+main DEBUG games.hex.ui.MapReader - (13,9) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (0,10) 8-
+main DEBUG games.hex.ui.MapReader - (0,10) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (0,10): com.mele.tapHerder.types.BoulderTerrain@3eb7fc54
+main INFO  games.hex.ui.MapReader - Setting cell type for (0,10): com.mele.tapHerder.types.BoulderTerrain@3eb7fc54
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (2,10) .-
+main DEBUG games.hex.ui.MapReader - (2,10) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (4,10) .-
+main DEBUG games.hex.ui.MapReader - (4,10) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (6,10) -:
+main DEBUG games.hex.ui.MapReader - (6,10) -:
+main INFO  games.hex.ui.MapReader - Setting cell type for (6,10): com.mele.tapHerder.types.FieldTerrain@7f552bd3
+main INFO  games.hex.ui.MapReader - Setting cell type for (6,10): com.mele.tapHerder.types.FieldTerrain@7f552bd3
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - (8,10) .-
+main DEBUG games.hex.ui.MapReader - (8,10) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (10,10) .-
+main DEBUG games.hex.ui.MapReader - (10,10) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (12,10) .-
+main DEBUG games.hex.ui.MapReader - (12,10) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (14,10) 8-
+main DEBUG games.hex.ui.MapReader - (14,10) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (14,10): com.mele.tapHerder.types.BoulderTerrain@3c22fc4c
+main INFO  games.hex.ui.MapReader - Setting cell type for (14,10): com.mele.tapHerder.types.BoulderTerrain@3c22fc4c
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (1,10) ^-
+main DEBUG games.hex.ui.MapReader - (1,10) ^-
+main INFO  games.hex.ui.MapReader - Setting cell type for (1,10): com.mele.tapHerder.types.FireTerrain@460d0a57
+main INFO  games.hex.ui.MapReader - Setting cell type for (1,10): com.mele.tapHerder.types.FireTerrain@460d0a57
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (3,10) .-
+main DEBUG games.hex.ui.MapReader - (3,10) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (5,10) .-
+main DEBUG games.hex.ui.MapReader - (5,10) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (7,10) T-
+main DEBUG games.hex.ui.MapReader - (7,10) T-
+main INFO  games.hex.ui.MapReader - Setting cell type for (7,10): com.mele.tapHerder.types.TreeTerrain@47d90b9e
+main INFO  games.hex.ui.MapReader - Setting cell type for (7,10): com.mele.tapHerder.types.TreeTerrain@47d90b9e
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (9,10) %-
+main DEBUG games.hex.ui.MapReader - (9,10) %-
+main INFO  games.hex.ui.MapReader - Setting cell type for (9,10): com.mele.tapHerder.types.DryBrushTerrain@1184ab05
+main INFO  games.hex.ui.MapReader - Setting cell type for (9,10): com.mele.tapHerder.types.DryBrushTerrain@1184ab05
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (11,10) .-
+main DEBUG games.hex.ui.MapReader - (11,10) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (13,10) .-
+main DEBUG games.hex.ui.MapReader - (13,10) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (0,11) 8-
+main DEBUG games.hex.ui.MapReader - (0,11) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (0,11): com.mele.tapHerder.types.BoulderTerrain@3aefe5e5
+main INFO  games.hex.ui.MapReader - Setting cell type for (0,11): com.mele.tapHerder.types.BoulderTerrain@3aefe5e5
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (2,11) .-
+main DEBUG games.hex.ui.MapReader - (2,11) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (4,11) O.
+main DEBUG games.hex.ui.MapReader - (4,11) O.
+main DEBUG games.hex.ui.MapReader - No type mapped to O
+main DEBUG games.hex.ui.MapReader - No type mapped to O
+main DEBUG games.hex.ui.MapReader - No resident mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to .
+main DEBUG games.hex.ui.MapReader - (6,11) -:
+main DEBUG games.hex.ui.MapReader - (6,11) -:
+main INFO  games.hex.ui.MapReader - Setting cell type for (6,11): com.mele.tapHerder.types.FieldTerrain@149e0f5d
+main INFO  games.hex.ui.MapReader - Setting cell type for (6,11): com.mele.tapHerder.types.FieldTerrain@149e0f5d
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - (8,11) .-
+main DEBUG games.hex.ui.MapReader - (8,11) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (10,11) +-
+main DEBUG games.hex.ui.MapReader - (10,11) +-
+main INFO  games.hex.ui.MapReader - Setting cell type for (10,11): com.mele.tapHerder.types.FenceTerrain@1b1473ab
+main INFO  games.hex.ui.MapReader - Setting cell type for (10,11): com.mele.tapHerder.types.FenceTerrain@1b1473ab
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (12,11) +-
+main DEBUG games.hex.ui.MapReader - (12,11) +-
+main INFO  games.hex.ui.MapReader - Setting cell type for (12,11): com.mele.tapHerder.types.FenceTerrain@2f7c2f4f
+main INFO  games.hex.ui.MapReader - Setting cell type for (12,11): com.mele.tapHerder.types.FenceTerrain@2f7c2f4f
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (14,11) 8-
+main DEBUG games.hex.ui.MapReader - (14,11) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (14,11): com.mele.tapHerder.types.BoulderTerrain@6af93788
+main INFO  games.hex.ui.MapReader - Setting cell type for (14,11): com.mele.tapHerder.types.BoulderTerrain@6af93788
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (1,11) %-
+main DEBUG games.hex.ui.MapReader - (1,11) %-
+main INFO  games.hex.ui.MapReader - Setting cell type for (1,11): com.mele.tapHerder.types.DryBrushTerrain@ef9296d
+main INFO  games.hex.ui.MapReader - Setting cell type for (1,11): com.mele.tapHerder.types.DryBrushTerrain@ef9296d
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (3,11) .-
+main DEBUG games.hex.ui.MapReader - (3,11) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (5,11) .-
+main DEBUG games.hex.ui.MapReader - (5,11) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (7,11) -:
+main DEBUG games.hex.ui.MapReader - (7,11) -:
+main INFO  games.hex.ui.MapReader - Setting cell type for (7,11): com.mele.tapHerder.types.FieldTerrain@7880cdf3
+main INFO  games.hex.ui.MapReader - Setting cell type for (7,11): com.mele.tapHerder.types.FieldTerrain@7880cdf3
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - (9,11) -:
+main DEBUG games.hex.ui.MapReader - (9,11) -:
+main INFO  games.hex.ui.MapReader - Setting cell type for (9,11): com.mele.tapHerder.types.FieldTerrain@5be6e01c
+main INFO  games.hex.ui.MapReader - Setting cell type for (9,11): com.mele.tapHerder.types.FieldTerrain@5be6e01c
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - (11,11) -:
+main DEBUG games.hex.ui.MapReader - (11,11) -:
+main INFO  games.hex.ui.MapReader - Setting cell type for (11,11): com.mele.tapHerder.types.FieldTerrain@1c93084c
+main INFO  games.hex.ui.MapReader - Setting cell type for (11,11): com.mele.tapHerder.types.FieldTerrain@1c93084c
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - (13,11) .-
+main DEBUG games.hex.ui.MapReader - (13,11) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (0,12) 8-
+main DEBUG games.hex.ui.MapReader - (0,12) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (0,12): com.mele.tapHerder.types.BoulderTerrain@6ef888f6
+main INFO  games.hex.ui.MapReader - Setting cell type for (0,12): com.mele.tapHerder.types.BoulderTerrain@6ef888f6
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (2,12) ~-
+main DEBUG games.hex.ui.MapReader - (2,12) ~-
+main INFO  games.hex.ui.MapReader - Setting cell type for (2,12): com.mele.tapHerder.types.DeepWaterTerrain@10e92f8f
+main INFO  games.hex.ui.MapReader - Setting cell type for (2,12): com.mele.tapHerder.types.DeepWaterTerrain@10e92f8f
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (4,12) .-
+main DEBUG games.hex.ui.MapReader - (4,12) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (6,12) .-
+main DEBUG games.hex.ui.MapReader - (6,12) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (8,12) -:
+main DEBUG games.hex.ui.MapReader - (8,12) -:
+main INFO  games.hex.ui.MapReader - Setting cell type for (8,12): com.mele.tapHerder.types.FieldTerrain@7ce3cb8e
+main INFO  games.hex.ui.MapReader - Setting cell type for (8,12): com.mele.tapHerder.types.FieldTerrain@7ce3cb8e
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - (10,12) -:
+main DEBUG games.hex.ui.MapReader - (10,12) -:
+main INFO  games.hex.ui.MapReader - Setting cell type for (10,12): com.mele.tapHerder.types.FieldTerrain@78b66d36
+main INFO  games.hex.ui.MapReader - Setting cell type for (10,12): com.mele.tapHerder.types.FieldTerrain@78b66d36
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - (12,12) +-
+main DEBUG games.hex.ui.MapReader - (12,12) +-
+main INFO  games.hex.ui.MapReader - Setting cell type for (12,12): com.mele.tapHerder.types.FenceTerrain@5223e5ee
+main INFO  games.hex.ui.MapReader - Setting cell type for (12,12): com.mele.tapHerder.types.FenceTerrain@5223e5ee
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (14,12) 8-
+main DEBUG games.hex.ui.MapReader - (14,12) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (14,12): com.mele.tapHerder.types.BoulderTerrain@bef2d72
+main INFO  games.hex.ui.MapReader - Setting cell type for (14,12): com.mele.tapHerder.types.BoulderTerrain@bef2d72
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (1,12) 8-
+main DEBUG games.hex.ui.MapReader - (1,12) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (1,12): com.mele.tapHerder.types.BoulderTerrain@69b2283a
+main INFO  games.hex.ui.MapReader - Setting cell type for (1,12): com.mele.tapHerder.types.BoulderTerrain@69b2283a
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (3,12) .-
+main DEBUG games.hex.ui.MapReader - (3,12) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (5,12) .-
+main DEBUG games.hex.ui.MapReader - (5,12) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (7,12) -&
+main DEBUG games.hex.ui.MapReader - (7,12) -&
+main INFO  games.hex.ui.MapReader - Setting cell type for (7,12): com.mele.tapHerder.types.FieldTerrain@22a637e7
+main INFO  games.hex.ui.MapReader - Setting cell type for (7,12): com.mele.tapHerder.types.FieldTerrain@22a637e7
+main DEBUG games.hex.ui.MapReader - No resident mapped to &
+main DEBUG games.hex.ui.MapReader - No resident mapped to &
+main DEBUG games.hex.ui.MapReader - (9,12) ~-
+main DEBUG games.hex.ui.MapReader - (9,12) ~-
+main INFO  games.hex.ui.MapReader - Setting cell type for (9,12): com.mele.tapHerder.types.DeepWaterTerrain@6fe7aac8
+main INFO  games.hex.ui.MapReader - Setting cell type for (9,12): com.mele.tapHerder.types.DeepWaterTerrain@6fe7aac8
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (11,12) -:
+main DEBUG games.hex.ui.MapReader - (11,12) -:
+main INFO  games.hex.ui.MapReader - Setting cell type for (11,12): com.mele.tapHerder.types.FieldTerrain@1d119efb
+main INFO  games.hex.ui.MapReader - Setting cell type for (11,12): com.mele.tapHerder.types.FieldTerrain@1d119efb
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - (13,12) .-
+main DEBUG games.hex.ui.MapReader - (13,12) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (0,13) 8-
+main DEBUG games.hex.ui.MapReader - (0,13) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (0,13): com.mele.tapHerder.types.BoulderTerrain@659a969b
+main INFO  games.hex.ui.MapReader - Setting cell type for (0,13): com.mele.tapHerder.types.BoulderTerrain@659a969b
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (2,13) 8-
+main DEBUG games.hex.ui.MapReader - (2,13) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (2,13): com.mele.tapHerder.types.BoulderTerrain@76908cc0
+main INFO  games.hex.ui.MapReader - Setting cell type for (2,13): com.mele.tapHerder.types.BoulderTerrain@76908cc0
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (4,13) 8-
+main DEBUG games.hex.ui.MapReader - (4,13) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (4,13): com.mele.tapHerder.types.BoulderTerrain@2473d930
+main INFO  games.hex.ui.MapReader - Setting cell type for (4,13): com.mele.tapHerder.types.BoulderTerrain@2473d930
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (6,13) 8-
+main DEBUG games.hex.ui.MapReader - (6,13) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (6,13): com.mele.tapHerder.types.BoulderTerrain@35047d03
+main INFO  games.hex.ui.MapReader - Setting cell type for (6,13): com.mele.tapHerder.types.BoulderTerrain@35047d03
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (8,13) 8-
+main DEBUG games.hex.ui.MapReader - (8,13) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (8,13): com.mele.tapHerder.types.BoulderTerrain@49b0b76
+main INFO  games.hex.ui.MapReader - Setting cell type for (8,13): com.mele.tapHerder.types.BoulderTerrain@49b0b76
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (10,13) 8-
+main DEBUG games.hex.ui.MapReader - (10,13) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (10,13): com.mele.tapHerder.types.BoulderTerrain@769f71a9
+main INFO  games.hex.ui.MapReader - Setting cell type for (10,13): com.mele.tapHerder.types.BoulderTerrain@769f71a9
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (12,13) -:
+main DEBUG games.hex.ui.MapReader - (12,13) -:
+main INFO  games.hex.ui.MapReader - Setting cell type for (12,13): com.mele.tapHerder.types.FieldTerrain@4c9f8c13
+main INFO  games.hex.ui.MapReader - Setting cell type for (12,13): com.mele.tapHerder.types.FieldTerrain@4c9f8c13
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - (14,13) 8-
+main DEBUG games.hex.ui.MapReader - (14,13) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (14,13): com.mele.tapHerder.types.BoulderTerrain@5ae50ce6
+main INFO  games.hex.ui.MapReader - Setting cell type for (14,13): com.mele.tapHerder.types.BoulderTerrain@5ae50ce6
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (1,13) 8-
+main DEBUG games.hex.ui.MapReader - (1,13) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (1,13): com.mele.tapHerder.types.BoulderTerrain@6f96c77
+main INFO  games.hex.ui.MapReader - Setting cell type for (1,13): com.mele.tapHerder.types.BoulderTerrain@6f96c77
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (3,13) 8-
+main DEBUG games.hex.ui.MapReader - (3,13) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (3,13): com.mele.tapHerder.types.BoulderTerrain@be64738
+main INFO  games.hex.ui.MapReader - Setting cell type for (3,13): com.mele.tapHerder.types.BoulderTerrain@be64738
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (5,13) 8-
+main DEBUG games.hex.ui.MapReader - (5,13) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (5,13): com.mele.tapHerder.types.BoulderTerrain@3ba9ad43
+main INFO  games.hex.ui.MapReader - Setting cell type for (5,13): com.mele.tapHerder.types.BoulderTerrain@3ba9ad43
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (7,13) 8-
+main DEBUG games.hex.ui.MapReader - (7,13) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (7,13): com.mele.tapHerder.types.BoulderTerrain@49d904ec
+main INFO  games.hex.ui.MapReader - Setting cell type for (7,13): com.mele.tapHerder.types.BoulderTerrain@49d904ec
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (9,13) 8-
+main DEBUG games.hex.ui.MapReader - (9,13) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (9,13): com.mele.tapHerder.types.BoulderTerrain@48e4374
+main INFO  games.hex.ui.MapReader - Setting cell type for (9,13): com.mele.tapHerder.types.BoulderTerrain@48e4374
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (11,13) *-
+main DEBUG games.hex.ui.MapReader - (11,13) *-
+main DEBUG games.hex.ui.MapReader - No type mapped to *
+main DEBUG games.hex.ui.MapReader - No type mapped to *
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (13,13) W:
+main DEBUG games.hex.ui.MapReader - (13,13) W:
+main DEBUG games.hex.ui.MapReader - No type mapped to W
+main DEBUG games.hex.ui.MapReader - No type mapped to W
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - (0,14) 8-
+main DEBUG games.hex.ui.MapReader - (0,14) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (0,14): com.mele.tapHerder.types.BoulderTerrain@3d680b5a
+main INFO  games.hex.ui.MapReader - Setting cell type for (0,14): com.mele.tapHerder.types.BoulderTerrain@3d680b5a
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (2,14) .-
+main DEBUG games.hex.ui.MapReader - (2,14) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (4,14) .-
+main DEBUG games.hex.ui.MapReader - (4,14) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (6,14) .-
+main DEBUG games.hex.ui.MapReader - (6,14) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (8,14) .-
+main DEBUG games.hex.ui.MapReader - (8,14) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (10,14) .-
+main DEBUG games.hex.ui.MapReader - (10,14) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (12,14) .-
+main DEBUG games.hex.ui.MapReader - (12,14) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (14,14) 8-
+main DEBUG games.hex.ui.MapReader - (14,14) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (14,14): com.mele.tapHerder.types.BoulderTerrain@4b5d6a01
+main INFO  games.hex.ui.MapReader - Setting cell type for (14,14): com.mele.tapHerder.types.BoulderTerrain@4b5d6a01
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (1,14) .-
+main DEBUG games.hex.ui.MapReader - (1,14) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (3,14) T-
+main DEBUG games.hex.ui.MapReader - (3,14) T-
+main INFO  games.hex.ui.MapReader - Setting cell type for (3,14): com.mele.tapHerder.types.TreeTerrain@4a22f9e2
+main INFO  games.hex.ui.MapReader - Setting cell type for (3,14): com.mele.tapHerder.types.TreeTerrain@4a22f9e2
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (5,14) .-
+main DEBUG games.hex.ui.MapReader - (5,14) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (7,14) T-
+main DEBUG games.hex.ui.MapReader - (7,14) T-
+main INFO  games.hex.ui.MapReader - Setting cell type for (7,14): com.mele.tapHerder.types.TreeTerrain@3c419631
+main INFO  games.hex.ui.MapReader - Setting cell type for (7,14): com.mele.tapHerder.types.TreeTerrain@3c419631
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (9,14) %-
+main DEBUG games.hex.ui.MapReader - (9,14) %-
+main INFO  games.hex.ui.MapReader - Setting cell type for (9,14): com.mele.tapHerder.types.DryBrushTerrain@418e7838
+main INFO  games.hex.ui.MapReader - Setting cell type for (9,14): com.mele.tapHerder.types.DryBrushTerrain@418e7838
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (11,14) .-
+main DEBUG games.hex.ui.MapReader - (11,14) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (13,14) -:
+main DEBUG games.hex.ui.MapReader - (13,14) -:
+main INFO  games.hex.ui.MapReader - Setting cell type for (13,14): com.mele.tapHerder.types.FieldTerrain@61230f6a
+main INFO  games.hex.ui.MapReader - Setting cell type for (13,14): com.mele.tapHerder.types.FieldTerrain@61230f6a
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - (0,15) 8-
+main DEBUG games.hex.ui.MapReader - (0,15) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (0,15): com.mele.tapHerder.types.BoulderTerrain@3c130745
+main INFO  games.hex.ui.MapReader - Setting cell type for (0,15): com.mele.tapHerder.types.BoulderTerrain@3c130745
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (2,15) .-
+main DEBUG games.hex.ui.MapReader - (2,15) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (4,15) .-
+main DEBUG games.hex.ui.MapReader - (4,15) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (6,15) -:
+main DEBUG games.hex.ui.MapReader - (6,15) -:
+main INFO  games.hex.ui.MapReader - Setting cell type for (6,15): com.mele.tapHerder.types.FieldTerrain@cd3fee8
+main INFO  games.hex.ui.MapReader - Setting cell type for (6,15): com.mele.tapHerder.types.FieldTerrain@cd3fee8
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - (8,15) .-
+main DEBUG games.hex.ui.MapReader - (8,15) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (10,15) .-
+main DEBUG games.hex.ui.MapReader - (10,15) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (12,15) .-
+main DEBUG games.hex.ui.MapReader - (12,15) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (14,15) 8-
+main DEBUG games.hex.ui.MapReader - (14,15) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (14,15): com.mele.tapHerder.types.BoulderTerrain@3e2e18f2
+main INFO  games.hex.ui.MapReader - Setting cell type for (14,15): com.mele.tapHerder.types.BoulderTerrain@3e2e18f2
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (1,15) .-
+main DEBUG games.hex.ui.MapReader - (1,15) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (3,15) .-
+main DEBUG games.hex.ui.MapReader - (3,15) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (5,15) .-
+main DEBUG games.hex.ui.MapReader - (5,15) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (7,15) T-
+main DEBUG games.hex.ui.MapReader - (7,15) T-
+main INFO  games.hex.ui.MapReader - Setting cell type for (7,15): com.mele.tapHerder.types.TreeTerrain@470f1802
+main INFO  games.hex.ui.MapReader - Setting cell type for (7,15): com.mele.tapHerder.types.TreeTerrain@470f1802
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (9,15) %-
+main DEBUG games.hex.ui.MapReader - (9,15) %-
+main INFO  games.hex.ui.MapReader - Setting cell type for (9,15): com.mele.tapHerder.types.DryBrushTerrain@63021689
+main INFO  games.hex.ui.MapReader - Setting cell type for (9,15): com.mele.tapHerder.types.DryBrushTerrain@63021689
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (11,15) .-
+main DEBUG games.hex.ui.MapReader - (11,15) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (13,15) -:
+main DEBUG games.hex.ui.MapReader - (13,15) -:
+main INFO  games.hex.ui.MapReader - Setting cell type for (13,15): com.mele.tapHerder.types.FieldTerrain@703580bf
+main INFO  games.hex.ui.MapReader - Setting cell type for (13,15): com.mele.tapHerder.types.FieldTerrain@703580bf
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - (0,16) 8-
+main DEBUG games.hex.ui.MapReader - (0,16) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (0,16): com.mele.tapHerder.types.BoulderTerrain@3e92efc3
+main INFO  games.hex.ui.MapReader - Setting cell type for (0,16): com.mele.tapHerder.types.BoulderTerrain@3e92efc3
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (2,16) .-
+main DEBUG games.hex.ui.MapReader - (2,16) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (4,16) .-
+main DEBUG games.hex.ui.MapReader - (4,16) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (6,16) .-
+main DEBUG games.hex.ui.MapReader - (6,16) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (8,16) T-
+main DEBUG games.hex.ui.MapReader - (8,16) T-
+main INFO  games.hex.ui.MapReader - Setting cell type for (8,16): com.mele.tapHerder.types.TreeTerrain@1622f1b
+main INFO  games.hex.ui.MapReader - Setting cell type for (8,16): com.mele.tapHerder.types.TreeTerrain@1622f1b
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (10,16) +-
+main DEBUG games.hex.ui.MapReader - (10,16) +-
+main INFO  games.hex.ui.MapReader - Setting cell type for (10,16): com.mele.tapHerder.types.FenceTerrain@72a7c7e0
+main INFO  games.hex.ui.MapReader - Setting cell type for (10,16): com.mele.tapHerder.types.FenceTerrain@72a7c7e0
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (12,16) -:
+main DEBUG games.hex.ui.MapReader - (12,16) -:
+main INFO  games.hex.ui.MapReader - Setting cell type for (12,16): com.mele.tapHerder.types.FieldTerrain@2e4b8173
+main INFO  games.hex.ui.MapReader - Setting cell type for (12,16): com.mele.tapHerder.types.FieldTerrain@2e4b8173
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - (14,16) 8-
+main DEBUG games.hex.ui.MapReader - (14,16) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (14,16): com.mele.tapHerder.types.BoulderTerrain@70e8f8e
+main INFO  games.hex.ui.MapReader - Setting cell type for (14,16): com.mele.tapHerder.types.BoulderTerrain@70e8f8e
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (1,16) %-
+main DEBUG games.hex.ui.MapReader - (1,16) %-
+main INFO  games.hex.ui.MapReader - Setting cell type for (1,16): com.mele.tapHerder.types.DryBrushTerrain@17046283
+main INFO  games.hex.ui.MapReader - Setting cell type for (1,16): com.mele.tapHerder.types.DryBrushTerrain@17046283
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (3,16) ~-
+main DEBUG games.hex.ui.MapReader - (3,16) ~-
+main INFO  games.hex.ui.MapReader - Setting cell type for (3,16): com.mele.tapHerder.types.DeepWaterTerrain@5bd03f44
+main INFO  games.hex.ui.MapReader - Setting cell type for (3,16): com.mele.tapHerder.types.DeepWaterTerrain@5bd03f44
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (5,16) -:
+main DEBUG games.hex.ui.MapReader - (5,16) -:
+main INFO  games.hex.ui.MapReader - Setting cell type for (5,16): com.mele.tapHerder.types.FieldTerrain@29626d54
+main INFO  games.hex.ui.MapReader - Setting cell type for (5,16): com.mele.tapHerder.types.FieldTerrain@29626d54
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - (7,16) .-
+main DEBUG games.hex.ui.MapReader - (7,16) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (9,16) +-
+main DEBUG games.hex.ui.MapReader - (9,16) +-
+main INFO  games.hex.ui.MapReader - Setting cell type for (9,16): com.mele.tapHerder.types.FenceTerrain@5a63f509
+main INFO  games.hex.ui.MapReader - Setting cell type for (9,16): com.mele.tapHerder.types.FenceTerrain@5a63f509
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (11,16) -:
+main DEBUG games.hex.ui.MapReader - (11,16) -:
+main INFO  games.hex.ui.MapReader - Setting cell type for (11,16): com.mele.tapHerder.types.FieldTerrain@6e4784bc
+main INFO  games.hex.ui.MapReader - Setting cell type for (11,16): com.mele.tapHerder.types.FieldTerrain@6e4784bc
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - (13,16) +-
+main DEBUG games.hex.ui.MapReader - (13,16) +-
+main INFO  games.hex.ui.MapReader - Setting cell type for (13,16): com.mele.tapHerder.types.FenceTerrain@34b7ac2f
+main INFO  games.hex.ui.MapReader - Setting cell type for (13,16): com.mele.tapHerder.types.FenceTerrain@34b7ac2f
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (0,17) 8-
+main DEBUG games.hex.ui.MapReader - (0,17) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (0,17): com.mele.tapHerder.types.BoulderTerrain@e056f20
+main INFO  games.hex.ui.MapReader - Setting cell type for (0,17): com.mele.tapHerder.types.BoulderTerrain@e056f20
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (2,17) ~-
+main DEBUG games.hex.ui.MapReader - (2,17) ~-
+main INFO  games.hex.ui.MapReader - Setting cell type for (2,17): com.mele.tapHerder.types.DeepWaterTerrain@4b0b0854
+main INFO  games.hex.ui.MapReader - Setting cell type for (2,17): com.mele.tapHerder.types.DeepWaterTerrain@4b0b0854
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (4,17) -:
+main DEBUG games.hex.ui.MapReader - (4,17) -:
+main INFO  games.hex.ui.MapReader - Setting cell type for (4,17): com.mele.tapHerder.types.FieldTerrain@19bb07ed
+main INFO  games.hex.ui.MapReader - Setting cell type for (4,17): com.mele.tapHerder.types.FieldTerrain@19bb07ed
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - (6,17) :W
+main DEBUG games.hex.ui.MapReader - (6,17) :W
+main INFO  games.hex.ui.MapReader - Setting cell type for (6,17): com.mele.tapHerder.types.PathTerrain@10e41621
+main INFO  games.hex.ui.MapReader - Setting cell type for (6,17): com.mele.tapHerder.types.PathTerrain@10e41621
+main DEBUG games.hex.ui.MapReader - (8,17) *-
+main DEBUG games.hex.ui.MapReader - (8,17) *-
+main DEBUG games.hex.ui.MapReader - No type mapped to *
+main DEBUG games.hex.ui.MapReader - No type mapped to *
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (10,17) -:
+main DEBUG games.hex.ui.MapReader - (10,17) -:
+main INFO  games.hex.ui.MapReader - Setting cell type for (10,17): com.mele.tapHerder.types.FieldTerrain@2667f029
+main INFO  games.hex.ui.MapReader - Setting cell type for (10,17): com.mele.tapHerder.types.FieldTerrain@2667f029
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - (12,17) +W
+main DEBUG games.hex.ui.MapReader - (12,17) +W
+main INFO  games.hex.ui.MapReader - Setting cell type for (12,17): com.mele.tapHerder.types.FenceTerrain@67a20f67
+main INFO  games.hex.ui.MapReader - Setting cell type for (12,17): com.mele.tapHerder.types.FenceTerrain@67a20f67
+main DEBUG games.hex.ui.MapReader - (14,17) 8-
+main DEBUG games.hex.ui.MapReader - (14,17) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (14,17): com.mele.tapHerder.types.BoulderTerrain@a9cd3b1
+main INFO  games.hex.ui.MapReader - Setting cell type for (14,17): com.mele.tapHerder.types.BoulderTerrain@a9cd3b1
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (1,17) ~-
+main DEBUG games.hex.ui.MapReader - (1,17) ~-
+main INFO  games.hex.ui.MapReader - Setting cell type for (1,17): com.mele.tapHerder.types.DeepWaterTerrain@13e39c73
+main INFO  games.hex.ui.MapReader - Setting cell type for (1,17): com.mele.tapHerder.types.DeepWaterTerrain@13e39c73
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (3,17) -#
+main DEBUG games.hex.ui.MapReader - (3,17) -#
+main INFO  games.hex.ui.MapReader - Setting cell type for (3,17): com.mele.tapHerder.types.FieldTerrain@64cd705f
+main INFO  games.hex.ui.MapReader - Setting cell type for (3,17): com.mele.tapHerder.types.FieldTerrain@64cd705f
+main DEBUG games.hex.ui.MapReader - No resident mapped to #
+main DEBUG games.hex.ui.MapReader - No resident mapped to #
+main DEBUG games.hex.ui.MapReader - (5,17) .-
+main DEBUG games.hex.ui.MapReader - (5,17) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (7,17) &:
+main DEBUG games.hex.ui.MapReader - (7,17) &:
+main INFO  games.hex.ui.MapReader - Setting cell type for (7,17): com.mele.tapHerder.types.StatueTerrain@9225652
+main INFO  games.hex.ui.MapReader - Setting cell type for (7,17): com.mele.tapHerder.types.StatueTerrain@9225652
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - (9,17) -:
+main DEBUG games.hex.ui.MapReader - (9,17) -:
+main INFO  games.hex.ui.MapReader - Setting cell type for (9,17): com.mele.tapHerder.types.FieldTerrain@654f0d9c
+main INFO  games.hex.ui.MapReader - Setting cell type for (9,17): com.mele.tapHerder.types.FieldTerrain@654f0d9c
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - (11,17) .-
+main DEBUG games.hex.ui.MapReader - (11,17) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (13,17) .-
+main DEBUG games.hex.ui.MapReader - (13,17) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (0,18) 8-
+main DEBUG games.hex.ui.MapReader - (0,18) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (0,18): com.mele.tapHerder.types.BoulderTerrain@6a400542
+main INFO  games.hex.ui.MapReader - Setting cell type for (0,18): com.mele.tapHerder.types.BoulderTerrain@6a400542
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (2,18) ~-
+main DEBUG games.hex.ui.MapReader - (2,18) ~-
+main INFO  games.hex.ui.MapReader - Setting cell type for (2,18): com.mele.tapHerder.types.DeepWaterTerrain@6580cfdd
+main INFO  games.hex.ui.MapReader - Setting cell type for (2,18): com.mele.tapHerder.types.DeepWaterTerrain@6580cfdd
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (4,18) .-
+main DEBUG games.hex.ui.MapReader - (4,18) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (6,18) .-
+main DEBUG games.hex.ui.MapReader - (6,18) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (8,18) -:
+main DEBUG games.hex.ui.MapReader - (8,18) -:
+main INFO  games.hex.ui.MapReader - Setting cell type for (8,18): com.mele.tapHerder.types.FieldTerrain@7e0b85f9
+main INFO  games.hex.ui.MapReader - Setting cell type for (8,18): com.mele.tapHerder.types.FieldTerrain@7e0b85f9
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - No resident mapped to :
+main DEBUG games.hex.ui.MapReader - (10,18) ~-
+main DEBUG games.hex.ui.MapReader - (10,18) ~-
+main INFO  games.hex.ui.MapReader - Setting cell type for (10,18): com.mele.tapHerder.types.DeepWaterTerrain@63355449
+main INFO  games.hex.ui.MapReader - Setting cell type for (10,18): com.mele.tapHerder.types.DeepWaterTerrain@63355449
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (12,18) .-
+main DEBUG games.hex.ui.MapReader - (12,18) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (14,18) 8-
+main DEBUG games.hex.ui.MapReader - (14,18) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (14,18): com.mele.tapHerder.types.BoulderTerrain@9353778
+main INFO  games.hex.ui.MapReader - Setting cell type for (14,18): com.mele.tapHerder.types.BoulderTerrain@9353778
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (1,18) .-
+main DEBUG games.hex.ui.MapReader - (1,18) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (3,18) ~-
+main DEBUG games.hex.ui.MapReader - (3,18) ~-
+main INFO  games.hex.ui.MapReader - Setting cell type for (3,18): com.mele.tapHerder.types.DeepWaterTerrain@6a28ffa4
+main INFO  games.hex.ui.MapReader - Setting cell type for (3,18): com.mele.tapHerder.types.DeepWaterTerrain@6a28ffa4
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (5,18) .-
+main DEBUG games.hex.ui.MapReader - (5,18) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (7,18) .-
+main DEBUG games.hex.ui.MapReader - (7,18) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (9,18) .-
+main DEBUG games.hex.ui.MapReader - (9,18) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (11,18) %-
+main DEBUG games.hex.ui.MapReader - (11,18) %-
+main INFO  games.hex.ui.MapReader - Setting cell type for (11,18): com.mele.tapHerder.types.DryBrushTerrain@48ae9b55
+main INFO  games.hex.ui.MapReader - Setting cell type for (11,18): com.mele.tapHerder.types.DryBrushTerrain@48ae9b55
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (13,18) .-
+main DEBUG games.hex.ui.MapReader - (13,18) .-
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No type mapped to .
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (0,19) 8-
+main DEBUG games.hex.ui.MapReader - (0,19) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (0,19): com.mele.tapHerder.types.BoulderTerrain@1700915
+main INFO  games.hex.ui.MapReader - Setting cell type for (0,19): com.mele.tapHerder.types.BoulderTerrain@1700915
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (2,19) 8-
+main DEBUG games.hex.ui.MapReader - (2,19) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (2,19): com.mele.tapHerder.types.BoulderTerrain@21de60b4
+main INFO  games.hex.ui.MapReader - Setting cell type for (2,19): com.mele.tapHerder.types.BoulderTerrain@21de60b4
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (4,19) 8-
+main DEBUG games.hex.ui.MapReader - (4,19) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (4,19): com.mele.tapHerder.types.BoulderTerrain@c267ef4
+main INFO  games.hex.ui.MapReader - Setting cell type for (4,19): com.mele.tapHerder.types.BoulderTerrain@c267ef4
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (6,19) 8-
+main DEBUG games.hex.ui.MapReader - (6,19) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (6,19): com.mele.tapHerder.types.BoulderTerrain@30ee2816
+main INFO  games.hex.ui.MapReader - Setting cell type for (6,19): com.mele.tapHerder.types.BoulderTerrain@30ee2816
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (8,19) 8-
+main DEBUG games.hex.ui.MapReader - (8,19) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (8,19): com.mele.tapHerder.types.BoulderTerrain@31d7b7bf
+main INFO  games.hex.ui.MapReader - Setting cell type for (8,19): com.mele.tapHerder.types.BoulderTerrain@31d7b7bf
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (10,19) 8-
+main DEBUG games.hex.ui.MapReader - (10,19) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (10,19): com.mele.tapHerder.types.BoulderTerrain@635eaaf1
+main INFO  games.hex.ui.MapReader - Setting cell type for (10,19): com.mele.tapHerder.types.BoulderTerrain@635eaaf1
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (12,19) 8-
+main DEBUG games.hex.ui.MapReader - (12,19) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (12,19): com.mele.tapHerder.types.BoulderTerrain@5c30a9b0
+main INFO  games.hex.ui.MapReader - Setting cell type for (12,19): com.mele.tapHerder.types.BoulderTerrain@5c30a9b0
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (14,19) 8-
+main DEBUG games.hex.ui.MapReader - (14,19) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (14,19): com.mele.tapHerder.types.BoulderTerrain@1ddf84b8
+main INFO  games.hex.ui.MapReader - Setting cell type for (14,19): com.mele.tapHerder.types.BoulderTerrain@1ddf84b8
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (1,19) 8-
+main DEBUG games.hex.ui.MapReader - (1,19) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (1,19): com.mele.tapHerder.types.BoulderTerrain@1139b2f3
+main INFO  games.hex.ui.MapReader - Setting cell type for (1,19): com.mele.tapHerder.types.BoulderTerrain@1139b2f3
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (3,19) 8-
+main DEBUG games.hex.ui.MapReader - (3,19) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (3,19): com.mele.tapHerder.types.BoulderTerrain@7a69b07
+main INFO  games.hex.ui.MapReader - Setting cell type for (3,19): com.mele.tapHerder.types.BoulderTerrain@7a69b07
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (5,19) 8-
+main DEBUG games.hex.ui.MapReader - (5,19) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (5,19): com.mele.tapHerder.types.BoulderTerrain@5e82df6a
+main INFO  games.hex.ui.MapReader - Setting cell type for (5,19): com.mele.tapHerder.types.BoulderTerrain@5e82df6a
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (7,19) 8-
+main DEBUG games.hex.ui.MapReader - (7,19) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (7,19): com.mele.tapHerder.types.BoulderTerrain@3f197a46
+main INFO  games.hex.ui.MapReader - Setting cell type for (7,19): com.mele.tapHerder.types.BoulderTerrain@3f197a46
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (9,19) 8-
+main DEBUG games.hex.ui.MapReader - (9,19) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (9,19): com.mele.tapHerder.types.BoulderTerrain@636be97c
+main INFO  games.hex.ui.MapReader - Setting cell type for (9,19): com.mele.tapHerder.types.BoulderTerrain@636be97c
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (11,19) 8-
+main DEBUG games.hex.ui.MapReader - (11,19) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (11,19): com.mele.tapHerder.types.BoulderTerrain@50a638b5
+main INFO  games.hex.ui.MapReader - Setting cell type for (11,19): com.mele.tapHerder.types.BoulderTerrain@50a638b5
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - (13,19) 8-
+main DEBUG games.hex.ui.MapReader - (13,19) 8-
+main INFO  games.hex.ui.MapReader - Setting cell type for (13,19): com.mele.tapHerder.types.BoulderTerrain@1817d444
+main INFO  games.hex.ui.MapReader - Setting cell type for (13,19): com.mele.tapHerder.types.BoulderTerrain@1817d444
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG games.hex.ui.MapReader - No resident mapped to -
+main DEBUG mele.games.animation.SpriteFactory - Autoregistering sprites...
+main DEBUG mele.games.animation.SpriteFactory - Autoregistering sprites...
+main INFO  mele.games.animation.SpriteFactory - Autoregistering STATUE to:  SpriteFactoryDescriptor [spriteClass=null, transparency=-65281, renderPass=BOTTOM, animationMethod=CYCLE, imageList={,AnimationImage [imageName=/Statue.png, image=null, fixedframes=1, framevariation=0]}]
+main INFO  mele.games.animation.SpriteFactory - Autoregistering STATUE to:  SpriteFactoryDescriptor [spriteClass=null, transparency=-65281, renderPass=BOTTOM, animationMethod=CYCLE, imageList={,AnimationImage [imageName=/Statue.png, image=null, fixedframes=1, framevariation=0]}]
+main INFO  mele.games.animation.SpriteFactory - Autoregistering DOG to:  SpriteFactoryDescriptor [spriteClass=null, transparency=-65281, renderPass=MIDDLE, animationMethod=CYCLE, imageList={,AnimationImage [imageName=/150px-Wolf_(Tamed)_0.png, image=null, fixedframes=5, framevariation=6]AnimationImage [imageName=/150px-Wolf_(Tamed)_1.png, image=null, fixedframes=1, framevariation=2]}]
+main INFO  mele.games.animation.SpriteFactory - Autoregistering DOG to:  SpriteFactoryDescriptor [spriteClass=null, transparency=-65281, renderPass=MIDDLE, animationMethod=CYCLE, imageList={,AnimationImage [imageName=/150px-Wolf_(Tamed)_0.png, image=null, fixedframes=5, framevariation=6]AnimationImage [imageName=/150px-Wolf_(Tamed)_1.png, image=null, fixedframes=1, framevariation=2]}]
+main INFO  mele.games.animation.SpriteFactory - Autoregistering WOLF to:  SpriteFactoryDescriptor [spriteClass=null, transparency=-65281, renderPass=MIDDLE, animationMethod=CYCLE, imageList={,AnimationImage [imageName=/150px-Wolf_(Aggressive)_0.png, image=null, fixedframes=2, framevariation=3]AnimationImage [imageName=/150px-Wolf_(Aggressive)_1.png, image=null, fixedframes=2, framevariation=4]AnimationImage [imageName=/150px-Wolf_(Aggressive)_2.png, image=null, fixedframes=2, framevariation=3]AnimationImage [imageName=/150px-Wolf_(Aggressive)_1.png, image=null, fixedframes=2, framevariation=4]}]
+main INFO  mele.games.animation.SpriteFactory - Autoregistering WOLF to:  SpriteFactoryDescriptor [spriteClass=null, transparency=-65281, renderPass=MIDDLE, animationMethod=CYCLE, imageList={,AnimationImage [imageName=/150px-Wolf_(Aggressive)_0.png, image=null, fixedframes=2, framevariation=3]AnimationImage [imageName=/150px-Wolf_(Aggressive)_1.png, image=null, fixedframes=2, framevariation=4]AnimationImage [imageName=/150px-Wolf_(Aggressive)_2.png, image=null, fixedframes=2, framevariation=3]AnimationImage [imageName=/150px-Wolf_(Aggressive)_1.png, image=null, fixedframes=2, framevariation=4]}]
+main INFO  mele.games.animation.SpriteFactory - Autoregistering BOULDER to:  SpriteFactoryDescriptor [spriteClass=null, transparency=-65281, renderPass=BOTTOM, animationMethod=CYCLE, imageList={,AnimationImage [imageName=/Boulder.png, image=null, fixedframes=1, framevariation=0]}]
+main INFO  mele.games.animation.SpriteFactory - Autoregistering BOULDER to:  SpriteFactoryDescriptor [spriteClass=null, transparency=-65281, renderPass=BOTTOM, animationMethod=CYCLE, imageList={,AnimationImage [imageName=/Boulder.png, image=null, fixedframes=1, framevariation=0]}]
+main INFO  mele.games.animation.SpriteFactory - Autoregistering SHEEP to:  SpriteFactoryDescriptor [spriteClass=null, transparency=-65281, renderPass=MIDDLE, animationMethod=CYCLE, imageList={,AnimationImage [imageName=/Sheep.png, image=null, fixedframes=1, framevariation=0]}]
+main INFO  mele.games.animation.SpriteFactory - Autoregistering SHEEP to:  SpriteFactoryDescriptor [spriteClass=null, transparency=-65281, renderPass=MIDDLE, animationMethod=CYCLE, imageList={,AnimationImage [imageName=/Sheep.png, image=null, fixedframes=1, framevariation=0]}]
+main INFO  mele.games.animation.SpriteFactory - Autoregistering TREE to:  SpriteFactoryDescriptor [spriteClass=null, transparency=-65281, renderPass=BOTTOM, animationMethod=CYCLE, imageList={,AnimationImage [imageName=/Tree.png, image=null, fixedframes=1, framevariation=0]}]
+main INFO  mele.games.animation.SpriteFactory - Autoregistering TREE to:  SpriteFactoryDescriptor [spriteClass=null, transparency=-65281, renderPass=BOTTOM, animationMethod=CYCLE, imageList={,AnimationImage [imageName=/Tree.png, image=null, fixedframes=1, framevariation=0]}]
+main INFO  mele.games.animation.SpriteFactory - Autoregistering FIRE to:  SpriteFactoryDescriptor [spriteClass=null, transparency=-65281, renderPass=BOTTOM, animationMethod=CYCLE, imageList={,AnimationImage [imageName=/Fire_0.png, image=null, fixedframes=1, framevariation=2]AnimationImage [imageName=/Fire_1.png, image=null, fixedframes=4, framevariation=2]AnimationImage [imageName=/Fire_2.png, image=null, fixedframes=1, framevariation=2]AnimationImage [imageName=/Fire_1.png, image=null, fixedframes=4, framevariation=2]}]
+main INFO  mele.games.animation.SpriteFactory - Autoregistering FIRE to:  SpriteFactoryDescriptor [spriteClass=null, transparency=-65281, renderPass=BOTTOM, animationMethod=CYCLE, imageList={,AnimationImage [imageName=/Fire_0.png, image=null, fixedframes=1, framevariation=2]AnimationImage [imageName=/Fire_1.png, image=null, fixedframes=4, framevariation=2]AnimationImage [imageName=/Fire_2.png, image=null, fixedframes=1, framevariation=2]AnimationImage [imageName=/Fire_1.png, image=null, fixedframes=4, framevariation=2]}]
+main INFO  mele.games.animation.SpriteFactory - Autoregistering DEEP_WATER to:  SpriteFactoryDescriptor [spriteClass=null, transparency=-65281, renderPass=BOTTOM, animationMethod=CYCLE, imageList={,AnimationImage [imageName=/Grid_Water.png, image=null, fixedframes=1, framevariation=0]}]
+main INFO  mele.games.animation.SpriteFactory - Autoregistering DEEP_WATER to:  SpriteFactoryDescriptor [spriteClass=null, transparency=-65281, renderPass=BOTTOM, animationMethod=CYCLE, imageList={,AnimationImage [imageName=/Grid_Water.png, image=null, fixedframes=1, framevariation=0]}]
+main INFO  mele.games.animation.SpriteFactory - Autoregistering FENCE to:  SpriteFactoryDescriptor [spriteClass=null, transparency=-65281, renderPass=BOTTOM, animationMethod=CYCLE, imageList={,AnimationImage [imageName=/Fence.png, image=null, fixedframes=1, framevariation=0]}]
+main INFO  mele.games.animation.SpriteFactory - Autoregistering FENCE to:  SpriteFactoryDescriptor [spriteClass=null, transparency=-65281, renderPass=BOTTOM, animationMethod=CYCLE, imageList={,AnimationImage [imageName=/Fence.png, image=null, fixedframes=1, framevariation=0]}]
+main INFO  mele.games.animation.SpriteFactory - Autoregistering OCELOT to:  SpriteFactoryDescriptor [spriteClass=null, transparency=-65281, renderPass=MIDDLE, animationMethod=CYCLE, imageList={,AnimationImage [imageName=/Ocelot_0.png, image=null, fixedframes=2, framevariation=2]AnimationImage [imageName=/Ocelot_1.png, image=null, fixedframes=1, framevariation=2]AnimationImage [imageName=/Ocelot_0.png, image=null, fixedframes=2, framevariation=2]AnimationImage [imageName=/Ocelot_2.png, image=null, fixedframes=1, framevariation=2]AnimationImage [imageName=/Ocelot_3.png, image=null, fixedframes=1, framevariation=0]AnimationImage [imageName=/Ocelot_4.png, image=null, fixedframes=2, framevariation=2]}]
+main INFO  mele.games.animation.SpriteFactory - Autoregistering OCELOT to:  SpriteFactoryDescriptor [spriteClass=null, transparency=-65281, renderPass=MIDDLE, animationMethod=CYCLE, imageList={,AnimationImage [imageName=/Ocelot_0.png, image=null, fixedframes=2, framevariation=2]AnimationImage [imageName=/Ocelot_1.png, image=null, fixedframes=1, framevariation=2]AnimationImage [imageName=/Ocelot_0.png, image=null, fixedframes=2, framevariation=2]AnimationImage [imageName=/Ocelot_2.png, image=null, fixedframes=1, framevariation=2]AnimationImage [imageName=/Ocelot_3.png, image=null, fixedframes=1, framevariation=0]AnimationImage [imageName=/Ocelot_4.png, image=null, fixedframes=2, framevariation=2]}]
+main INFO  mele.games.animation.SpriteFactory - Autoregistering LONG_GRASS to:  SpriteFactoryDescriptor [spriteClass=null, transparency=-65281, renderPass=BOTTOM, animationMethod=CYCLE, imageList={,AnimationImage [imageName=/TallGrass.png, image=null, fixedframes=1, framevariation=0]}]
+main INFO  mele.games.animation.SpriteFactory - Autoregistering LONG_GRASS to:  SpriteFactoryDescriptor [spriteClass=null, transparency=-65281, renderPass=BOTTOM, animationMethod=CYCLE, imageList={,AnimationImage [imageName=/TallGrass.png, image=null, fixedframes=1, framevariation=0]}]
+main INFO  mele.games.animation.SpriteFactory - Autoregistering BRY_BRUSH to:  SpriteFactoryDescriptor [spriteClass=null, transparency=-65281, renderPass=BOTTOM, animationMethod=CYCLE, imageList={,AnimationImage [imageName=/DryBrush.png, image=null, fixedframes=1, framevariation=0]}]
+main INFO  mele.games.animation.SpriteFactory - Autoregistering BRY_BRUSH to:  SpriteFactoryDescriptor [spriteClass=null, transparency=-65281, renderPass=BOTTOM, animationMethod=CYCLE, imageList={,AnimationImage [imageName=/DryBrush.png, image=null, fixedframes=1, framevariation=0]}]
+main INFO  mele.games.animation.RenderUtils - Loading image from: /D:/Programming/tapHerder/target/classes/Boulder.png
+main INFO  mele.games.animation.RenderUtils - Loading image from: /D:/Programming/tapHerder/target/classes/Boulder.png
+main INFO  mele.games.animation.RenderUtils - Loading image from: /D:/Programming/tapHerder/target/classes/Grid_Water.png
+main INFO  mele.games.animation.RenderUtils - Loading image from: /D:/Programming/tapHerder/target/classes/Grid_Water.png
+main INFO  mele.games.animation.RenderUtils - Loading image from: /D:/Programming/tapHerder/target/classes/Fence.png
+main INFO  mele.games.animation.RenderUtils - Loading image from: /D:/Programming/tapHerder/target/classes/Fence.png
+main INFO  mele.games.animation.RenderUtils - Loading image from: /D:/Programming/tapHerder/target/classes/150px-Wolf_(Tamed)_0.png
+main INFO  mele.games.animation.RenderUtils - Loading image from: /D:/Programming/tapHerder/target/classes/150px-Wolf_(Tamed)_0.png
+main INFO  mele.games.animation.RenderUtils - Loading image from: /D:/Programming/tapHerder/target/classes/150px-Wolf_(Tamed)_1.png
+main INFO  mele.games.animation.RenderUtils - Loading image from: /D:/Programming/tapHerder/target/classes/150px-Wolf_(Tamed)_1.png
+main INFO  mele.games.animation.RenderUtils - Loading image from: /D:/Programming/tapHerder/target/classes/DryBrush.png
+main INFO  mele.games.animation.RenderUtils - Loading image from: /D:/Programming/tapHerder/target/classes/DryBrush.png
+main INFO  mele.games.animation.RenderUtils - Loading image from: /D:/Programming/tapHerder/target/classes/150px-Wolf_(Aggressive)_0.png
+main INFO  mele.games.animation.RenderUtils - Loading image from: /D:/Programming/tapHerder/target/classes/150px-Wolf_(Aggressive)_0.png
+main INFO  mele.games.animation.RenderUtils - Loading image from: /D:/Programming/tapHerder/target/classes/150px-Wolf_(Aggressive)_1.png
+main INFO  mele.games.animation.RenderUtils - Loading image from: /D:/Programming/tapHerder/target/classes/150px-Wolf_(Aggressive)_1.png
+main INFO  mele.games.animation.RenderUtils - Loading image from: /D:/Programming/tapHerder/target/classes/150px-Wolf_(Aggressive)_2.png
+main INFO  mele.games.animation.RenderUtils - Loading image from: /D:/Programming/tapHerder/target/classes/150px-Wolf_(Aggressive)_2.png
+main INFO  mele.games.animation.RenderUtils - Loading image from: /D:/Programming/tapHerder/target/classes/Tree.png
+main INFO  mele.games.animation.RenderUtils - Loading image from: /D:/Programming/tapHerder/target/classes/Tree.png
+main INFO  mele.games.animation.RenderUtils - Loading image from: /D:/Programming/tapHerder/target/classes/Fire_0.png
+main INFO  mele.games.animation.RenderUtils - Loading image from: /D:/Programming/tapHerder/target/classes/Fire_0.png
+main INFO  mele.games.animation.RenderUtils - Loading image from: /D:/Programming/tapHerder/target/classes/Fire_1.png
+main INFO  mele.games.animation.RenderUtils - Loading image from: /D:/Programming/tapHerder/target/classes/Fire_1.png
+main INFO  mele.games.animation.RenderUtils - Loading image from: /D:/Programming/tapHerder/target/classes/Fire_2.png
+main INFO  mele.games.animation.RenderUtils - Loading image from: /D:/Programming/tapHerder/target/classes/Fire_2.png
+main INFO  mele.games.animation.RenderUtils - Loading image from: /D:/Programming/tapHerder/target/classes/Statue.png
+main INFO  mele.games.animation.RenderUtils - Loading image from: /D:/Programming/tapHerder/target/classes/Statue.png
+AWT-EventQueue-0 DEBUG games.hex.ui.HexInputListener - java.awt.Point[x=410,y=307]
+AWT-EventQueue-0 DEBUG games.hex.ui.HexInputListener - java.awt.Point[x=410,y=307]
+AWT-EventQueue-0 DEBUG games.hex.ui.CellRenderer - Diagonal: 11 CellRenderer [cell=(10,6), selected=true, hovered=true]
+AWT-EventQueue-0 DEBUG games.hex.ui.CellRenderer - Diagonal: 11 CellRenderer [cell=(10,6), selected=true, hovered=true]
+AWT-EventQueue-0 DEBUG games.hex.ui.HexInputListener - java.awt.Point[x=410,y=307]
+AWT-EventQueue-0 DEBUG games.hex.ui.HexInputListener - java.awt.Point[x=410,y=307]
+AWT-EventQueue-0 DEBUG games.hex.ui.CellRenderer - Diagonal: 11 CellRenderer [cell=(10,6), selected=false, hovered=true]
+AWT-EventQueue-0 DEBUG games.hex.ui.CellRenderer - Diagonal: 11 CellRenderer [cell=(10,6), selected=false, hovered=true]
+main INFO  com.mele.tapHerder.TapHerder - Ending game...
+main DEBUG com.mele.tapHerder.TapHerder - Exit from main.

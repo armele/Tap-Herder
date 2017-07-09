@@ -1,46 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.mele.tapHerder</groupId>
-  <artifactId>tapHerder</artifactId>
-  <packaging>jar</packaging>
-  <version>1.0</version>
-  <name>Tap Herder</name>
-  <url>http://maven.apache.org</url>
-  <build>
-    <resources>
-      <resource>
-        <targetPath>com/mele/tapHerder</targetPath>
-        <filtering>false</filtering>
-        <directory>${basedir}/src/main/resources</directory>
-        <includes>
-          <include>*.xml</include>
-          <include>*.gif</include>
-          <include>*.mp3</include>
-          <include>*.png</include>
-          <include>*.map</include>    
-          <include>*.wav</include>        
-        </includes>
-        <excludes>
-          <exclude>**/*.java</exclude>
-          <exclude>**/*.jbf</exclude>
-        </excludes>
-      </resource>
-    </resources>      
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>2.5.1</version>
-        <configuration>
-          <source>6</source>
-          <target>6</target>
-        </configuration>
-      </plugin>
-      <plugin>
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.mele.tapHerder</groupId>
+	<artifactId>tapHerder</artifactId>
+	<packaging>jar</packaging>
+	<version>1.0</version>
+	<name>Tap Herder</name>
+	<url>http://maven.apache.org</url>
+	<build>
+		<resources>
+			<resource>
+				<targetPath>com/mele/tapHerder</targetPath>
+				<filtering>false</filtering>
+				<directory>${basedir}/src/main/resources</directory>
+				<includes>
+					<include>*.xml</include>
+					<include>*.gif</include>
+					<include>*.mp3</include>
+					<include>*.png</include>
+					<include>*.map</include>
+					<include>*.wav</include>
+				</includes>
+				<excludes>
+					<exclude>**/*.java</exclude>
+					<exclude>**/*.jbf</exclude>
+				</excludes>
+			</resource>
+		</resources>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+                <version>3.2</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+				</configuration>
+			</plugin>
+			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
-				<version>2.2</version>
+				<version>3.0.2</version>
 				<configuration>
 					<archive>
 						<manifest>
@@ -58,11 +59,11 @@
 						</manifestEntries>
 					</archive>
 				</configuration>
-	  </plugin>
-      <plugin>
+			</plugin>
+			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-shade-plugin</artifactId>
-				<version>2.0</version>
+				<version>3.0.0</version>
 				<executions>
 					<execution>
 						<phase>package</phase>
@@ -85,25 +86,35 @@
 						</configuration>
 					</execution>
 				</executions>
-		</plugin>
-    </plugins>
-  </build>  
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.1</version>
-      <scope>test</scope>
-    </dependency>	
-    <dependency>
-        <groupId>commons-logging</groupId>
-        <artifactId>commons-logging</artifactId>
-        <version>1.1.1</version>
-    </dependency>    
-    <dependency>
-      <groupId>log4j</groupId>
-      <artifactId>log4j</artifactId>
-      <version>1.2.8</version>
-    </dependency>     
-  </dependencies>
+			</plugin>
+		</plugins>
+	</build>
+	<dependencies>
+		<dependency>
+			<groupId>deathfrog</groupId>
+			<artifactId>hexrender</artifactId>
+			<version>1.0</version>
+		</dependency>	
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.1</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-api</artifactId>
+			<version>2.8.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>2.8.2</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.reflections</groupId>
+		    <artifactId>reflections</artifactId>
+		    <version>0.9.11</version>
+		</dependency>		
+	</dependencies>
 </project>
