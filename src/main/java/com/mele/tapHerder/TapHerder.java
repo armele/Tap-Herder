@@ -67,7 +67,6 @@ public class TapHerder {
 	public static void main(String args[]) {	
 		
 		// TODO: Splash screen for instant acknowledgment that the game has started.
-		// TODO: Command line parsing to start in edit mode.
 		if (args != null && args.length > 0 && "edit".equalsIgnoreCase(args[0])) {
 			startEditor();
 		} else {

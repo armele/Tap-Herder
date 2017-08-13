@@ -74,6 +74,7 @@ public class TapHerderGame extends Frame implements IHexEventListener {
 		//TODO: Random board creation options
 		//TODO: Menuing option to pick board
 		hexControl.loadFromMap("com/mele/tapHerder/large.map");
+		hexControl.registerHexEventListener(this);
 		
 		HexArrayRenderer har = hexControl.getView();
 		har.setSelectionColor(Color.green);
@@ -86,6 +87,9 @@ public class TapHerderGame extends Frame implements IHexEventListener {
 		});
 		
 		hexControl.snap();
+		
+		har.setLabel(0, "Score");
+		har.setLabel(2, "Moves");
 		
 		initialized = true;
 	}
@@ -102,6 +106,12 @@ public class TapHerderGame extends Frame implements IHexEventListener {
 		currentTick = tick;
 		
 		if (selectedCell != null) {
+			BaseTerrainType type = (BaseTerrainType)selectedCell.getCell().getType();
+			if (type != null) {
+				type.react(selectedCell.getCell(), selectedCell.getCell(), tick);
+			} else {
+				// log.debug("No type information found on cell " + checkCell);
+			}
 			
 			// For all cells along each direction radiating out from the selected cell
 			// determine how they react to the "tap". 
@@ -109,8 +119,17 @@ public class TapHerderGame extends Frame implements IHexEventListener {
 				ArrayList<HexCell> cellList = selectedCell.getCell().pathFromCell(v);
 				
 				for (HexCell checkCell : cellList) {
-					BaseTerrainType type = (BaseTerrainType)checkCell.getType();
-					type.react(selectedCell.getCell(), tick);
+					type = (BaseTerrainType)checkCell.getType();
+					if (type != null) {
+						type.react(selectedCell.getCell(), checkCell, tick);
+					} else {
+						// log.debug("No type information found on cell " + checkCell);
+					}
+					
+					for (IHexResident res : checkCell.getResidents()) {
+						BaseResident br = (BaseResident) res;
+						br.react(selectedCell.getCell(), tick);
+					}
 				}
 			}
 			selectedCell.setSelected(false);
@@ -147,6 +166,8 @@ public class TapHerderGame extends Frame implements IHexEventListener {
 	 * @see com.mele.games.hex.IHexEventListener#cellEvent(com.mele.games.hex.ui.HexEventDetail)
 	 */
 	public boolean cellEvent(HexEventDetail cmd) {
+		boolean keepDefault = false;
+		
 		if (cmd != null) {
 			switch (cmd.getEventType()) {
 			case MOUSE_LEFTCLICK:
@@ -154,24 +175,23 @@ public class TapHerderGame extends Frame implements IHexEventListener {
 				if (cmd.getEventLocation() != null) {
 					selectedCell = cmd.getEventLocation();
 					selectedCell.setSelected(true);
-					BaseTerrainType type = (BaseTerrainType)selectedCell.getCell().getType();
-					type.react(selectedCell.getCell(), currentTick);
-					
-					//log.info("Got a tap command: " + cmd);
 					scoreLog.addScore(ScoreEvent.SCORE_TAP);
 					tapCount++;
 				}
 			case MOUSE_CENTERCLICK:
 				break;
 			case MOUSE_ENTERED:
+				keepDefault = true;
 				break;
 			case MOUSE_EXITED:
+				keepDefault = true;
 				break;
 			case MOUSE_RELEASED:
 				break;
 			case MOUSE_RIGHTCLICK:
 				break;
 			case MOUSE_WINEXIT:
+				keepDefault = true;
 				break;
 			default:
 				break;				
@@ -179,14 +199,14 @@ public class TapHerderGame extends Frame implements IHexEventListener {
 
 		
 		}
-		return false;
+		return keepDefault;
 	}
 
 	public Integer getScore() {
 		return new Integer(scoreLog.scoreTotal());
 	}
 	
-	public ScoreLog getScoreLog() {
+	public static ScoreLog getScoreLog() {
 		return scoreLog;
 	}
 	
@@ -224,6 +244,8 @@ public class TapHerderGame extends Frame implements IHexEventListener {
 			Graphics2D offScreenGraphicsCtx = (Graphics2D) hexCanvas.getGraphics();
 			har.update(offScreenGraphicsCtx);
 			g.drawImage(hexCanvas, border.left, border.top, this);
+			har.setLabel(1, scoreLog.scoreTotal());
+			har.setLabel(3, scoreLog.moves());
 		}
 	}
 

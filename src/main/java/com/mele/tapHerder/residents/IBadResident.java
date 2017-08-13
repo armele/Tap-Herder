@@ -9,5 +9,5 @@ import com.mele.games.hex.IHexResident;
  *
  */
 public interface IBadResident extends IHexResident {
-
+	// TODO: Add some pursuit logic for bad guys...
 }

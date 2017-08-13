@@ -15,6 +15,9 @@ public class ScoreLog {
 		scoreList.add(score);
 	}
 	
+	/**
+	 * @return
+	 */
 	public int scoreTotal() {
 		int total = 0;
 		
@@ -23,5 +26,20 @@ public class ScoreLog {
 		}
 		
 		return total;
+	}
+	
+	/**
+	 * @return
+	 */
+	public int moves() {
+		int moves = 0;
+		
+		for (ScoreEvent event : scoreList) {
+			if (ScoreEvent.SCORE_TAP.equals(event)) {
+				moves++;
+			}
+		}	
+		
+		return moves;
 	}
 }

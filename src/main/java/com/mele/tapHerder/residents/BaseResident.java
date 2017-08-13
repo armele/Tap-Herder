@@ -4,6 +4,9 @@ import java.awt.Color;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import com.mele.games.hex.EHexVector;
 import com.mele.games.hex.IHexResident;
 import com.mele.games.hex.ui.HexCell;
@@ -19,8 +22,8 @@ import com.mele.tapHerder.types.BaseTerrainType;
  *
  */
 public abstract class BaseResident implements IHexResident, IHexRenderable {
+	protected static Logger log = LogManager.getLogger(BaseResident.class);
 	protected Map<String, Object> properties = new HashMap<String, Object>();
-	protected TapHerderGame game = null;
 	protected HexCell currentLocation = null;
 	protected Color bkColor = null;
 	
@@ -54,20 +57,6 @@ public abstract class BaseResident implements IHexResident, IHexRenderable {
 	}
 	
 	/**
-	 * @return
-	 */
-	public HexCell getCurrentLocation() {
-		return currentLocation;
-	}
-	
-	/**
-	 * @param home
-	 */
-	public void setCurrentLocation(HexCell home) {
-		currentLocation = home;
-	}
-	
-	/**
 	 * @return the runDistance
 	 */
 	public int getRunDistance() {
@@ -86,13 +75,6 @@ public abstract class BaseResident implements IHexResident, IHexRenderable {
 	 */
 	public Object getProperty(String key) {
 		return properties.get(key);
-	}
-	
-	/**
-	 * @param game
-	 */
-	public void setGame(TapHerderGame game) {
-		this.game = game;
 	}
 	
 	/* (non-Javadoc)
@@ -175,6 +157,8 @@ public abstract class BaseResident implements IHexResident, IHexRenderable {
 				
 				moveInDirection(tapDirection);
 			}
+		} else {
+			log.debug("A homeless resident is being asked to react...");
 		}
 	}
 	
@@ -183,23 +167,23 @@ public abstract class BaseResident implements IHexResident, IHexRenderable {
 	 * @param type
 	 */
 	protected void goodResidentMove(HexCell neighbor, BaseTerrainType type) {
-		if (type.isGoal()){
+		if (type != null && type.isGoal()){
 			// Reached a goal space!
-			game.getScoreLog().addScore(ScoreEvent.SCORE_RESGOAL);
+			TapHerderGame.getScoreLog().addScore(ScoreEvent.SCORE_RESGOAL);
 			currentLocation.removeResident(this);
 			
 			// TODO: Find a good spot for these constants...
 			// TODO: Special animations for reaching a goal...
 			// TODO: Propagate this to other resident classes...
 			neighbor.addProperty("GOALREACH", new Boolean(true)); 
-		} else if (type.isHazard()) {
+		} else if (type != null && type.isHazard()) {
 			// Got pushed into a hazard - I'm dead!
 			currentLocation.removeResident(this);
 			kill();
-		} else if (type.isObstacle()) {
+		} else if (type != null && type.isObstacle()) {
 			// Got pushed into an obstacle - can't move
 			motion.setInMotion(false);
-		} else if (type.isDestructable()) {
+		} else if (type != null && type.isDestructable()) {
 			// Got pushed into a destroyable obstacle - can't move
 			motion.setInMotion(false);
 		} else {
@@ -237,13 +221,13 @@ public abstract class BaseResident implements IHexResident, IHexRenderable {
 	 * @param type
 	 */
 	protected void badResidentMove(HexCell neighbor, BaseTerrainType type) {
-		if (type.isHazard()) {
+		if (type != null && type.isHazard()) {
 			// Got pushed into a hazard - I'm dead!
 			currentLocation.removeResident(this);
 			kill();
-		} else if (type.isObstacle()) {
+		} else if (type != null && type.isObstacle()) {
 			// Got pushed into an obstacle - can't move
-		} else if (type.isDestructable()) {
+		} else if (type != null && type.isDestructable()) {
 			// Got pushed into a destroyable obstacle - can't move
 		} else {
 			boolean moveMe = false;
@@ -276,5 +260,16 @@ public abstract class BaseResident implements IHexResident, IHexRenderable {
 	@Override
 	public void setBackgroundColor(Color backgroundColor) {
 		bkColor = backgroundColor;
+	}	
+	
+	@Override
+	public HexCell getCell() {
+		return currentLocation;
+	}
+
+
+	@Override
+	public void setCell(HexCell cell) {
+		currentLocation = cell;		
 	}	
 }

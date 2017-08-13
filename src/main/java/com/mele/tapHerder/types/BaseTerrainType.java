@@ -3,8 +3,6 @@ package com.mele.tapHerder.types;
 import java.awt.Color;
 import java.util.HashMap;
 
-import com.mele.games.animation.ERenderPass;
-import com.mele.games.animation.SpriteFactoryDescriptor;
 import com.mele.games.hex.IHexResident;
 import com.mele.games.hex.ui.HexCell;
 import com.mele.games.hex.ui.ICellType;
@@ -79,23 +77,29 @@ public abstract class BaseTerrainType implements ICellType {
 	 * 
 	 * @param tappedCell
 	 */
-	public void react(HexCell tappedCell, int tick) {
-		if (isDestructable()) {
-			BaseTerrainType newType = getDestructable();
+	public void react(HexCell tapOrigin, HexCell reactionCell, int tick) {
+		// If the cell being checked for a reaction is the cell that was tapped, process destructability
+		// and resident reactions.
+		if (tapOrigin.equals(reactionCell)) {
+			if (isDestructable()) {
+				BaseTerrainType newType = getDestructable();
+				
+				if (newType.isHazard()) {
+					TapHerderGame.scoreLog.addScore(ScoreEvent.SCORE_TOHAZARD);
+				} else if (!newType.isObstacle()) {
+					TapHerderGame.scoreLog.addScore(ScoreEvent.SCORE_TOSAFE);
+				}
+				
+				reactionCell.setType(newType);
+				reactionCell.addProperty(IHexRenderable.PROPKEY_NEWTYPE, IHexRenderable.PROPVAL_TRUE);
+			}	
 			
-			if (newType.isHazard()) {
-				TapHerderGame.scoreLog.addScore(ScoreEvent.SCORE_TOHAZARD);
-			} else if (!newType.isObstacle()) {
-				TapHerderGame.scoreLog.addScore(ScoreEvent.SCORE_TOSAFE);
+			for (IHexResident res : reactionCell.getResidents()) {
+				BaseResident resident = (BaseResident) res;
+				resident.react(reactionCell, tick);
 			}
-			
-			tappedCell.setType(newType);
-			tappedCell.addProperty(IHexRenderable.PROPKEY_NEWTYPE, IHexRenderable.PROPVAL_TRUE);
-		}	
-		
-		for (IHexResident res : tappedCell.getResidents()) {
-			BaseResident resident = (BaseResident) res;
-			resident.react(tappedCell, tick);
+		} else {
+			// TODO: Implementation for reacting to taps from other cells.
 		}
 	}
 

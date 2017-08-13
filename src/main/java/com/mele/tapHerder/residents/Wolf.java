@@ -6,6 +6,7 @@ import com.mele.games.animation.SpriteFrame;
 import com.mele.games.hex.ui.HexCell;
 import com.mele.games.hex.ui.ResidentMetadata;
 import com.mele.games.mechanics.ScoreEvent;
+import com.mele.tapHerder.TapHerderGame;
 import com.mele.tapHerder.types.BaseTerrainType;
 
 /**
@@ -43,6 +44,6 @@ public class Wolf extends BaseResident implements IBadResident {
 	 * @see com.mele.tapHerder.residents.BaseResident#kill()
 	 */
 	public void kill() {
-		game.getScoreLog().addScore(ScoreEvent.SCORE_DEADANTIRES);
+		TapHerderGame.getScoreLog().addScore(ScoreEvent.SCORE_DEADANTIRES);
 	}
 }
